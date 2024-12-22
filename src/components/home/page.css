@@ -1,0 +1,90 @@
+.hero-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-color: #174ea616;
+  padding: 80px 0 !important;
+}
+
+.hero-section h1 {
+  text-align: center;
+  font-weight: 600 !important;
+  margin: 0;
+  padding: 0;
+
+  & span {
+    font-weight: 600 !important;
+  }
+}
+
+.hero-section h1 span,
+.hero-section .description span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.hero-section .description {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 40px 0 !important;
+  font-weight: 400 !important;
+}
+
+.hero-section .primary-btn{
+  margin: auto;
+  padding: 16px 40px;
+}
+
+
+.hero-section .review-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: auto;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.hero-section .svg-section{
+  display: flex;
+  gap: 4px !important;
+
+  & svg{
+    color: #ffc83d;
+  }
+}
+
+.hero-section .review-section p{
+  margin: 0;
+  color: #5b5a5a;
+  font-weight: 400;
+}
+
+.hero-section .review-section div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover-line{
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 400;
+}
+
+.cta-section{
+  padding: 60px 0;
+}
+
+.cta-section .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cta-section h2{
+  text-align: center;
+}

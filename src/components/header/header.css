@@ -1,0 +1,201 @@
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background: transparent;
+  position: relative;
+  z-index: 999999;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  transition: background-color 0.3s ease;
+  background-color: #174ea616;
+  border-bottom: 1px solid #cccccc85;
+}
+
+/* When scrolled, add background color */
+.header-scrolled {
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  border-bottom: 1px solid #cccccc8b;
+}
+
+/* Adjust header links when scrolled */
+.header-scrolled ul li a {
+  color: black;
+}
+
+/* Style for the header menu */
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  padding: 30px 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header ul li a svg {
+  width: 16px;
+  height: 19px;
+  stroke: black;
+  fill: black;
+}
+
+.header-scrolled ul li a svg {
+  fill: black;
+  fill: black;
+}
+
+header ul li a:hover,
+header ul li a:hover svg {
+  color: var(--primary-color);
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
+}
+
+/* Mobile Menu Icon - hidden by default */
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header ul {
+    display: none; /* Hide the regular menu on mobile */
+  }
+
+  header .primary-btn {
+    display: none; /* Hide primary button on mobile */
+  }
+
+  .mobile-menu-icon {
+    display: block; /* Show hamburger icon */
+  }
+
+  /* Styling for the hamburger icon */
+  .mobile-menu-icon svg {
+    width: 30px;
+    height: auto;
+  }
+
+  .mobile-menu-icon svg path {
+    fill: white;
+    stroke: white;
+  }
+
+  .header-scrolled .mobile-menu-icon svg path {
+    stroke: black; /* Change stroke color when scrolled */
+  }
+}
+
+/* Sidebar styles - initially hidden */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  color: black;
+  transition: right 0.3s ease;
+  z-index: 1001;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  right: 0; /* When open, bring it into view */
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid #e3dcdc;
+}
+
+.sidebar ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Overlay to close sidebar when clicked outside */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+header ul li.dropdown {
+  position: relative;
+}
+
+header li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+header ul li .dropdown-menu {
+  position: absolute;
+  top: 76%;
+  left: 0;
+  display: none;
+  background-color: white;
+  border: 1px solid #fdfafa;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+  z-index: 1000;
+}
+
+header ul li .dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #cbcaca;
+}
+
+header ul li .dropdown-menu li:last-child {
+  border: 0;
+}
+
+header ul li .dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li .dropdown-menu li a:hover {
+  color: #41cb5a;
+}

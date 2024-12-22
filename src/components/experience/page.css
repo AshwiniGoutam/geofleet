@@ -1,0 +1,38 @@
+.experience-section{
+    margin: 40px 0;
+}
+
+.experience-section h2{
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 50px !important;
+    line-height: 60px !important;
+
+    & span{
+        font-weight: 700 !important;
+        color: var(--primary-color);
+    }
+}
+
+.experience-section p{
+    text-align: center;
+}
+
+.experience-section .marquee-slider {
+  margin-top: 60px;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #fbf9f9 15%,
+    #fcf8f8 85%,
+    transparent
+  );
+}
+
+.experience-section .marquee-slider .item{
+    margin-left: 40px;
+}
+
+.experience-section .marquee-slider .item img{
+    height: 300px;
+}

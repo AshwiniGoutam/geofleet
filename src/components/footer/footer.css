@@ -1,0 +1,130 @@
+footer {
+  background-color: #174ea6;
+  padding: 60px 0;
+  color: white;
+}
+
+footer .logo-div {
+  margin-bottom: 20px;
+}
+
+.phone-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+.footer-heading {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer span {
+  display: block;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: rgb(204, 204, 204);
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+footer .address-div {
+  margin-bottom: 20px;
+}
+
+footer .address-div p {
+  margin-bottom: 10px;
+}
+
+footer .email-div p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-download-btns {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-download-btns a {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.footer-download-btns img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-download-btns span {
+  color: white;
+}
+
+.footer-download-btns a img[alt="playStore"] {
+  width: 20px;
+  object-fit: cover;
+}
+
+.copyright-section {
+  /* background-color: #41cb5a; */
+  background-color: #174ea6;
+  border-top: 1px solid #cccccc30;
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright-section a {
+  text-align: center;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 10px;
+  }
+  .privacy-policy-row ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
