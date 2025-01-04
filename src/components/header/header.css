@@ -6,19 +6,15 @@ header {
   padding: 0px 20px;
   background: transparent;
   position: relative;
-  z-index: 999999;
+  z-index: 9;
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
   transition: background-color 0.3s ease;
-  /* background-color: #174ea616; */
-  /* border-bottom: 1px solid #cccccc85; */
 }
 
-/* When scrolled, add background color */
 .header-scrolled {
   background-color: white;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   border-bottom: 1px solid #cccccc8b;
 }
 
@@ -102,10 +98,10 @@ header ul li a:hover svg {
     height: auto;
   }
 
-  .mobile-menu-icon svg path {
+  /* .mobile-menu-icon svg path {
     fill: white;
     stroke: white;
-  }
+  } */
 
   .header-scrolled .mobile-menu-icon svg path {
     stroke: black; /* Change stroke color when scrolled */

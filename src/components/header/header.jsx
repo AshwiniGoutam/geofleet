@@ -136,12 +136,12 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
           </li>
           <li>
             <Link to="/mobile-app" onClick={toggleSidebar}>
-              Mobile App
+              How it works
             </Link>
           </li>
           <li>
             <Link to="/csms-platform" onClick={toggleSidebar}>
-              CSMS Platform
+              Pricing
             </Link>
           </li>
           <li>
