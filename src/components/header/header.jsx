@@ -77,34 +77,33 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
       >
         <div data-aos="fade-down">
           <Link to="/" className="logo-div">
-            <img src="../assets/images/logo.png" alt="logo" width="160px" />
+            {/* <img src="../assets/images/logo.png" alt="logo" width="160px" /> */}
+            <img src="../assets/images/dots.png" alt="logo" width="" />
+            <img src="../assets/images/dots.png" alt="logo" width="" />
+            <img src="../assets/images/dots.png" alt="logo" width="" />
+            geofleet.ai
           </Link>
         </div>
 
         <ul data-aos="fade-down" className="desktop-menu">
-          {!home && (
-            <li>
-              <Link to="/">
-                Product <ArrowDown />
-              </Link>
-            </li>
-          )}
+          <li>
+            <Link to="/">Home</Link>
+          </li>
           <li className="dropdown">
+            <Link to="#">Features</Link>
+          </li>
+          <li>
+            <Link to="#">How it Works</Link>
+          </li>
+          <li>
             <Link to="#">Pricing</Link>
           </li>
-          {/* <li>
-            <a href="#about-us">About</a>
-          </li> */}
           <li>
-            <a href="#features">Features</a>
+            <Link to="#">Blog</Link>
           </li>
-          {!mobile && !csms && !contact && (
-            <li>
-              <a href="#explore-solutions">
-                Resources <ArrowDown />
-              </a>
-            </li>
-          )}
+          <li>
+            <Link to="#">Contact</Link>
+          </li>
         </ul>
 
         {/* Hamburger Menu */}
@@ -113,7 +112,7 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
         </div>
 
         <Link to="/contact-us" className="primary-btn" data-aos="fade-down">
-          Contact Us <img src="../../assets/images/arrow.svg" alt="" />
+          Sign In
         </Link>
       </header>
 

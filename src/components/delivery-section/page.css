@@ -1,0 +1,47 @@
+.delivery-section {
+  background-color: #141f39;
+}
+
+.delivery-section h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.delivery-section .devlivery-btn-1 {
+  background-color: #ff7f52;
+  color: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid transparent;
+}
+
+.delivery-section .devlivery-btn-2 {
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid #ccc;
+}
+
+.delivery-section .stats-div {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delivery-section .col-sm-12 {
+  margin-top: 80px;
+}
+
+.delivery-section .col-sm-12 h4 {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+.delivery-section .col-sm-12 p {
+  color: white;
+}

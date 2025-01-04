@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./page.css";
 
@@ -7,65 +5,85 @@ export default function Features() {
   return (
     <section className="features-section">
       <div className="container">
-        <div className="row row-gap-4 align-items-center">
-          <div className="col-sm-6">
-            <h3>Create optimized delivery routes from your orders.</h3>
-            <p>
-              Create optimized delivery routes from your orders in seconds with
-              EasyRoutes, whether through our web platform or seamlessly
-              integrated into your Shopify Admin.
-            </p>
-            <button className="primary-btn">
-              Route Optimization <FontAwesomeIcon icon={faArrowRight} />{" "}
-            </button>
-          </div>
+        <div className="row align-items-center">
           <div className="col-sm-6">
             <img
               src="../../assets/images/features-image-1.png"
-              alt="feature-1"
+              alt="images"
               width="100%"
             />
           </div>
+          <div className="col-sm-6">
+            <h2>
+              Smart and Intelligent Route Optimization to Maximize Efficiency
+              and Cut Costs by 25%
+            </h2>
+            <p>
+              Experience the power of intelligent route optimization with
+              Geofleet. Our cutting-edge platform helps you create optimized
+              delivery routes that take into account traffic patterns, driver
+              preferences, and your unique business priorities. Say goodbye to
+              inefficiencies and hello to cost savings!
+            </p>
 
+            <h4>With Geofleet, you can:</h4>
+
+            <ul>
+              <li>
+                Save up to 25% per delivery by optimizing every route for
+                maximum efficiency.
+              </li>
+              <li>
+                Easily create routes that factor in real-time traffic data,
+                reducing delays and improving delivery times.
+              </li>
+              <li>
+                Customize routes based on driver preferences and operational
+                needs. Edit routes effortlessly—although with our smart
+                optimization, you’ll rarely need to!
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-sm-6">
+            <h2>Live Monitoring – Keep Your Delivery Fleet on Track</h2>
+            <p>
+              Stay in control of your fleet with Geofleet’s real-time live
+              monitoring. Dispatch routes directly to our user-friendly driver
+              app, track driver progress in real time, and gain insights into
+              every journey. At the end of the day, you can easily review
+              performance stats and optimize future operations.
+            </p>
+            <h4>With Geofleet, you can:</h4>
+            <ul>
+              <li>
+                Track driver progress in real time, ensuring on-time deliveries
+                and operational efficiency.
+              </li>
+              <li>
+                Dispatch optimized routes seamlessly to the driver app,
+                simplifying the process for your team.
+              </li>
+              <li>
+                Review daily stats to identify opportunities for further
+                optimization and improve fleet performance.
+              </li>
+            </ul>
+            <p>
+              Ensure your fleet is always on track with Geofleet’s Live
+              Monitoring.
+            </p>
+          </div>
           <div className="col-sm-6">
             <img
               src="../../assets/images/features-image-2.png"
-              alt="feature-1"
+              alt="images"
               width="100%"
             />
-          </div>
-          <div className="col-sm-6">
-            <h3>Keep customers up-to-date and informed.</h3>
-            <p>
-              EasyRoutes keeps your customers informed with automated delivery
-              notifications and customizable tracking pages, allowing you to
-              craft the perfect branded delivery experience.
-            </p>
-            <button className="primary-btn">
-              Learn More <FontAwesomeIcon icon={faArrowRight} />{" "}
-            </button>
-          </div>
 
-          <div className="col-sm-6">
-            <h3>Give drivers the tools they need to deliver succesfully.</h3>
-            <p>
-              Our mobile app for iOS and Android walks your drivers through
-              their delivery routes step-by-step, with all the information they
-              need, right at their fingertips.
-            </p>
-            <button className="primary-btn">
-              Route Optimization <FontAwesomeIcon icon={faArrowRight} />{" "}
-            </button>
-          </div>
-          <div className="col-sm-6">
-            <img
-              src="../../assets/images/features-image-3.png"
-              alt="feature-1"
-              width="100%"
-            />
+            {/* <img src="../../assets/images/col-arrow.png" alt="arrow" className="col-last-arrow" /> */}
           </div>
         </div>
-        <div className="divider"></div>
       </div>
     </section>
   );

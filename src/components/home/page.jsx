@@ -4,14 +4,13 @@ import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faGem,
-  faStar,
-  faTrophy,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Clients from "../clients/page";
-import Experence from "../experience/page";
-import Features from "../features/page";
 import Footer from "../footer/footer";
+import DeliverySection from "../delivery-section/page";
+import Features from "../features/page";
+import AppSection from "../app-section/page";
 
 export default function Home() {
   return (
@@ -19,63 +18,120 @@ export default function Home() {
       <Header />
       <section className="hero-section">
         <div className="container">
-          <div className="row">
-            <h1>
-              The easy way to manage <span className="">local deliveries</span>
-            </h1>
-            <p className="description">
-              <span>EasyRoutes by Geofleet</span> streamlines your local
-              deliveries with route optimization, real-time tracking, delivery
-              notifications, and in-depth analytics. Cut costs, enhance
-              productivity, and keep your customers happy, all in one platform.
-            </p>
+          <div className="row align-items-center">
+            <div className="col-sm-12 col-md-6 col-lg-6">
+              <img
+                src="../../assets/images/vector-icon-3.png"
+                alt="vector-icon-1"
+                className="vector-icon-1"
+              />
+              <img
+                src="../../assets/images/vector-icon-1.png"
+                alt="vector-icon-1"
+                className="vector-icon-2"
+              />
+              <h1>
+                Smarter Fleets,
+                <span className=""> Seamless Deliveries.</span>
+              </h1>
+              <p className="description">
+                Optimizing Fleets, Planning Routes, and Ensuring Seamless
+                Deliveries with Driver Excellence.
+              </p>
 
-            <button className="primary-btn">
-              Try it free <FontAwesomeIcon icon={faArrowRight} />{" "}
-            </button>
-
-            <div className="review-section">
-              <div>
-                <div className="svg-section">🏆🏆</div>
-                <p> 2x Shopify Staff Pick</p>
+              <div className="d-flex align-items-center gap-4">
+                <button className="primary-btn">Free Trail </button>
+                <a href="#">
+                  Explore the Product <FontAwesomeIcon icon={faArrowRight} />
+                </a>
               </div>
 
-              <div>
-                <div className="svg-section">⭐⭐⭐⭐⭐</div>
-                <p> (4.9 rating)</p>
-              </div>
+              <div className="review-section">
+                <div>
+                  <img src="../../assets/images/right-icon.png" alt="icon" />
+                  <p>Get 7 days free trial</p>
+                </div>
 
-              <div>
-                <p>💎</p>
-                <p> Built for Shopify</p>
+                <div>
+                  <img src="../../assets/images/right-icon.png" alt="icon" />
+                  <p> No credit card is required </p>
+                </div>
+
+                <div>
+                  <img src="../../assets/images/right-icon.png" alt="icon" />
+                  <p> Cancel anytime</p>
+                </div>
               </div>
             </div>
 
-            <Clients />
+            <div className="col-sm-12 col-md-6 col-lg-6 text-end">
+              <img
+                src="../../assets/images/banner-graphic.png"
+                alt="graphic"
+                width="100%"
+              />
+              <img
+                src="../../assets/images/vector-icon-2.png"
+                alt="vector-icon-1"
+                className="vector-icon-3"
+              />
+            </div>
 
-            <p className="cover-line">
-              🌎 Powering deliveries for thousands of businesses across the
-              globe
-            </p>
+            <Clients />
           </div>
         </div>
       </section>
 
-      <Experence />
+      <DeliverySection />
 
       <Features />
+
+      <AppSection />
 
       <section className="cta-section">
         <div className="container">
           <div className="row">
-            <h2>
-              Cut delivery costs by 25%.{" "}
-              <span className="d-block">Reduce customer support by 80%.</span>
-            </h2>
+            <div className="col-sm-12 col-md-8 col-lg-9">
+              <img
+                src="../../assets/images/cta-graphic.png"
+                alt="cta-graphic"
+                className="cta-graphic"
+              />
+              <div>
+                <h2>Sign up to our newletter</h2>
+                <p>
+                  Recive latest news, updates and many{" "}
+                  <span className="d-block">other news every week.</span>
+                </p>
+              </div>
+              <div className="input-div">
+                <input type="text" placeholder="Enter your email address" />
+                <FontAwesomeIcon icon={faChevronRight} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <button className="primary-btn">
-              Get Started <FontAwesomeIcon icon={faArrowRight} />{" "}
-            </button>
+      <section className="routing-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-sm-6">
+              <img src="../../assets/images/routing-image.png" alt="images" className="w-100" />
+            </div>
+            <div className="col-sm-6">
+              <div>
+                <p>Routing Engine API</p>
+                <h2>Need just our algo?</h2>
+              </div>
+              <p>
+                ParallaxIQ's AI-driven route optimization algorithm is fast,
+                scalable, and seamlessly integrates with your systems. Tap into
+                our machine learning models worldwide for the most precise ETAs.
+              </p>
+
+              <button>Go to Engine API</button>
+            </div>
           </div>
         </div>
       </section>

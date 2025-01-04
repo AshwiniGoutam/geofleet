@@ -23,6 +23,15 @@ export default function Clients() {
         <div className="item">
             <img src="../../assets/images/client-logo-4.png" alt="logo" />
         </div>
+        <div className="item">
+            <img src="../../assets/images/client-logo-5.png" alt="logo" />
+        </div>
+        <div className="item">
+            <img src="../../assets/images/client-logo-6.png" alt="logo" />
+        </div>
+        <div className="item">
+            <img src="../../assets/images/client-logo-7.png" alt="logo" />
+        </div>
       </Marquee>
     </div>
   );

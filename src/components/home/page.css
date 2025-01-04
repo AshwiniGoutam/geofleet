@@ -3,12 +3,21 @@
   background-size: cover;
   width: 100%;
   position: relative;
-  background-color: #174ea616;
   padding: 80px 0 !important;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  background-image: url("../../../public/assets/images/background-shadow.png");
+  position: absolute;
+  top: -160px;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-section h1 {
-  text-align: center;
+  text-align: start;
   font-weight: 600 !important;
   margin: 0;
   padding: 0;
@@ -18,26 +27,43 @@
   }
 }
 
+.hero-section a {
+  color: black;
+}
+
+.vector-icon-1 {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+}
+
+.vector-icon-2 {
+  position: absolute;
+  top: 4%;
+  left: 45%;
+}
+
 .hero-section h1 span,
 .hero-section .description span {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   font-weight: 600;
 }
 
 .hero-section .description {
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: start;
   margin: 20px 0 40px 0 !important;
   font-weight: 400 !important;
+  color: #4f4f4f;
 }
 
-.hero-section .primary-btn{
-  margin: auto;
+.hero-section .primary-btn {
+  /* margin: auto; */
   padding: 16px 40px;
 }
 
-
-.hero-section .review-section{
+.hero-section .review-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,44 +73,119 @@
   margin-top: 40px;
 }
 
-.hero-section .svg-section{
+.hero-section .svg-section {
   display: flex;
   gap: 4px !important;
 
-  & svg{
+  & svg {
     color: #ffc83d;
   }
 }
 
-.hero-section .review-section p{
+.hero-section .review-section p {
   margin: 0;
   color: #5b5a5a;
   font-weight: 400;
 }
 
-.hero-section .review-section div{
+.hero-section .review-section div {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.cover-line{
+.cover-line {
   text-align: center;
   margin-top: 16px;
   font-weight: 400;
 }
 
-.cta-section{
+.cta-section {
   padding: 60px 0;
+  margin-top: 50px;
 }
 
-.cta-section .row{
+.cta-section .row,
+.cta-section .row .col-sm-12 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
 
-.cta-section h2{
+.cta-section .row .col-sm-12 {
+  background-color: hsl(200deg 92.31% 94.9%);
+  padding: 60px 20px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.cta-section h2 {
   text-align: center;
+}
+
+.cta-section p {
+  text-align: center;
+}
+
+.cta-section .input-div {
+  background-color: white;
+  padding: 10px 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100px;
+}
+
+.cta-section .input-div input {
+  border: none;
+  width: 100%;
+}
+
+.cta-section svg {
+  background-color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.cta-section .cta-graphic {
+  position: absolute;
+  left: 30px;
+  top: -56px;
+  width: 210px;
+}
+
+.routing-section {
+  background-color: rgba(20, 31, 57, 1);
+  color: white;
+}
+
+.routing-section img {
+  height: 400px;
+}
+
+.routing-section p {
+  color: rgba(200, 208, 255, 1);
+  font-weight: 400;
+}
+
+.routing-section button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.routing-section .col-sm-6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
 }

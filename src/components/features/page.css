@@ -1,19 +1,48 @@
 .features-section {
-  background-color: #174ea616;
-  padding-bottom: 60px !important;
+  position: relative;
 }
 
-.features-section h3 {
-  font-size: 40px !important;
+.features-section .row {
+  row-gap: 170px;
 }
 
-.features-section p {
-  font-size: 18px;
-  margin: 10px 0 30px 0;
+.features-section h2 {
+  font-size: 32px !important;
+  line-height: 45px !important;
 }
 
-.features-section .row .col-sm-6 img {
-  height: 500px;
-  /* object-fit: contain; */
-  border-radius: 16px;
+.features-section h4 {
+  margin-top: 20px;
+}
+
+.features-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.features-section ul li {
+  color: #4f4f4f;
+}
+
+.features-section .col-sm-6:first-child {
+  position: relative;
+}
+
+.features-section .col-sm-6:first-child::after {
+  content: url("../../../public/assets/images/col-arrow.png");
+  position: absolute;
+  bottom: -160px;
+  right: 45px;
+}
+
+.features-section .row:last-child::after {
+  content: url("../../../public/assets/images/col-arrow.png");
+  position: absolute;
+  bottom: -100px;
+  right: 45%;
+  transform: rotate(-50deg);
 }

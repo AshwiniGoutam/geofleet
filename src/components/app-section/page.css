@@ -1,0 +1,40 @@
+.app-section {
+  margin-top: 70px;
+}
+
+.app-section h2 {
+  text-align: center;
+}
+
+.app-section p {
+  text-align: center;
+}
+
+.app-section .col-sm-12{
+    margin-top: 40px;
+}
+
+.app-section .card {
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+}
+
+.app-section .card h4 {
+  text-align: start;
+  font-size: 20px;
+}
+
+.app-section .card p {
+  text-align: start;
+}
+
+.app-section .card img {
+  /* width: 136px; */
+}
