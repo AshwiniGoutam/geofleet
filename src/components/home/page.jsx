@@ -11,6 +11,8 @@ import Footer from "../footer/footer";
 import DeliverySection from "../delivery-section/page";
 import Features from "../features/page";
 import AppSection from "../app-section/page";
+import Testimonial from "../testimonials/page";
+import Pricing from "../pricing/page";
 
 export default function Home() {
   return (
@@ -117,7 +119,11 @@ export default function Home() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-6">
-              <img src="../../assets/images/routing-image.png" alt="images" className="w-100" />
+              <img
+                src="../../assets/images/routing-image.png"
+                alt="images"
+                className="w-100"
+              />
             </div>
             <div className="col-sm-6">
               <div>
@@ -135,6 +141,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Testimonial />
+
+      <section className="community-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6">
+              <h2>
+                Join our community of{" "}
+                <span className="d-block">1,000+ businesses</span>
+              </h2>
+              <img
+                src="../../assets/images/community-image.png"
+                alt="images"
+                className="before-img"
+              />
+            </div>
+            <div className="col-sm-6">
+              <div className="community-stats-div">
+                <div>
+                  <h4>
+                    191+ <span className="d-block">milion</span>
+                  </h4>
+                  <p>Delivery optimized</p>
+                </div>
+                <div>
+                  <h4>
+                    57+ <span className="d-block">Kilometers</span>
+                  </h4>
+                  <p>CO2 reductions</p>
+                </div>
+                <p className="text-white px-5 mx-4">
+                  That's like planting 6 million trees!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Pricing />
 
       <Footer />
     </>

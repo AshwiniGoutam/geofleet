@@ -1,11 +1,12 @@
 footer {
-  background-color: #174ea6;
+  background-color: rgba(20, 31, 57, 1);
   padding: 60px 0;
   color: white;
 }
 
 footer .logo-div {
-  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .phone-section {
@@ -18,6 +19,13 @@ footer .logo-div {
 footer p {
   margin: 0;
   font-size: 14px;
+  color: rgba(180, 182, 196, 1) !important;
+}
+
+footer a{
+  
+  font-size: 14px;
+  color: rgba(180, 182, 196, 1) !important;
 }
 
 footer h4 {
@@ -103,17 +111,23 @@ footer a {
 }
 
 .copyright-section {
-  /* background-color: #41cb5a; */
-  background-color: #174ea6;
-  border-top: 1px solid #cccccc30;
-  padding: 10px;
-  text-align: center;
+  background-color: rgba(20, 31, 57, 1);
+}
+
+.copyright-section .row{
+  padding: 10px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .copyright-section a {
-  text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  font-size: 14px;
   margin: 0;
+  width: fit-content;
   text-decoration: none;
 }
 

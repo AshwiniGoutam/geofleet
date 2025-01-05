@@ -77,7 +77,6 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
       >
         <div data-aos="fade-down">
           <Link to="/" className="logo-div">
-            {/* <img src="../assets/images/logo.png" alt="logo" width="160px" /> */}
             <img src="../assets/images/dots.png" alt="logo" width="" />
             <img src="../assets/images/dots.png" alt="logo" width="" />
             <img src="../assets/images/dots.png" alt="logo" width="" />
