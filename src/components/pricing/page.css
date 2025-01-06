@@ -13,6 +13,60 @@
 .pricing-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  border-radius: 16px;
+}
+
+.pricing-section .container .row .col .card{
+  position: relative;
+}
+
+.pricing-section .container .row .col:nth-child(1) .card {
+  border-top: 7px solid rgb(101 160 250);
+}
+
+.pricing-section .container .row .col:nth-child(1) .card button {
+  background-color: rgb(101 160 250);
+  border: 0;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.pricing-section .container .row .col:nth-child(2) .card button {
+  background-color: rgb(173 135 255);
+  border: 0;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.pricing-section .container .row .col:nth-child(3) .card button {
+  background-color: rgb(255 126 134);
+  border: 0;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+.credit-span {
+  font-size: 12px;
+  display: block;
+  color: #949191;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pricing-section .container .row .col:nth-child(2) .card {
+  border-top: 7px solid rgb(173 135 255);
+}
+
+.pricing-section .container .row .col:nth-child(3) .card {
+  border-top: 7px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .pricing-card:hover {
@@ -50,8 +104,51 @@
 .feature-list {
   list-style: none;
   padding-left: 0;
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
 }
 
 .feature-item {
   margin-bottom: 1rem;
+}
+
+
+.check{
+  margin-right: 10px;
+  background-color: hsl(157.5deg 61.54% 89.8%);
+  width: 0px;
+  height: 0px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+}
+
+.check svg{
+  color: #616161;
+}
+
+.popular-card{
+  background-color: rgb(255 126 134);
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  padding: 16px 10px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.popular-card p{
+  color: white;
+  font-weight: 400;
+}
+
+.pricing-card .fw-semi-bold{
+  font-size: 40px;
+  font-weight: 500;
 }

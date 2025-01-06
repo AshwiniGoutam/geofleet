@@ -10,8 +10,8 @@
   text-align: center;
 }
 
-.app-section .col-sm-12{
-    margin-top: 40px;
+.app-section .col-sm-12 {
+  margin-top: 40px;
 }
 
 .app-section .card {
@@ -37,4 +37,76 @@
 
 .app-section .card img {
   /* width: 136px; */
+}
+
+.driver-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.driver-section .round-1 {
+  border: 1px dashed #ccc;
+  height: 599px;
+  width: 608px;
+  border-radius: 100%;
+}
+
+.driver-section .round-2 {
+  border: 1px dashed #ccc;
+  height: 440px;
+  width: 440px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.driver-section .user-img-1 {
+  position: absolute;
+  bottom: -60px;
+  left: 30%;
+}
+
+.driver-section .order-div {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 300px;
+  border-radius: 16px;
+  background-color: white;
+  padding: 20px 10px;
+  z-index: 1;
+  position: absolute;
+  bottom: 30%;
+  left: 133px;
+  animation: 2s infinite alternate mover;
+}
+
+.driver-section .driver-div {
+  left: 60%;
+  bottom: -100px;
+  animation: 2s infinite alternate mover;
+}
+
+.driver-section .iphone-mockup-img {
+  position: absolute;
+  right: 0;
+  width: 700px;
+  top: -17px;
+}
+
+.driver-section .order-div p {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+.driver-section .order-div p span {
+  color: rgba(18, 20, 29, 1);
+  opacity: 0.5;
+}
+
+.driver-section .user-img-2 {
+  position: absolute;
+  top: 0;
+  left: -70px;
 }

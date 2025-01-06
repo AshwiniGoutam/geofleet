@@ -12,22 +12,7 @@ export default function Footer() {
           <div className="row row-gap-4 justify-content-between w-100">
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="logo-div">
-                <img
-                  src="../assets/images/white-dots.png"
-                  alt="logo"
-                  width=""
-                />
-                <img
-                  src="../assets/images/white-dots.png"
-                  alt="logo"
-                  width=""
-                />
-                <img
-                  src="../assets/images/white-dots.png"
-                  alt="logo"
-                  width=""
-                />
-                geofleet.ai
+                <img src="../assets/images/white-logo.png" alt="logo" width="180px"/>
               </div>
               <p className="mt-4">
                 Optimizing Fleets, Planning Routes, and Ensuring Seamless
@@ -99,11 +84,11 @@ export default function Footer() {
             </div>
 
             <div className="d-flex align-items-center gap-2">
-              <a href="/">
+              <a href="https://apps.apple.com/in/app/geofleet/id6739492785" target="_blank">
                 {" "}
                 <img src="../../assets/images/google-store.png" alt="" />
               </a>
-              <a href="/">
+              <a href="https://play.google.com/store/apps/details?id=com.geofleet.app&hl=en_IN" target="_blank">
                 {" "}
                 <img src="../../assets/images/apple-store.png" alt="" />
               </a>

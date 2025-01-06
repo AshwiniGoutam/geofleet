@@ -1,0 +1,61 @@
+.how-it-works-container {
+  margin: 50px auto;
+  max-width: 1200px;
+  overflow-x: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.step-card {
+  min-width: 300px;
+  background: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Smooth scrolling for horizontal scroll */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}

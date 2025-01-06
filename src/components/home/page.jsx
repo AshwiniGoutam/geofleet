@@ -13,12 +13,13 @@ import Features from "../features/page";
 import AppSection from "../app-section/page";
 import Testimonial from "../testimonials/page";
 import Pricing from "../pricing/page";
+import HowItWorks from "../how-it-works/page";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <section className="hero-section">
+      <section className="hero-section overflow-hidden">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-12 col-md-6 col-lg-6">
@@ -32,23 +33,42 @@ export default function Home() {
                 alt="vector-icon-1"
                 className="vector-icon-2"
               />
-              <h1>
+              <h1
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 Smarter Fleets,
                 <span className=""> Seamless Deliveries.</span>
               </h1>
-              <p className="description">
+              <p
+                className="description"
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 Optimizing Fleets, Planning Routes, and Ensuring Seamless
                 Deliveries with Driver Excellence.
               </p>
 
-              <div className="d-flex align-items-center gap-4">
-                <button className="primary-btn">Free Trail </button>
+              <div
+                className="d-flex align-items-center gap-4"
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
+                <button className="primary-btn">Free Trial </button>
                 <a href="#">
                   Explore the Product <FontAwesomeIcon icon={faArrowRight} />
                 </a>
               </div>
 
-              <div className="review-section">
+              <div
+                className="review-section"
+                data-aos="fade-down"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+              >
                 <div>
                   <img src="../../assets/images/right-icon.png" alt="icon" />
                   <p>Get 7 days free trial</p>
@@ -66,7 +86,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-6 col-lg-6 text-end">
+            <div className="col-sm-12 col-md-6 col-lg-6 text-end" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
               <img
                 src="../../assets/images/banner-graphic.png"
                 alt="graphic"
@@ -89,6 +111,8 @@ export default function Home() {
       <Features />
 
       <AppSection />
+
+      {/* <HowItWorks/> */}
 
       <section className="cta-section">
         <div className="container">

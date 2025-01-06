@@ -37,11 +37,11 @@ export default function AppSection() {
     <section className="app-section">
       <div className="container">
         <div className="row">
-          <h2>
+          <h2 data-aos="fade-up">
             Sassy, Massy, Classy –{" "}
             <span className="d-block">ParallaxIQ Driver App</span>
           </h2>
-          <p>
+          <p data-aos="fade-up">
             Experience seamless navigation, intuitive design, and top-tier
             functionality{" "}
             <span className="d-block">
@@ -49,11 +49,62 @@ export default function AppSection() {
             </span>
           </p>
 
-          <img
+          {/* <img
             src="../../assets/images/bannergraphic.png"
             alt="banner"
             className="mt-4"
-          />
+          /> */}
+
+          <div className="driver-section">
+            <div className="round-1">
+              <img
+                src="../../assets/images/user-img-2.png"
+                alt="user-img-1"
+                className="user-img-1"
+              />
+
+              <div className="order-div">
+                <div className="d-flex align-items-start gap-2">
+                  <img
+                    src="../../assets/images/order-img.png"
+                    alt="user-img-1"
+                    className="mt-1"
+                  />
+                  <p>
+                    Your Order is out for Delivery and shall be delivered by
+                    12:15 PM. <span className="d-block">1st Jan</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="round-2">
+              <img
+                src="../../assets/images/user-img-1.png"
+                alt="user-img-1"
+                className="user-img-2"
+              />
+
+              <div className="order-div driver-div">
+                <div className="d-flex align-items-start gap-2">
+                  <img
+                    src="../../assets/images/driver-icon.png"
+                    alt="user-img-1"
+                    className="mt-1"
+                  />
+                  <p>
+                    Driver Shuvam would like to chat with you, please accept the
+                    request. <span className="d-block">june 05</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="../../assets/images/iphone-mockup.png"
+              alt="iphone-mockup-img"
+              className="iphone-mockup-img"
+            />
+          </div>
 
           {cardData.map((card) => (
             <div className="col-sm-12 col-md-6 col-lg-3" key={card.id}>

@@ -5,15 +5,15 @@ export default function Features() {
   return (
     <section className="features-section">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-sm-6">
+        <div className="row align-items-center overflow-hidden">
+          <div className="col-sm-6" data-aos="fade-right">
             <img
               src="../../assets/images/features-image-1.png"
               alt="images"
               width="100%"
             />
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6" data-aos="fade-left">
             <h2>
               Smart and Intelligent Route Optimization to Maximize Efficiency
               and Cut Costs by 25%
@@ -45,7 +45,7 @@ export default function Features() {
             </ul>
           </div>
 
-          <div className="col-sm-6">
+          <div className="col-sm-6" data-aos="fade-right">
             <h2>Live Monitoring – Keep Your Delivery Fleet on Track</h2>
             <p>
               Stay in control of your fleet with Geofleet’s real-time live
@@ -74,7 +74,7 @@ export default function Features() {
               Monitoring.
             </p>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6" data-aos="fade-left">
             <img
               src="../../assets/images/features-image-2.png"
               alt="images"

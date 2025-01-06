@@ -37,6 +37,7 @@
   position: absolute;
   bottom: -160px;
   right: 45px;
+  animation: 2s infinite alternate mover;
 }
 
 .features-section .row:last-child::after {
@@ -45,4 +46,5 @@
   bottom: -100px;
   right: 45%;
   transform: rotate(-50deg);
+  animation: 2s infinite alternate mover;
 }
