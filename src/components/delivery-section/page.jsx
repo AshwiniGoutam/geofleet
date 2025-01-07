@@ -15,7 +15,7 @@ export default function DeliverySection() {
             className="d-flex align-items-center justify-content-center gap-3"
             data-aos="fade-up"
           >
-            <button className="devlivery-btn-1">Start free trail</button>
+            <button className="devlivery-btn-1">Start free trial</button>
             <button className="devlivery-btn-2">Book a demo</button>
           </div>
 

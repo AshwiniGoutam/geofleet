@@ -39,7 +39,7 @@ export default function AppSection() {
         <div className="row">
           <h2 data-aos="fade-up">
             Sassy, Massy, Classy –{" "}
-            <span className="d-block">ParallaxIQ Driver App</span>
+            <span className="d-block">Geofleet Driver App</span>
           </h2>
           <p data-aos="fade-up">
             Experience seamless navigation, intuitive design, and top-tier
@@ -106,9 +106,14 @@ export default function AppSection() {
             />
           </div>
 
-          {cardData.map((card) => (
+          {cardData.map((card, index) => (
             <div className="col-sm-12 col-md-6 col-lg-3" key={card.id}>
-              <div className="card">
+              <div
+                className="card"
+                data-aos="fade-up"
+                data-aos-offset={`${index + 2 + "00"}`}
+                data-aos-easing="ease-in-sine"
+              >
                 <img src={card.imgSrc} alt={card.title} />
                 <div>
                   <h4>{card.title}</h4>

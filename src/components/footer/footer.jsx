@@ -84,11 +84,11 @@ export default function Footer() {
             </div>
 
             <div className="d-flex align-items-center gap-2">
-              <a href="https://apps.apple.com/in/app/geofleet/id6739492785" target="_blank">
+              <a href="https://play.google.com/store/apps/details?id=com.geofleet.app&hl=en_IN" target="_blank">
                 {" "}
                 <img src="../../assets/images/google-store.png" alt="" />
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.geofleet.app&hl=en_IN" target="_blank">
+              <a href="https://apps.apple.com/in/app/geofleet/id6739492785" target="_blank">
                 {" "}
                 <img src="../../assets/images/apple-store.png" alt="" />
               </a>
@@ -106,15 +106,15 @@ export default function Footer() {
             <div className="d-flex align-items-center gap-4 w-auto">
               <a href="/">
                 {" "}
-                <img src="../../assets/images/instagram-icon.png" alt="" />
+                <img src="../../assets/images/instagram-icon.png" alt=""  width="30px" height="30px"/>
               </a>
               <a href="/">
                 {" "}
-                <img src="../../assets/images/twitter-icon.png" alt="" />
+                <img src="../../assets/images/twitter-icon.png" alt="" width="30px" height="30px" />
               </a>
               <a href="/">
                 {" "}
-                <img src="../../assets/images/linkedin-icon.png" alt="" />
+                <img src="../../assets/images/linkedin-icon.png" alt="" width="30px" height="30px" />
               </a>
             </div>
           </div>

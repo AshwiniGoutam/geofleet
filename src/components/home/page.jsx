@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faChevronRight,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import Clients from "../clients/page";
 import Footer from "../footer/footer";
@@ -86,9 +87,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-6 col-lg-6 text-end" data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+            <div
+              className="col-sm-12 col-md-6 col-lg-6 text-end"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <img
                 src="../../assets/images/banner-graphic.png"
                 alt="graphic"
@@ -112,34 +116,46 @@ export default function Home() {
 
       <AppSection />
 
-      {/* <HowItWorks/> */}
+      <HowItWorks />
+
+      <Testimonial />
 
       <section className="cta-section">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-8 col-lg-9">
-              <img
+              {/* <img
                 src="../../assets/images/cta-graphic.png"
                 alt="cta-graphic"
                 className="cta-graphic"
-              />
-              <div>
-                <h2>Sign up to our newletter</h2>
+              /> */}
+              <div
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+              >
+                <h2>Sign Up To Our Newletter</h2>
                 <p>
                   Recive latest news, updates and many{" "}
                   <span className="d-block">other news every week.</span>
                 </p>
               </div>
-              <div className="input-div">
+              <div
+                className="input-div"
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
                 <input type="text" placeholder="Enter your email address" />
-                <FontAwesomeIcon icon={faChevronRight} />
+                <button className="primary-btn">Subscribe</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="routing-section">
+      {/* <section className="routing-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-6">
@@ -164,15 +180,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      <Testimonial />
+      </section> */}
 
       <section className="community-section">
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <h2>
+              <h2
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+              >
                 Join our community of{" "}
                 <span className="d-block">1,000+ businesses</span>
               </h2>
@@ -183,7 +201,9 @@ export default function Home() {
               />
             </div>
             <div className="col-sm-6">
-              <div className="community-stats-div">
+              <div className="community-stats-div" data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
                 <div>
                   <h4>
                     191+ <span className="d-block">milion</span>
@@ -196,7 +216,7 @@ export default function Home() {
                   </h4>
                   <p>CO2 reductions</p>
                 </div>
-                <p className="text-white px-5 mx-4">
+                <p className="text-white px-5 mx-4" style={{ zIndex: "9" }}>
                   That's like planting 6 million trees!
                 </p>
               </div>
