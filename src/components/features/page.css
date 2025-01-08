@@ -48,3 +48,10 @@
   transform: rotate(-50deg);
   animation: 2s infinite alternate mover;
 }
+
+
+@media (max-width:767px){
+  .features-section .row{
+    row-gap: 40px;
+  }
+}

@@ -264,4 +264,25 @@
   .community-section .before-img {
     display: none;
   }
+
+  .cta-section .row .col-sm-12{
+    border-radius: 0;
+  }
+
+  .cta-section .input-div{
+    width: 100%;
+  }
+
+  .community-section{
+    padding-bottom: 40px;
+  }
+
+  .community-section .row{
+    row-gap: 40px;
+  }
+
+  .community-section p{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }

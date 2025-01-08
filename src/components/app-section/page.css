@@ -110,3 +110,34 @@
   top: 0;
   left: -70px;
 }
+
+@media (max-width: 767px) {
+  .app-section .row {
+    overflow: hidden;
+  }
+
+  .driver-section .round-1,
+  .driver-section .round-2 {
+    border: 0;
+  }
+
+  .driver-section .iphone-mockup-img {
+    position: static;
+    width: 100%;
+  }
+
+  .driver-section .order-div {
+    bottom: auto;
+    top: 10%;
+    left: 10%;
+  }
+
+  .driver-section .driver-div {
+    bottom: -10%;
+    top: auto;
+    left: 30%;
+  }
+  .driver-section .user-img-1 {
+    left: 0;
+  }
+}

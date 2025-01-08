@@ -72,7 +72,7 @@ const itemVariants = {
 
 export default function HowItWorks() {
   return (
-    <div className="container pt-5">
+    <div className="container pt-5" id="how-it-works">
       <motion.h2
         className="text-center mb-5"
          data-aos="fade-up"

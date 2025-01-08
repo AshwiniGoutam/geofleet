@@ -23,7 +23,7 @@
   margin-bottom: 40px;
 }
 
-.testimonial-section .swiper-wrapper{
+.testimonial-section .swiper-wrapper {
   margin-left: 5px;
 }
 
@@ -98,4 +98,11 @@
 .testimonial-section .custom-nav .custom-prev img,
 .testimonial-section .custom-nav .custom-next img {
   width: 36px;
+}
+
+@media (max-width: 767px) {
+  .testimonial-section-header {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
 }

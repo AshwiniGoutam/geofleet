@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu";
 import ArrowDown from "../arrowDown";
 
-export default function Header({ ShowHeader, home, mobile, csms, contact }) {
+export default function Header({ ShowHeader, home }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -81,35 +81,31 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
           </Link>
         </div>
 
-        <ul data-aos="fade-down" className="desktop-menu">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li className="dropdown">
-            <Link to="#">Features</Link>
-          </li>
-          <li>
-            <Link to="#">How it Works</Link>
-          </li>
-          <li>
-            <Link to="#">Pricing</Link>
-          </li>
-          <li>
-            <Link to="#">Blog</Link>
-          </li>
-          <li>
-            <Link to="#">Contact</Link>
-          </li>
-        </ul>
+        <div className="right-header">
+          <ul data-aos="fade-down" className="desktop-menu">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How it Works</a>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+          </ul>
 
-        {/* Hamburger Menu */}
-        <div className="mobile-menu-icon" onClick={toggleSidebar}>
-          <HumbergMenu />
+          {/* Hamburger Menu */}
+          <div className="mobile-menu-icon" onClick={toggleSidebar}>
+            <HumbergMenu />
+          </div>
+
+          <Link to="/contact-us" className="primary-btn" data-aos="fade-down">
+            Sign In
+          </Link>
         </div>
-
-        <Link to="/contact-us" className="primary-btn" data-aos="fade-down">
-          Sign In
-        </Link>
       </header>
 
       {/* Mobile Sidebar */}
@@ -119,11 +115,9 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
         </button>
         <ul>
           <li>
-            {!home && (
-              <Link to="/" onClick={toggleSidebar}>
-                Home
-              </Link>
-            )}
+            <Link to="/" onClick={toggleSidebar}>
+              Home
+            </Link>
           </li>
           <li>
             <a href="#features" onClick={toggleSidebar}>
@@ -131,19 +125,14 @@ export default function Header({ ShowHeader, home, mobile, csms, contact }) {
             </a>
           </li>
           <li>
-            <Link to="/mobile-app" onClick={toggleSidebar}>
+            <a href="#how-it-works" onClick={toggleSidebar}>
               How it works
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/csms-platform" onClick={toggleSidebar}>
+            <a href="#pricing" onClick={toggleSidebar}>
               Pricing
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact-us" onClick={toggleSidebar}>
-              Contact Us
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

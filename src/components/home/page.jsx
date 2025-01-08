@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className="hero-section overflow-hidden">
+      <section className="hero-section overflow-hidden" id="home">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-12 col-md-6 col-lg-6">
@@ -134,7 +134,7 @@ export default function Home() {
                 data-aos-offset="100"
                 data-aos-easing="ease-in-sine"
               >
-                <h2>Sign Up To Our Newletter</h2>
+                <h2>Sign Up To Our Newsletter</h2>
                 <p>
                   Recive latest news, updates and many{" "}
                   <span className="d-block">other news every week.</span>
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="community-section">
+      <section className="community-section overflow-hidden">
         <div className="container">
           <div className="row">
             <div className="col-sm-6">

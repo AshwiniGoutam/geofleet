@@ -3,7 +3,7 @@ import "./page.css";
 
 export default function Features() {
   return (
-    <section className="features-section">
+    <section className="features-section" id="features">
       <div className="container">
         <div className="row align-items-center overflow-hidden">
           <div className="col-sm-6" data-aos="fade-right">

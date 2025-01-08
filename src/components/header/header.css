@@ -30,7 +30,13 @@ header ul {
   gap: 40px;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 16%;
+  padding: 0;
+}
+
+.header .right-header{
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
 
 header .logo-div{

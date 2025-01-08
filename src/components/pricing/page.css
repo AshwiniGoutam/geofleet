@@ -152,3 +152,9 @@
   font-size: 40px;
   font-weight: 500;
 }
+
+@media(max-width:767px){
+  .pricing-section .container .row .col:nth-child(3) .card{
+    margin-top: 50px;
+  }
+}

@@ -54,7 +54,7 @@ export default function Pricing() {
   return (
     <>
       <PricingModal show={modalShow} onHide={() => setModalShow(false)} />
-      <section className="pricing-section">
+      <section className="pricing-section" id="pricing">
         <div className="container py-5">
           <div
             className="text-center mb-5"

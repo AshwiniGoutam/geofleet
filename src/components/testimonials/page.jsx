@@ -50,7 +50,7 @@ export default function Testimonial() {
             modules={[Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide  data-aos="fade-up">
+            <SwiperSlide>
               <div className="card px-4">
                 <div>
                   {/* <h4>Lorem Ipsum is simply dummy text of the printing</h4> */}
@@ -80,7 +80,7 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide  data-aos="fade-up">
+            <SwiperSlide>
               <div className="card px-2">
                 <div>
                   {/* <h4>Lorem Ipsum is simply dummy text of the printing</h4> */}
@@ -111,7 +111,7 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide  data-aos="fade-up">
+            <SwiperSlide>
               <div className="card px-4">
                 <div>
                   {/* <h4>Lorem Ipsum is simply dummy text of the printing</h4> */}
@@ -141,7 +141,7 @@ export default function Testimonial() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide  data-aos="fade-up">
+            <SwiperSlide>
               <div className="card px-2">
                 <div>
                   {/* <h4>Lorem Ipsum is simply dummy text of the printing</h4> */}
