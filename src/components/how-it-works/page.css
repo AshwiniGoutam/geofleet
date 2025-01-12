@@ -1,11 +1,87 @@
-.how-it-works{
-  /* background-image: url('../../../public/assets/images/road-map.png'); */
+.how-it-works-section h2 {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.bg-primary{
-  background-color: #293fccb8;
+.how-it-works-section-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 100px 0;
 }
 
-.steps{
-  background-color: #293fcc28;
+.how-it-works-section-cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 110px; */
+  border: 0;
+}
+
+.how-it-works-section-cards .card p:nth-child(odd) {
+  position: absolute;
+  top: -130px;
+}
+
+.how-it-works-section-cards .card p:nth-child(even) {
+  position: absolute;
+  bottom: -130px;
+}
+
+.how-it-works-section-cards .card p {
+  /* color: black; */
+  /* font-weight: 600; */
+  font-size: 18px;
+}
+
+.how-it-works-section-cards .card:nth-child(1) p span {
+  color: #03d3dd;
+  font-weight: 600;
+}
+.how-it-works-section-cards .card:nth-child(2) p span {
+  color: #0870ad;
+  font-weight: 600;
+}
+.how-it-works-section-cards .card:nth-child(3) p span {
+  color: #4131c7;
+  font-weight: 600;
+}
+.how-it-works-section-cards .card:nth-child(4) p span {
+  color: #7c35c9;
+  font-weight: 600;
+}
+.how-it-works-section-cards .card:nth-child(5) p span {
+  color: #c23cc1;
+  font-weight: 600;
+}
+
+.how-it-works-section-cards .card-1 p::before,
+.how-it-works-section-cards .card-3 p::before,
+.how-it-works-section-cards .card-5 p::before {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 1px;
+  border: 1px dashed #ccc;
+  margin: auto;
+  position: absolute;
+  top: -100px;
+  left: 79px;
+  right: auto;
+}
+
+.how-it-works-section-cards .card-2 p::after,
+.how-it-works-section-cards .card-4 p::after {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 1px;
+  border: 1px dashed #ccc;
+  margin: auto;
+  position: absolute;
+  bottom: -100px;
+  left: 79px;
+  right: auto;
 }

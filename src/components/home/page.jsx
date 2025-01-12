@@ -15,6 +15,7 @@ import AppSection from "../app-section/page";
 import Testimonial from "../testimonials/page";
 import Pricing from "../pricing/page";
 import HowItWorks from "../how-it-works/page";
+import CtaSection from "../cta-section/page";
 
 export default function Home() {
   return (
@@ -120,40 +121,7 @@ export default function Home() {
 
       <Testimonial />
 
-      <section className="cta-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 col-md-8 col-lg-9">
-              {/* <img
-                src="../../assets/images/cta-graphic.png"
-                alt="cta-graphic"
-                className="cta-graphic"
-              /> */}
-              <div
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-              >
-                <h2>Sign Up To Our Newsletter</h2>
-                <p>
-                  Recive latest news, updates and many{" "}
-                  <span className="d-block">other news every week.</span>
-                </p>
-              </div>
-              <div
-                className="input-div"
-                data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-easing="ease-in-sine"
-              >
-                <FontAwesomeIcon icon={faEnvelope} />
-                <input type="text" placeholder="Enter your email address" />
-                <button className="primary-btn">Subscribe</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
 
       {/* <section className="routing-section">
         <div className="container">
@@ -201,9 +169,12 @@ export default function Home() {
               />
             </div>
             <div className="col-sm-6">
-              <div className="community-stats-div" data-aos="fade-left"
+              <div
+                className="community-stats-div"
+                data-aos="fade-left"
                 data-aos-offset="100"
-                data-aos-easing="ease-in-sine">
+                data-aos-easing="ease-in-sine"
+              >
                 <div>
                   <h4>
                     191+ <span className="d-block">milion</span>

@@ -1,0 +1,19 @@
+.cta-section h2 {
+  font-size: 30px !important;
+  line-height: normal !important;
+}
+
+.cta-section input {
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.cta-section .login-text {
+  margin-top: 20px !important;
+  font-weight: 400;
+
+  & a {
+    color: inherit;
+    font-weight: 400;
+  }
+}

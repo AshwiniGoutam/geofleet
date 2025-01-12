@@ -1,8 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Package, CreditCard, Upload, Route, TrainTrack, AlarmCheck, Camera, ParkingMeterIcon } from "lucide-react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  Phone,
+  Package,
+  Upload,
+  Route,
+  TrainTrack,
+  AlarmCheck,
+  Camera,
+  ParkingMeterIcon,
+} from "lucide-react";
+import "./page.css";
 
 const steps = [
   {
@@ -72,93 +81,93 @@ const itemVariants = {
 
 export default function HowItWorks() {
   return (
-    <div className="container pt-5" id="how-it-works">
-      <motion.h2
-        className="text-center mb-5"
-         data-aos="fade-up"
-      >
-        HOW IT WORKS
-      </motion.h2>
-
-      <motion.div
-        className="position-relative"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        {steps.map((step, index) => (
-          <motion.div
-            key={step.number}
-            className="row align-items-center mb-5 position-relative"
-            variants={itemVariants}
-          >
-            {/* Dotted connector line */}
-            {index < steps.length - 1 && (
-              <div
-                className="position-absolute"
-                style={{
-                  left: "50%",
-                  top: "100%",
-                  width: "2px",
-                  height: "50px",
-                  background:
-                    "repeating-linear-gradient(to bottom, #dee2e6 0, #dee2e6 4px, transparent 4px, transparent 8px)",
-                }}
+    <section className="how-it-works-section">
+      <div className="container">
+        <div className="row">
+          <h2>How it Works</h2>
+          <div className="how-it-works-section-cards">
+            <div
+              className="card card-1"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="../../assets/images/how-it-works-1.jpg"
+                alt="how-it-works"
+                style={{ objectFit: "contain" }}
               />
-            )}
+              <p>
+                <span>01</span> Upload Orders/Visits
+              </p>
+            </div>
 
-            {step.position === "right" ? (
-              <>
-                <div className="col-md-6 text-end mb-2 mt-2">
-                  <motion.div className="pe-4">
-                    <div className="small text-primary  mb-2">
-                      STEP {step.number}
-                    </div>
-                    <h3 className="h4 mb-0">{step.title}</h3>
-                    <p className="text-muted">{step.description}</p>
-                  </motion.div>
-                </div>
-                <div className="col-md-6 mb-2 mt-2">
-                  <motion.div
-                    className="d-flex justify-content-start"
-                  >
-                    <div
-                      className="rounded-circle bg-primary p-4 d-inline-flex align-items-center justify-content-center"
-                      style={{ width: "80px", height: "80px" }}
-                    >
-                      <step.icon className="text-white" size={40} />
-                    </div>
-                  </motion.div>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="col-md-6 mb-2 mt-2">
-                  <motion.div
-                    className="d-flex justify-content-end"
-                  >
-                    <div
-                      className="rounded-circle bg-primary p-4 d-inline-flex align-items-center justify-content-center"
-                      style={{ width: "80px", height: "80px" }}
-                    >
-                      <step.icon className="text-white" size={40} />
-                    </div>
-                  </motion.div>
-                </div>
-                <div className="col-md-6 mb-2 mt-2">
-                  <motion.div className="ps-4">
-                    <div className="steps small text-primary  mb-2">
-                      STEP {step.number}
-                    </div>
-                    <h3 className="h4 mb-0">{step.title}</h3>
-                    <p className="text-muted">{step.description}</p>
-                  </motion.div>
-                </div>
-              </>
-            )}
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+            <div
+              className="card card-2"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
+              <p>
+                <span>02</span> Optimize Routes
+              </p>
+              <img
+                src="../../assets/images/how-it-works-2.jpg"
+                alt="how-it-works"
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+
+            <div
+              className="card card-3"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="../../assets/images/how-it-works-3.jpg"
+                alt="how-it-works"
+                style={{ objectFit: "contain" }}
+              />
+              <p>
+                <span>03</span> Real-time tracking
+              </p>
+            </div>
+
+            <div
+              className="card card-4"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-easing="ease-in-sine"
+            >
+              <p>
+                <span>04</span> Capture Delivery Proofs
+              </p>
+              <img
+                src="../../assets/images/how-it-works-4.jpg"
+                alt="how-it-works"
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+
+            <div
+              className="card card-5"
+              data-aos="fade-up"
+              data-aos-offset="500"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                src="../../assets/images/how-it-works-5.jpg"
+                alt="how-it-works"
+                style={{ objectFit: "contain" }}
+              />
+              <p>
+                <span>05</span> Reports & Analytics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

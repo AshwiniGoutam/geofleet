@@ -77,7 +77,7 @@ export default function Header({ ShowHeader, home }) {
       >
         <div data-aos="fade-down">
           <Link to="/" className="logo-div">
-            <img src="../assets/images/logo.png" alt="logo" width="200px" />
+            <img src="../assets/images/logo.svg" alt="logo" width="200px" />
           </Link>
         </div>
 
