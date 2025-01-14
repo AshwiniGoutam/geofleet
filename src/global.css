@@ -72,6 +72,10 @@ section{
   transition: 0.5s;
 }
 
+.primary-btn:hover{
+  background-color:  #184ea0;
+}
+
 .primary-btn img {
   width: 25px;
 }

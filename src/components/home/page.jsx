@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../header/header";
 import "./page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,10 +16,13 @@ import Testimonial from "../testimonials/page";
 import Pricing from "../pricing/page";
 import HowItWorks from "../how-it-works/page";
 import CtaSection from "../cta-section/page";
+import PricingModal from "../pricing/pricing-model";
 
 export default function Home() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <>
+      <PricingModal show={modalShow} onHide={() => setModalShow(false)} />
       <Header />
       <section className="hero-section overflow-hidden" id="home">
         <div className="container">
@@ -59,8 +62,13 @@ export default function Home() {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
               >
-                <button className="primary-btn">Free Trial </button>
-                <a href="#">
+                <button
+                  className="primary-btn"
+                  onClick={() => setModalShow(true)}
+                >
+                  Schedule a Demo{" "}
+                </button>
+                <a href="http://app.geofleet.ai/" target="_blank">
                   Explore the Product <FontAwesomeIcon icon={faArrowRight} />
                 </a>
               </div>

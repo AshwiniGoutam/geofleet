@@ -85,3 +85,11 @@
   left: 79px;
   right: auto;
 }
+
+
+@media (max-width:1400px){
+  .how-it-works-section-cards .card img{
+    width: 98%;
+    z-index: 9;
+  }
+}

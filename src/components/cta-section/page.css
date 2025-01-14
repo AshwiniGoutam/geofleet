@@ -17,3 +17,26 @@
     font-weight: 400;
   }
 }
+
+.cta-success-modal {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.cta-success-modal img {
+  width: 100px;
+}
+
+.cta-success-modal .close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: #3b3a3a;
+  cursor: pointer;
+}
