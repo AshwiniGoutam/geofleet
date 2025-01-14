@@ -81,7 +81,7 @@ const itemVariants = {
 
 export default function HowItWorks() {
   return (
-    <section className="how-it-works-section">
+    <section className="how-it-works-section" id="how-it-works">
       <div className="container">
         <div className="row">
           <h2>How it Works</h2>

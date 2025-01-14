@@ -102,7 +102,7 @@ export default function Header({ ShowHeader, home }) {
             <HumbergMenu />
           </div>
 
-          <Link to="/contact-us" className="primary-btn" data-aos="fade-down">
+          <Link to="http://app.geofleet.ai/" className="primary-btn" data-aos="fade-down">
             Sign In
           </Link>
         </div>

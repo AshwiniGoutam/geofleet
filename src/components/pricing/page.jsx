@@ -5,7 +5,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import PricingModal from "./pricing-model";
 
 export default function Pricing() {
-  const [Active, setActive] = useState(false);
+  const [Active, setActive] = useState(true);
   const [modalShow, setModalShow] = useState(false);
   const pricingTiers = [
     {
@@ -111,9 +111,13 @@ export default function Pricing() {
                       <span className="display-5 fw-semi-bold text-primary-custom">
                         {tier.price}
                       </span>
-                      <span className="d-block text-muted ms-2">
-                        Per User / Per {Active ? "Year" : "Month"}
-                      </span>
+                      {index === 2 ? (
+                        ""
+                      ) : (
+                        <span className="d-block text-muted ms-2">
+                          Per User / Per {Active ? "Year" : "Month"}
+                        </span>
+                      )}
 
                       <button onClick={() => setModalShow(true)}>
                         Schedule a demo

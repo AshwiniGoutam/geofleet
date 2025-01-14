@@ -27,11 +27,11 @@ export default function Footer() {
                 (730) 3993-102
               </a>
               <a
-                href="mailto:care@parallaxiq.com"
+                href="mailto:care@geofleet.ai"
                 className="d-flex align-items-center gap-2 mt-3 mb-0"
               >
                 <FontAwesomeIcon icon={faEnvelope} />
-                care@parallaxiq.com
+                care@geofleet.ai
               </a>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
@@ -104,15 +104,15 @@ export default function Footer() {
             </a>
 
             <div className="d-flex align-items-center gap-4 w-auto">
-              <a href="/">
+              {/* <a href="/">
                 {" "}
                 <img src="../../assets/images/instagram-icon.png" alt=""  width="30px" height="30px"/>
-              </a>
-              <a href="/">
+              </a> */}
+              <a href="https://x.com/geofleetAI" target="_blank">
                 {" "}
                 <img src="../../assets/images/twitter-icon.png" alt="" width="30px" height="30px" />
               </a>
-              <a href="/">
+              <a href="https://www.linkedin.com/showcase/geofleetin" target="_blank">
                 {" "}
                 <img src="../../assets/images/linkedin-icon.png" alt="" width="30px" height="30px" />
               </a>

@@ -31,6 +31,7 @@
   color: white;
   border-radius: 16px;
   margin-top: 30px;
+  display: block;
 }
 
 .pricing-section .container .row .col:nth-child(2) .card button {
@@ -40,6 +41,7 @@
   color: white;
   border-radius: 16px;
   margin-top: 30px;
+  display: block;
 }
 
 .pricing-section .container .row .col:nth-child(3) .card button {
@@ -49,6 +51,7 @@
   color: white;
   border-radius: 16px;
   margin-top: 30px;
+  display: block;
 }
 
 .credit-span {
@@ -151,6 +154,12 @@
 .pricing-card .fw-semi-bold{
   font-size: 40px;
   font-weight: 500;
+}
+
+.pricing-section .container .row .col:nth-child(3) .card .fw-semi-bold{
+  font-size: 1.75rem;
+  margin-bottom: 68px !important;
+  display: block;
 }
 
 @media(max-width:767px){
