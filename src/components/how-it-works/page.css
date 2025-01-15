@@ -57,6 +57,10 @@
   font-weight: 600;
 }
 
+.how-it-works-section-cards img{
+  width: 100%;
+}
+
 .how-it-works-section-cards .card-1 p::before,
 .how-it-works-section-cards .card-3 p::before,
 .how-it-works-section-cards .card-5 p::before {

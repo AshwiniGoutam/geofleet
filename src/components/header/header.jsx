@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu";
 import ArrowDown from "../arrowDown";
 
-export default function Header({ ShowHeader, home }) {
+export default function Header({ ShowHeader, border }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -74,6 +74,7 @@ export default function Header({ ShowHeader, home }) {
         className={`header ${
           isScrolled || ShowHeader ? "header-scrolled" : ""
         }`}
+        style={{ border: border ? "1px solid #ccc" : "" }}
       >
         <div data-aos="fade-down">
           <Link to="/" className="logo-div">
@@ -102,7 +103,11 @@ export default function Header({ ShowHeader, home }) {
             <HumbergMenu />
           </div>
 
-          <Link to="http://app.geofleet.ai/" className="primary-btn" data-aos="fade-down">
+          <Link
+            to="http://app.geofleet.ai/"
+            className="primary-btn"
+            data-aos="fade-down"
+          >
             Sign In
           </Link>
         </div>
