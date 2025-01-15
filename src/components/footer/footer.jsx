@@ -45,10 +45,10 @@ export default function Footer() {
                   <Link to="/">About</Link>
                 </li>
                 <li>
-                  <Link to="/">Products</Link>
+                  <a href="/privacy-policy">Privacy Policy</a>
                 </li>
                 <li>
-                  <Link to="/">Team</Link>
+                  <a href="/terms-and-condition">Terms and Condition</a>
                 </li>
               </ul>
             </div>
@@ -115,6 +115,10 @@ export default function Footer() {
               <a href="https://www.linkedin.com/showcase/geofleetin" target="_blank">
                 {" "}
                 <img src="../../assets/images/linkedin-icon.png" alt="" width="30px" height="30px" />
+              </a>
+              <a href="https://www.youtube.com/@getgeofleet" target="_blank">
+                {" "}
+                <img src="../../assets/images/youtube.png" alt="" width="40px" height="40px" />
               </a>
             </div>
           </div>
