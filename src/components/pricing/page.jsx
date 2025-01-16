@@ -11,28 +11,30 @@ export default function Pricing() {
     {
       title: "Base",
       description: "If you only need route optimization and basic dispatching.",
-      price: `${Active ? "35" : "30"}`,
+      price: `${Active ? "12" : "10"}`,
       buttonText: "Try for Free",
       buttonVariant: "secondary-custom",
       h5Heading: "Includes:",
       features: [
-        "Intelligent Route Optimization to slash delivery costs by 25%",
-        "Dispatch to driver mobile apps and stop using paper print-outs",
+        "Live GPS & Progress Tracking: Real-time insights into fleet movements.",
+        "Mobile App for Dispatch: Eliminate paper print-outs with seamless dispatch to drivers’ apps.",
+        "SIM-Based Tracking: Track drivers even without smartphones.",
+        "Fleet Management Module: Comprehensive fleet operations management.",
+        "Basic Reports & Analytics: Actionable insights into fleet performance."
       ],
     },
     {
-      title: "Professional",
+      title: "Standard",
       description:
         "For growing businesses that benefit from more real-time visibility.",
-      price: `${Active ? "25" : "20"}`,
+      price: `${Active ? "15" : "12"}`,
       buttonText: "Start 14 Days Free Trial",
       buttonVariant: "primary-custom",
-      h5Heading: "Everything in Essentials, plus:",
+      h5Heading: "Everything in Standard, plus:",
       features: [
-        "Live GPS + progress tracking to see what's going on in real-time",
-        "Photo POD and signatures to ensure proper delivery",
-        "End-of-day reports to analyze driver performance",
-        "API integrations to integrate systems and automate workflows",
+        "Intelligent Route Optimization: Optimize delivery routes, reducing costs by up to 25%.",
+        "API Integrations: Seamless system integration and workflow automation.",
+        "Customer Notifications: Keep customers informed with accurate ETAs.",
       ],
     },
     {
@@ -44,9 +46,10 @@ export default function Pricing() {
       buttonVariant: "secondary-custom",
       h5Heading: "Everything in Professional, plus:",
       features: [
-        "Customer notifications to keep your customers updated with accurate ETAs",
-        "Customizable templates to add your company's voice",
-        "Real-time delivery tracker link for the ultimate 5-star delivery experience!",
+        "AI Copilot: Smart assistant to guide and enhance fleet operations.",
+        "Dedicated Account Manager: Personalized support for your business.",
+        "24/7 Support: Always-on assistance to address issues promptly.",
+        "And Much More: Additional customization options and enterprise-grade features."
       ],
     },
   ];
