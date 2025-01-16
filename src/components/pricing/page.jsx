@@ -11,7 +11,7 @@ export default function Pricing() {
     {
       title: "Base",
       description: "If you only need route optimization and basic dispatching.",
-      price: `${Active ? "35" : "30"}`,
+      price: `${Active ? "12" : "10"}`,
       buttonText: "Try for Free",
       buttonVariant: "secondary-custom",
       h5Heading: "Includes:",
@@ -24,7 +24,7 @@ export default function Pricing() {
       title: "Professional",
       description:
         "For growing businesses that benefit from more real-time visibility.",
-      price: `${Active ? "25" : "20"}`,
+      price: `${Active ? "15" : "12"}`,
       buttonText: "Start 14 Days Free Trial",
       buttonVariant: "primary-custom",
       h5Heading: "Everything in Essentials, plus:",
