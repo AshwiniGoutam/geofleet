@@ -5,7 +5,7 @@ header {
   justify-content: space-between;
   padding: 0px 20px;
   background: transparent;
-  position: relative;
+  /* position: relative; */
   z-index: 99;
   backdrop-filter: blur(8px);
   position: sticky;
@@ -33,13 +33,13 @@ header ul {
   padding: 0;
 }
 
-.header .right-header{
+.header .right-header {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 20px;
 }
 
-header .logo-div{
+header .logo-div {
   font-size: 28px;
   color: var(--primary-color);
   font-weight: 600;
@@ -47,6 +47,7 @@ header .logo-div{
 
 header ul li {
   padding: 30px 0;
+  cursor: pointer;
 }
 
 header ul li a {
@@ -54,20 +55,19 @@ header ul li a {
   color: black;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   font-weight: 500;
 }
 
 header ul li a svg {
-  width: 16px;
-  height: 19px;
+  width: 12px;
+  height: 12px;
   stroke: black;
   fill: black;
 }
 
 .header-scrolled ul li a svg {
-  fill: black;
-  fill: black;
+  fill: rgb(90, 88, 88);
 }
 
 header ul li a:hover,
@@ -80,6 +80,113 @@ header ul li a:hover svg {
 /* Mobile Menu Icon - hidden by default */
 .mobile-menu-icon {
   display: none;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: -66%;
+  width: 1000px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: grid;
+  grid-template-columns: 2fr 1.3fr;
+  gap: 32px;
+}
+
+.header ul li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-menu-products {
+  display: grid;
+  /* gap: 20px; */
+}
+
+.header ul li{
+  display: flex;
+  gap: 16px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.product-item:hover {
+  background: #f5f5f5;
+}
+
+.product-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.product-content{
+  padding: 10px 16px;
+  border-radius: 16px !important;
+}
+
+.product-content h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.product-content p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.mega-menu-links {
+  background: var(--primary-color);
+  padding: 8px 24px;
+  border-radius: 6px;
+}
+
+.mega-menu-links li{
+  padding: 10px 0;
+}
+
+.mega-menu-links li img{
+  width: 70%;
+}
+
+.mega-menu-links li p{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.menu-links {
+  list-style: none;
+  display: grid;
+  gap: 0px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  transition: color 0.2s;
+  padding: 10px !important;
+}
+
+.menu-links a:hover {
+  color: #007bff;
 }
 
 @media (max-width: 768px) {

@@ -1,11 +1,4 @@
 .features-section {
-  background: rgba(0, 102, 255, 0.319);
-  background: radial-gradient(
-    circle,
-    rgba(0, 102, 255, 0.31) 0%,
-    rgba(173, 206, 255, 0.297) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
   background-position: bottom;
   background-attachment: fixed;
 }
