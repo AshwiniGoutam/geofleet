@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PricingModal from "../pricing/pricing-model";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Banner() {
+export default function Banner({ data, hideExplore }) {
   const [modalShow, setModalShow] = useState(false);
   return (
     <section
@@ -26,14 +26,8 @@ export default function Banner() {
               alt="vector-icon-1"
               className="vector-icon-2"
             />
-            <h1>
-              Smarter Fleets,
-              <span className=""> Seamless Deliveries.</span>
-            </h1>
-            <p className="description">
-              Optimizing Fleets, Planning Routes, and Ensuring Seamless
-              Deliveries with Driver Excellence.
-            </p>
+            <h1>{data?.heading}</h1>
+            <p className="description">{data?.description}</p>
 
             <div className="d-flex align-items-center gap-4">
               <button
@@ -42,26 +36,22 @@ export default function Banner() {
               >
                 Schedule a Demo{" "}
               </button>
-              <a href="http://app.geofleet.ai/" target="_blank">
-                Explore the Product <FontAwesomeIcon icon={faArrowRight} />
-              </a>
+              {!hideExplore && (
+                <a href="http://app.geofleet.ai/" target="_blank">
+                  Explore the Product <FontAwesomeIcon icon={faArrowRight} />
+                </a>
+              )}
             </div>
 
             <div className="review-section" data-aos-easing="ease-in-sine">
-              <div>
-                <img src="../../assets/images/right-icon.png" alt="icon" />
-                <p>Get 7 days free trial</p>
-              </div>
-
-              <div>
-                <img src="../../assets/images/right-icon.png" alt="icon" />
-                <p> No credit card is required </p>
-              </div>
-
-              <div>
-                <img src="../../assets/images/right-icon.png" alt="icon" />
-                <p> Cancel anytime</p>
-              </div>
+              {data?.tags?.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <img src="../../assets/images/right-icon.png" alt="icon" />
+                    <p>{item}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -71,11 +61,7 @@ export default function Banner() {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <img
-              src="../../assets/images/banner-graphic.png"
-              alt="graphic"
-              width="100%"
-            />
+            <img src={data?.image} alt="graphic" width="100%" />
             <img
               src="../../assets/images/vector-icon-2.png"
               alt="vector-icon-1"

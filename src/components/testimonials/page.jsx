@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function Testimonial() {
+export default function Testimonial({page}) {
   const swiperRef = useRef(null);
   return (
-    <section className="testimonial-section">
+    <section className={`testimonial-section ${page && 'mt-0'}`}>
       <div className="container">
         <div className="row">
           <div className="testimonial-section-header">

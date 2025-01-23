@@ -17,13 +17,14 @@ import Pricing from "../pricing/page";
 import HowItWorks from "../how-it-works/page";
 import CtaSection from "../cta-section/page";
 import Banner from "../banner/page";
+import { HomeBanner } from "../../data";
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <Banner />
+      <Banner data={HomeBanner} />
 
       <DeliverySection />
 

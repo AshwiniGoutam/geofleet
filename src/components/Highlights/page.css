@@ -1,0 +1,23 @@
+.hightlight-cards{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hightlight-cards img{
+    background-color: var(--primary-color);
+    width: 88px;
+    height: 75px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hightlight-cards h4{
+    font-size: 20px;
+}
+
+.hightlight-cards p{
+    font-size: 14px;
+}
