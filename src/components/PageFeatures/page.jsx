@@ -12,7 +12,7 @@ export default function PageFeatures({ data }) {
                 <img
                   src={item?.image}
                   alt="images"
-                  className={index === 5 ? "w-100" : ""}
+                  // className={index === 5 ? "w-100" : ""}
                 />
               </div>
               <div className="col-sm-6 content-col">

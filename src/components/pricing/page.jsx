@@ -137,7 +137,7 @@ export default function Pricing() {
                             key={featureIndex}
                             className="feature-item d-flex align-items-center"
                           >
-                            <span class="check">
+                            <span className="check">
                               <FontAwesomeIcon icon={faCheck} />
                             </span>
                             <span className="text-muted">{feature}</span>

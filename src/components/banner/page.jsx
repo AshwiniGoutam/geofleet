@@ -29,7 +29,7 @@ export default function Banner({ data, hideExplore }) {
             <h1>{data?.heading}</h1>
             <p className="description">{data?.description}</p>
 
-            <div className="d-flex align-items-center gap-4">
+            <div className="d-flex align-items-center gap-4 flex-wrap">
               <button
                 className="primary-btn"
                 onClick={() => setModalShow(true)}

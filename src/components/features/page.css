@@ -437,3 +437,13 @@
 .layout348_content ul li {
   color: #4f4f4f;
 }
+
+@media(max-width:767px){
+  .layout348_desktop-image-wrapper{
+    display: none;
+  }
+
+  .layout348_component{
+    grid-template-columns: 2fr;
+  }
+}

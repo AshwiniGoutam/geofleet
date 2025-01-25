@@ -6,15 +6,23 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacy from "./pages/privacy";
 import Terms from "./pages/terms-and-condition";
 import FleetManagment from "./pages/fleet-mangment/page";
+import RouteAsService from "./pages/route-as-service/page";
+import SupervisorApp from "./pages/supervisor-app/page";
+import DriverMobileApp from "./pages/driver-mobile-app/page";
+import SimTracking from "./pages/sim-tracker/page";
 
 function App() {
   return (
-    <>
+    <>  
       {/* <Home /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/fleet-managment" element={<FleetManagment />} />
+          <Route path="/route-as-service" element={<RouteAsService />} />
+          <Route path="/supervisor-app" element={<SupervisorApp />} />
+          <Route path="/driver-mobile-app" element={<DriverMobileApp />} />
+          <Route path="/sim-tracking" element={<SimTracking />} />
+          <Route path="/fleet-management" element={<FleetManagment />} />
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/terms-and-condition" element={<Terms />} />
           <Route path="*" element={<Home />} />

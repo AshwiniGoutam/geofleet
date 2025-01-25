@@ -1,16 +1,17 @@
 /* Header styles */
 header {
+  /* position: sticky;
+  top: 0; */
+  z-index: 99;
+}
+
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 0px;
   background: transparent;
-  /* position: relative; */
-  z-index: 99;
   backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0;
-  transition: background-color 0.3s ease;
 }
 
 .header-scrolled {
@@ -96,18 +97,20 @@ nav {
 .mega-menu {
   position: absolute;
   top: 100%;
-  left: -66%;
-  width: 1000px;
+  left: 0;
+  width: 100%;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 0px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
   display: grid;
-  grid-template-columns: 2fr 1.3fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
+  padding: 20px 0;
+  border-top: 3px solid var(--primary-color);
 }
 
 .header ul li:hover .mega-menu {
@@ -116,28 +119,37 @@ nav {
 }
 
 .mega-menu-products {
-  display: grid;
+  /* display: grid; */
   /* gap: 20px; */
+  padding: 20px 0 10px 0;
 }
 
-.header ul li{
+.mega-menu-products h5 {
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: normal !important;
+  color: #848484;
+  font-size: 18px;
+}
+
+.header ul li {
   display: flex;
   gap: 16px;
   border-radius: 6px;
   transition: 0.2s;
 }
 
-.product-item:hover {
+/* .product-item:hover {
   background: #f5f5f5;
-}
+} */
 
 .product-icon {
   width: 40px;
   height: 40px;
 }
 
-.product-content{
-  padding: 10px 16px;
+.product-content {
+  /* padding: 10px 16px; */
   border-radius: 16px !important;
 }
 
@@ -152,23 +164,34 @@ nav {
   line-height: 1.4;
 }
 
-.mega-menu-links {
-  background: var(--primary-color);
-  padding: 8px 24px;
-  border-radius: 6px;
+.menu-links h3 {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.697);
 }
 
-.mega-menu-links li{
+.mega-menu-links {
+  /* background: #cccccc7b; */
+  border-right: 1px solid #ccc;
+  padding: 8px 24px;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.mega-menu-products a {
+  padding: 5px 0;
+}
+
+.mega-menu-links li {
   padding: 10px 0;
 }
 
-.mega-menu-links li img{
+.mega-menu-links li img {
   width: 70%;
 }
 
-.mega-menu-links li p{
+.mega-menu-links li p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.884);
+  color: black;
 }
 
 .menu-links {
@@ -189,33 +212,29 @@ nav {
   color: #007bff;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 20px;
+@media (max-width: 991px) {
+  .mobile-menu-icon {
+    display: block; /* Show hamburger icon */
   }
   header ul {
     display: none; /* Hide the regular menu on mobile */
   }
-
-  header .primary-btn {
-    display: none; /* Hide primary button on mobile */
-  }
-
-  .mobile-menu-icon {
-    display: block; /* Show hamburger icon */
-  }
-
-  /* Styling for the hamburger icon */
   .mobile-menu-icon svg {
     width: 30px;
     height: auto;
+    cursor: pointer;
   }
 
-  /* .mobile-menu-icon svg path {
-    fill: white;
-    stroke: white;
-  } */
+  header {
+    padding: 20px 12px;
+  }
 
+  header .primary-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .header-scrolled .mobile-menu-icon svg path {
     stroke: black; /* Change stroke color when scrolled */
   }
@@ -225,8 +244,8 @@ nav {
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* Initially off-screen */
-  width: 250px;
+  right: -100%; /* Initially off-screen */
+  width: 100%;
   height: 100%;
   background-color: white;
   color: black;
@@ -243,12 +262,37 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .sidebar ul li {
   padding: 10px;
+}
+
+/* .sidebar ul li:not(:last-child) {
   border-bottom: 1px solid #e3dcdc;
+} */
+
+.sidebar .accordion-button {
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  border: 0 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.sidebar .accordion-item {
+  border-top: 0 !important;
+}
+
+.sidebar .accordion-item:last-child {
+  border-bottom: 0 !important;
+}
+
+.sidebar .accordion-body {
+  padding-top: 0;
 }
 
 .sidebar ul li a {
@@ -265,6 +309,19 @@ nav {
   border: none;
   color: black;
   cursor: pointer;
+}
+
+.sidebar .accordion .accordion-item:not(:first-child) .accordion-button:after {
+  content: none;
+}
+
+.sidebar .accordion {
+  margin-top: 20px;
+  border: 0;
+}
+
+.sidebar a {
+  color: black;
 }
 
 /* Overlay to close sidebar when clicked outside */
