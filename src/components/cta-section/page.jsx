@@ -11,14 +11,15 @@ export default function CtaSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent page reload on form submission
-
+  
     if (!email) {
       alert("Please enter a valid email address.");
       return;
     }
-
+  
     try {
       setLoading(true);
+  
       const response = await fetch("https://api.geofleet.in/v1/iam/mail-list", {
         method: "POST",
         headers: {
@@ -26,23 +27,27 @@ export default function CtaSection() {
         },
         body: JSON.stringify({ email }),
       });
-
+  
+      const result = await response.json();
+  
       if (response.ok) {
-        const result = await response.json();
         console.log("Response:", result);
         setModalShow(true);
         setEmail("");
-        setLoading(false);
       } else {
-        const error = await response.json();
-        alert(`Error: ${error.message || "Failed to submit email."}`);
-        setLoading(false);
+        // Show error message returned by the API
+        const errorMessage = result.message;
+        alert(`Error: ${errorMessage}`);
+        console.log(errorMessage)
       }
     } catch (error) {
       console.error("Error submitting email:", error);
       alert("An error occurred. Please try again.");
+    } finally {
+      setLoading(false); // Stop loading spinner regardless of success or error
     }
   };
+  
   return (
     <>
       <Modal

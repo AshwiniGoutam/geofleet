@@ -79,7 +79,7 @@ export default function Header({ ShowHeader, border }) {
         }`}
         style={{ border: border ? "1px solid #ccc" : "" }}
       >
-        <div className="container">
+        <div className="container-fluid">
           <div>
             <Link to="/" className="logo-div">
               <img src="../assets/images/logo.svg" alt="logo" width="200px" />
@@ -98,26 +98,26 @@ export default function Header({ ShowHeader, border }) {
               <div class="mega-menu">
                 <div class="mega-menu-links">
                   <ul class="menu-links">
-                    {/* <li className="flex-column">
-                      <img src="../../assets/images/logo.svg" alt="logo-svg" />
-                    </li> */}
-                    <h3>Geofleet</h3>
+                    <li className="flex-column">
+                      <img
+                        src="../../assets/images/routing-banner.png"
+                        alt="logo-svg"
+                      />
+                    </li>
                     <li>
                       <p>
-                        GeoFleet is a comprehensive fleet management solution
-                        with multi-source tracking (Mobile App, SIM, GPS,
-                        RFID/Fastag), real-time updates, route optimization, and
-                        delivery management features like EPOD, E-Signature, and
-                        OTP, ensuring efficient and secure operations.
+                        GeoFleet streamlines fleet management with multi-source
+                        tracking (App, SIM, GPS), real-time updates, route
+                        optimization, and delivery tools like EPOD and OTP.
                       </p>
                     </li>
                   </ul>
                 </div>
                 <div class="mega-menu-products">
-                  <h5>Features</h5>
+                  <h5>Solutions</h5>
                   <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
-                      <h3>Routing as Service →</h3>
+                      <h3> Routing as Service →</h3>
                     </div>
                   </Link>
                   <Link to="/supervisor-app" class="product-item">
@@ -143,7 +143,7 @@ export default function Header({ ShowHeader, border }) {
                 </div>
 
                 <div class="mega-menu-products">
-                  <h5>Products</h5>
+                  <h5 className="visiblisty-hidden" style={{visibility:'hidden'}}>Products</h5>
                   <Link to="/" class="product-item">
                     <div class="product-content">
                       <h3>Track & Trace, →</h3>

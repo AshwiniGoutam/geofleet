@@ -284,55 +284,55 @@ export const DriverHightlights = [
     heading: "Real Time Tracking & Monitoring",
     description:
       "Monitor the live location and status of vehicles and drivers for complete Enable drivers to view and share their location for accurate and timely updates..",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-1.png",
   },
   {
     heading: "Instant Route Optimization",
     description:
       "Provide drivers with the best routes to save time, reduce fuel costs, and improve delivery efficiency.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-2.png",
   },
   {
     heading: "Reports & Analytics",
     description:
       "Provides actionable fleet insights via dashboards, key metrics, and reports for better decision-making and efficiency.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-3.png",
   },
   {
     heading: "Alerts & Notifications",
     description:
       "Alerts & Notifications provide real-time updates on events for timely action and better fleet management.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-4.png",
   },
   {
     heading: "Electronic Proof of Delivery (EPOD)",
     description:
       "Capture delivery confirmations through digital signatures, photos, or QR code scans.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-5.png",
   },
   {
     heading: "Delivery Lifecycle Tracking",
     description:
       "Provide full visibility of the delivery process, from assignment to completion.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-6.png",
   },
   {
     heading: "Attendance Tracking",
     description:
       "Monitor driver attendance with clock-in and clock-out functionality for streamlined workforce management.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-7.png",
   },
   {
     heading: "OTP Verification",
     description:
       "Secure deliveries with one-time password (OTP) validation for customer authentication.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-8.png",
   },
   {
     heading: "Seamless Communication",
     description:
       "Enable instant communication between drivers and supervisors for updates, alerts, and support.",
-    image: "../assets/images/driver-hightlight-.png",
+    image: "../assets/images/driver-hightlight-9.png",
   },
 ];
 
@@ -572,7 +572,7 @@ export const SupervisorFeature = [
   },
   {
     heading:
-      "Issue and Exception Handling:  Resolve Challenges and Keep Operations Running Smoothly",
+      "Issue and Exception Handling: Resolve Challenges and Keep Operations Running Smoothly",
     description:
       "GeoFleet’s issue and exception handling tools allow you to address delivery or route exceptions in real-time, approve changes, and manage on-the-spot challenges efficiently.",
     subHeading: "With GeoFleet, you can:",
@@ -614,7 +614,7 @@ export const DriverFeature = [
   },
   {
     heading:
-      "Instant Route Optimization:  Save Time, Cut Costs, and Boost Efficiency",
+      "Instant Route Optimization: Save Time, Cut Costs, and Boost Efficiency",
     description:
       "GeoFleet’s instant route optimization feature provides drivers with the best routes, ensuring faster deliveries, reduced fuel consumption, and overall improved fleet efficiency.",
     subHeading: "With GeoFleet, you can:",
@@ -682,7 +682,7 @@ export const DriverFeature = [
 export const SimFeature = [
   {
     heading:
-      "Plug-and-Play Connectivity: Seamless Integration, Effortless Setup",
+      "Plug-and-Play Connectivity:Seamless Integration, Effortless Setup",
     description:
       "GeoFleet’s Plug-and-Play Connectivity feature allows you to integrate SIM-based tracking with zero additional hardware, enabling quick and hassle-free setup within your existing systems.",
     subHeading: "With GeoFleet, you can:",
@@ -696,7 +696,7 @@ export const SimFeature = [
   },
   {
     heading:
-      "Configurable Tracking Intervals: Tailored Updates for Maximum Flexibility",
+      "Configurable Tracking Intervals:Tailored Updates for Maximum Flexibility",
     description:
       "GeoFleet’s Configurable Tracking Intervals feature lets you set the frequency at which you receive updates from the driver’s phone network provider, allowing for greater control over tracking accuracy and data usage.",
     subHeading: "With GeoFleet, you can:",
@@ -708,7 +708,7 @@ export const SimFeature = [
     image: "../assets/images/sim-feature-2.png",
   },
   {
-    heading: "Cost-Effective Solution: Lower Costs, Higher Efficiency",
+    heading: "Cost-Effective Solution:Lower Costs, Higher Efficiency",
     description:
       "GeoFleet’s Cost-Effective Solution leverages SIM-driven tracking technology to reduce hardware and maintenance costs, offering a more affordable and efficient approach to fleet management.",
     subHeading: "With GeoFleet, you can:",
@@ -721,7 +721,7 @@ export const SimFeature = [
     image: "../assets/images/sim-feature-3.png",
   },
   {
-    heading: "Geo-Fencing Alerts: Monitor Boundaries, Act Instantly",
+    heading: "Geo-Fencing Alerts:Monitor Boundaries, Act Instantly",
     description:
       "GeoFleet’s Geo-Fencing Alerts feature enables you to set virtual boundaries around specific areas and receive instant notifications whenever a vehicle enters or exits those zones.",
     subHeading: "With GeoFleet, you can:",
@@ -734,7 +734,7 @@ export const SimFeature = [
     image: "../assets/images/sim-feature-4.png",
   },
   {
-    heading: "Scalable Fleet Management: Grow Your Fleet with Ease",
+    heading: "Scalable Fleet Management:Grow Your Fleet with Ease",
     description:
       "GeoFleet’s driver assignment optimization and ETA calculation features ensure the right drivers are matched to the right routes, maximizing operational efficiency and providing accurate delivery updates for enhanced customer satisfaction.",
     subHeading: "With GeoFleet, you can:",
@@ -747,7 +747,7 @@ export const SimFeature = [
   },
   {
     heading:
-      "Real-Time Data Sync: Continuous Connectivity for Accurate Tracking",
+      "Real-Time Data Sync:Continuous Connectivity for Accurate Tracking",
     description:
       "GeoFleet’s Real-Time Data Sync feature ensures continuous synchronization of vehicle status, routes, and delivery updates through reliable IoT connectivity.",
     subHeading: "With GeoFleet, you can:",
@@ -760,7 +760,7 @@ export const SimFeature = [
     image: "../assets/images/sim-feature-6.png",
   },
   {
-    heading: "Multi-Network Support: Uninterrupted Tracking Across Regions",
+    heading: "Multi-Network Support:Uninterrupted Tracking Across Regions",
     description:
       "GeoFleet’s Multi-Network Support ensures seamless connectivity across different regions by supporting multiple mobile networks, guaranteeing uninterrupted tracking.",
     subHeading: "With GeoFleet, you can:",
