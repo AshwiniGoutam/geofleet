@@ -8,6 +8,7 @@ import ArrowDown from "../arrowDown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { Accordion } from "react-bootstrap";
+import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header({ ShowHeader, border }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -117,48 +118,144 @@ export default function Header({ ShowHeader, border }) {
                   <h5>Solutions</h5>
                   <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
-                      <h3> Routing as Service →</h3>
+                      <img
+                        src="../../assets/images/routing-as-service-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3> Routing as Service →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
                   </Link>
                   <Link to="/supervisor-app" class="product-item">
                     <div class="product-content">
-                      <h3>Supervisor App →</h3>
+                      <img
+                        src="../../assets/images/supervisor-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3>Supervisor App →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
                   </Link>
                   <Link to="/driver-mobile-app" class="product-item">
                     <div class="product-content">
-                      <h3>Driver Mobile App →</h3>
+                      <img
+                        src="../../assets/images/header-driver-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3>Driver Mobile App →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
                   </Link>
                   <Link to="/sim-tracking" class="product-item">
                     <div class="product-content">
-                      <h3>Sim Tracking →</h3>
+                      <img src="../../assets/images/sim-icon.png" alt="icon" />
+
+                      <div>
+                        <h3>Sim Tracking →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
                   </Link>
-                  <Link to="/fleet-management" class="product-item">
+                  {/* <Link to="/fleet-management" class="product-item">
                     <div class="product-content">
-                      <h3>Fleet Management →</h3>
+                      <img
+                        src="../../assets/images/fleet-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3>Fleet Management →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
-                  </Link>
+                  </Link> */}
                 </div>
 
                 <div class="mega-menu-products">
-                  <h5 className="visiblisty-hidden" style={{visibility:'hidden'}}>Products</h5>
-                  <Link to="/" class="product-item">
+                  <h5
+                    className="visiblisty-hidden"
+                    style={{ visibility: "hidden" }}
+                  >
+                    Products
+                  </h5>
+                  <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
-                      <h3>Track & Trace, →</h3>
+                      <img
+                        src="../../assets/images/routing-as-service-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3> Routing as Service →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
                   </Link>
-                  <a href="/" class="product-item">
+                  <Link to="/supervisor-app" class="product-item">
                     <div class="product-content">
-                      <h3>Order Management System →</h3>
+                      <img
+                        src="../../assets/images/supervisor-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3>Supervisor App →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
-                  </a>
-                  <a href="/" class="product-item">
+                  </Link>
+                  <Link to="/driver-mobile-app" class="product-item">
                     <div class="product-content">
-                      <h3>Route Planning API →</h3>
+                      <img
+                        src="../../assets/images/header-driver-icon.png"
+                        alt="icon"
+                      />
+                      <div>
+                        <h3>Driver Mobile App →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
                     </div>
-                  </a>
+                  </Link>
+                  <Link to="/sim-tracking" class="product-item">
+                    <div class="product-content">
+                      <img src="../../assets/images/sim-icon.png" alt="icon" />
+
+                      <div>
+                        <h3>Sim Tracking →</h3>
+                        <p>
+                          Seamless oversight with real-time vehicle tracking,
+                          fuel monitoring, maintenance alerts.
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </li>
