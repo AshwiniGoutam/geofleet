@@ -72,6 +72,24 @@ section{
   transition: 0.5s;
 }
 
+.secondary-btn {
+  background: #ff7f52;
+  text-decoration: none;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+  transition: 2s;
+  font-weight: 400;
+  display: flex;
+  gap: 5px;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  transition: 0.5s;
+}
+
 .primary-btn:hover{
   background-color:  #184ea0;
 }

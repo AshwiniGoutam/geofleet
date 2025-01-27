@@ -26,7 +26,7 @@ export default function Banner({ data, hideExplore }) {
               alt="vector-icon-1"
               className="vector-icon-2"
             />
-            <h1>{data?.heading}</h1>
+            <h1 className={hideExplore?"banner-h1":""}>{data?.heading}</h1>
             <p className="description">{data?.description}</p>
 
             <div className="d-flex align-items-center gap-4 flex-wrap">
@@ -61,7 +61,7 @@ export default function Banner({ data, hideExplore }) {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <img src={data?.image} alt="graphic" width="100%" />
+            <img src={data?.image} alt="graphic" width="100%" className="w-100" />
             <img
               src="../../assets/images/vector-icon-2.png"
               alt="vector-icon-1"

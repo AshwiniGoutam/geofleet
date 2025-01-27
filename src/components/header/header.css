@@ -129,7 +129,7 @@ nav {
   padding: 0;
   margin-bottom: 20px;
   line-height: normal !important;
-  color: #848484;
+  /* color: #848484; */
   font-size: 18px;
 }
 
@@ -168,10 +168,16 @@ nav {
   line-height: 1.4;
 }
 
-.product-content img{
-  width: 32px;
-  height: 32px;
-  opacity: 0.7;
+/* .header-icon-div {
+  background-color: #007bff60;
+  padding: 5px;
+  border-radius: 100px;
+} */
+
+.product-content img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .menu-links h3 {
@@ -181,8 +187,10 @@ nav {
 
 .mega-menu-links {
   background: #0066ff14;
-  border-right: 1px solid #ccc;
   padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mega-menu-products a {

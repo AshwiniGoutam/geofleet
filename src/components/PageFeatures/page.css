@@ -6,6 +6,11 @@
     gap: 20px;
 }
 
+.page-features-section h2{
+    font-size: 28px !important;
+    line-height: normal !important;
+}
+
 .page-features-section .content-col{
     align-items: start;
 }

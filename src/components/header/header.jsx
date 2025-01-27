@@ -115,7 +115,7 @@ export default function Header({ ShowHeader, border }) {
                   </ul>
                 </div>
                 <div class="mega-menu-products">
-                  <h5>Solutions</h5>
+                  <h5>Our Solutions</h5>
                   <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
                       <img
@@ -174,21 +174,6 @@ export default function Header({ ShowHeader, border }) {
                       </div>
                     </div>
                   </Link>
-                  {/* <Link to="/fleet-management" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/fleet-icon.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3>Fleet Management →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link> */}
                 </div>
 
                 <div class="mega-menu-products">
@@ -198,14 +183,14 @@ export default function Header({ ShowHeader, border }) {
                   >
                     Products
                   </h5>
-                  <Link to="/route-as-service" class="product-item">
+                  <Link to="/tms" class="product-item">
                     <div class="product-content">
                       <img
-                        src="../../assets/images/routing-as-service-icon.png"
+                        src="../../assets/images/trace-track.png"
                         alt="icon"
                       />
                       <div>
-                        <h3> Routing as Service →</h3>
+                        <h3> Track & Trace →</h3>
                         <p>
                           Seamless oversight with real-time vehicle tracking,
                           fuel monitoring, maintenance alerts.
@@ -216,11 +201,11 @@ export default function Header({ ShowHeader, border }) {
                   <Link to="/supervisor-app" class="product-item">
                     <div class="product-content">
                       <img
-                        src="../../assets/images/supervisor-icon.png"
+                        src="../../assets/images/order-management.png"
                         alt="icon"
                       />
                       <div>
-                        <h3>Supervisor App →</h3>
+                        <h3>Order Management System →</h3>
                         <p>
                           Seamless oversight with real-time vehicle tracking,
                           fuel monitoring, maintenance alerts.
@@ -231,11 +216,11 @@ export default function Header({ ShowHeader, border }) {
                   <Link to="/driver-mobile-app" class="product-item">
                     <div class="product-content">
                       <img
-                        src="../../assets/images/header-driver-icon.png"
+                        src="../../assets/images/route-planing.png"
                         alt="icon"
                       />
                       <div>
-                        <h3>Driver Mobile App →</h3>
+                        <h3>Route Planning API →</h3>
                         <p>
                           Seamless oversight with real-time vehicle tracking,
                           fuel monitoring, maintenance alerts.
@@ -243,12 +228,16 @@ export default function Header({ ShowHeader, border }) {
                       </div>
                     </div>
                   </Link>
-                  <Link to="/sim-tracking" class="product-item">
+                  <Link to="/fleet-management" class="product-item">
                     <div class="product-content">
-                      <img src="../../assets/images/sim-icon.png" alt="icon" />
-
+                      <div className="header-icon-div">
+                        <img
+                          src="../../assets/images/fleet-icon.png"
+                          alt="icon"
+                        />
+                      </div>
                       <div>
-                        <h3>Sim Tracking →</h3>
+                        <h3>Fleet Management →</h3>
                         <p>
                           Seamless oversight with real-time vehicle tracking,
                           fuel monitoring, maintenance alerts.

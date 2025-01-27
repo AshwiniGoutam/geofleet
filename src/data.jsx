@@ -36,9 +36,9 @@ export const SupervisorData = {
 
 export const DriverMobileData = {
   heading:
-    "Empowering Drivers with Real-Time Tracking and Comprehensive Tools with Geofleet Driver App",
+    "Geofleet App: Real-time tracking and tools to empower drivers.",
   description:
-    "Effortlessly manage your fleet with the Geofleet.ai Supervisor Mobile App. Track vehicles and drivers in real time, oversee deliveries, assign tasks, optimize routes, and analyze performance—all from one convenient platform. Stay connected, approve exceptions, and ensure operational efficiency on the go.",
+    "Manage your fleet with the Geofleet.ai Supervisor App. Track vehicles, assign tasks, optimize routes, and analyze performance in real time. Stay connected and ensure efficiency on the go.",
   tags: ["IOT GPS Tracking", "Sim Tracking", "Tracking via Driver App "],
   image: "../assets/images/driver-banner.png",
 };

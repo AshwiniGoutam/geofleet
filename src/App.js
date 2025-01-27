@@ -10,6 +10,8 @@ import RouteAsService from "./pages/route-as-service/page";
 import SupervisorApp from "./pages/supervisor-app/page";
 import DriverMobileApp from "./pages/driver-mobile-app/page";
 import SimTracking from "./pages/sim-tracker/page";
+import TMS from "./pages/tms/page";
+import Intigration from "./pages/intigration/page";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tms" element={<TMS />} />
+          <Route path="/intigration" element={<Intigration />} />
           <Route path="/route-as-service" element={<RouteAsService />} />
           <Route path="/supervisor-app" element={<SupervisorApp />} />
           <Route path="/driver-mobile-app" element={<DriverMobileApp />} />

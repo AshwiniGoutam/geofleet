@@ -18,6 +18,8 @@ import HowItWorks from "../how-it-works/page";
 import CtaSection from "../cta-section/page";
 import Banner from "../banner/page";
 import { HomeBanner } from "../../data";
+import OurServices from "../our-solutions/page";
+import HomeServicesSection from "../home-services/page";
 
 export default function Home() {
   return (
@@ -28,7 +30,11 @@ export default function Home() {
 
       <DeliverySection />
 
-      <Features />
+      <OurServices />
+
+      <HomeServicesSection />
+
+      {/* <Features /> */}
 
       <AppSection />
 
