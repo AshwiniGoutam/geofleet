@@ -193,26 +193,85 @@
 }
 
 .major-intigration {
-    & .col-lg-8 div{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+  & .col-lg-8 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   & span {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 16px;
     border-radius: 10px;
   }
 
-  & span:hover{
+  & span:hover {
     background-color: var(--primary-color);
     color: white;
   }
 }
 
+.major-intigration .integration-row {
+  margin-top: 60px;
+}
 
-@media(max-width:768px){
-  .intigration-logo-1,.intigration-logo-2,.intigration-logo-3,.intigration-logo-4,.intigration-logo-5,.intigration-logo-6,.intigration-logo-7,.intigration-logo-8{
+.major-intigration .integration-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #cccccc6b;
+  border-radius: 16px;
+  padding: 10px 24px 24px 24px;
+  height: 100%;
+  cursor: pointer;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-color) !important;
+    transition: 0.2s;
+  }
+}
+
+.major-intigration .integration-boxes:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  & a {
+    gap: 10px;
+  }
+}
+
+.major-intigration .integration-boxes img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.integration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & input,
+  textarea {
+    padding: 12px;
+    margin-top: 5px;
+  }
+
+  & .primary-btn{
+    width: fit-content !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .intigration-logo-1,
+  .intigration-logo-2,
+  .intigration-logo-3,
+  .intigration-logo-4,
+  .intigration-logo-5,
+  .intigration-logo-6,
+  .intigration-logo-7,
+  .intigration-logo-8 {
     display: none;
   }
 }

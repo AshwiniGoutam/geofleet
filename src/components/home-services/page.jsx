@@ -67,7 +67,7 @@ export default function HomeServicesSection({ page }) {
                     cost-effective operations.
                   </p>
                 </div>
-                <Link to="/routing-as-service">
+                <Link to="/route-as-service">
                   <button className="primary-btn w-auto">Know More</button>
                 </Link>
               </div>

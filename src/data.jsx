@@ -1,3 +1,14 @@
+export const MainBanner = {
+  heading: "All-in-One Fleet Management for Smarter, More Efficient Operations",
+  description:"Geofleet simplifies fleet operations with real-time tracking, route optimization, and analytics. Boost efficiency, cut costs, and deliver smarter with our all-in-one solution.",
+  tags: [
+    "Get 7 days free trial",
+    "No credit card is required ",
+    "Cancel anytime",
+  ],
+  image: "../assets/images/main-home-banner.png",
+};
+
 export const HomeBanner = {
   heading: "Smarter Fleets, Seamless Deliveries.",
   description:
@@ -35,8 +46,7 @@ export const SupervisorData = {
 };
 
 export const DriverMobileData = {
-  heading:
-    "Geofleet App: Real-time tracking and tools to empower drivers.",
+  heading: "Geofleet App: Real-time tracking and tools to empower drivers.",
   description:
     "Manage your fleet with the Geofleet.ai Supervisor App. Track vehicles, assign tasks, optimize routes, and analyze performance in real time. Stay connected and ensure efficiency on the go.",
   tags: ["IOT GPS Tracking", "Sim Tracking", "Tracking via Driver App "],
@@ -771,5 +781,80 @@ export const SimFeature = [
       "Enhance fleet management efficiency with reliable tracking, regardless of geographical challenges.",
     ],
     image: "../assets/images/sim-feature-7.png",
+  },
+];
+
+export const IntegrationData = [
+  {
+    image: "../assets/images/fship.png",
+    heading: "Fship",
+    description:
+      "Fship is an AI-powered eCommerce shipping aggregator offering affordable logistics solutions.",
+  },
+  {
+    image: "../assets/images/trux-cargo.png",
+    heading: "Trux Cargo",
+    description:
+      "Truxcargo provides fast order creation, pickup scheduling, and coverage across 30,500+ pincodes for efficient shipping.",
+  },
+  {
+    image: "../assets/images/shiperfacto.png",
+    heading: "Shiperfecto",
+    description:
+      "Make use of Shiperfecto's AI-driven warehousing and shipping to aggregate reliable, cost-effective courier services.",
+  },
+  {
+    image: "../assets/images/selloship.png",
+    heading: "Selloship",
+    description:
+      "Reduce Return to Origin (RTOs) with Selloship's end-to-end logistics platform now integrated into the EasyEcom solution.",
+  },
+  {
+    image: "../assets/images/rapidShyp.png",
+    heading: "RapidShyp",
+    description:
+      "RapidShyp is integrated with EasyEcom to simplify shipping management for Indian DTC brands and eCommerce businesses.",
+  },
+  {
+    image: "../assets/images/purpledrone.png",
+    heading: "Purpledrone",
+    description:
+      "Purpledrone offers warehousing, distribution, and last-mile deliveries services to retail and eCommerce businesses.",
+  },
+  {
+    image: "../assets/images/pico-express.png",
+    heading: "Pico Express",
+    description:
+      "Pico-Express offers real-time shipment tracking, door-to-door and express delivery options, and API for easy courier tracking.",
+  },
+  {
+    image: "../assets/images/openleaf.png",
+    heading: "Openleaf",
+    description:
+      "Automate shipping workflows and exceptions to update customers of their order statuses with the Openleaf API.",
+  },
+  {
+    image: "../assets/images/daakit.png",
+    heading: "Daakit",
+    description:
+      "Daakit offers aggregated shipping rates, real-time tracking, and integration with EasyEcom for simplified order management.",
+  },
+  {
+    image: "../assets/images/bhejoo.png",
+    heading: "Bhejoo",
+    description:
+      "Make use of Bhejoo's shipping recommendation engine to select the most reliable and cost-effective courier partner.",
+  },
+  {
+    image: "../assets/images/bicree.png",
+    heading: "Bicree",
+    description:
+      "Bicree is a SaaS-based logistics company that offers end-to-end shipping solutions for e-commerce businesses.",
+  },
+  {
+    image: "../assets/images/ginesys.webp",
+    heading: "Ginesys",
+    description:
+      "Make use of the Ginesys One ERP integration to consolidate, track, and improve order, sales, and ship velocity.",
   },
 ];

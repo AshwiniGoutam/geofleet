@@ -17,7 +17,7 @@ import Pricing from "../pricing/page";
 import HowItWorks from "../how-it-works/page";
 import CtaSection from "../cta-section/page";
 import Banner from "../banner/page";
-import { HomeBanner } from "../../data";
+import { HomeBanner, MainBanner } from "../../data";
 import OurServices from "../our-solutions/page";
 import HomeServicesSection from "../home-services/page";
 
@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Header />
 
-      <Banner data={HomeBanner} />
+      <Banner data={MainBanner} />
 
       <DeliverySection />
 

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./page.css";
 import Header from "../../components/header/header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { IntegrationData } from "../../data";
+import CtaSection from "../../components/cta-section/page";
+import Footer from "../../components/footer/footer";
+import { Modal } from "react-bootstrap";
 
 export default function Intigration() {
+  const [Show, setShow] = useState(false);
   return (
     <>
       <Header />
@@ -66,8 +73,77 @@ export default function Intigration() {
               </div>
             </div>
           </div>
+
+          <div className="row row-gap-4 integration-row">
+            {IntegrationData &&
+              IntegrationData?.map((items, index) => {
+                return (
+                  <div className="col-sm-4" key={index}>
+                    <div
+                      className="integration-boxes"
+                      onClick={() => setShow(true)}
+                    >
+                      <div>
+                        <img src={items?.image} alt="icon" />
+                        <h4>{items?.heading}</h4>
+                        <p>{items?.description}</p>
+                      </div>
+
+                      <a href="#">
+                        Request Integration{" "}
+                        <FontAwesomeIcon icon={faChevronRight} />
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
         </div>
       </section>
+
+      <CtaSection />
+
+      <Footer />
+
+      <Modal
+        show={Show}
+        onHide={() => setShow(false)}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Request Integration
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="integration-form">
+            <div>
+              <label>Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                className="form-control"
+              />
+            </div>
+            <div>
+              <label>Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="form-control"
+              />
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea placeholder="Message" className="form-control" />
+            </div>
+
+            <button className="primary-btn">Send Request</button>
+          </div>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }
