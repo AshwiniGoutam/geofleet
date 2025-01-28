@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tms" element={<TMS />} />
-          <Route path="/intigration" element={<Intigration />} />
+          <Route path="/integration" element={<Intigration />} />
           <Route path="/route-as-service" element={<RouteAsService />} />
           <Route path="/supervisor-app" element={<SupervisorApp />} />
           <Route path="/driver-mobile-app" element={<DriverMobileApp />} />
