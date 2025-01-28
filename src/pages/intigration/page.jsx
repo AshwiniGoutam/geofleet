@@ -49,12 +49,12 @@ export default function Intigration() {
 
       <section className="major-intigration">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-4">
+          <div className="row row-gap-4 align-items-center">
+            <div className="col-sm-12 col-lg-4">
               {" "}
               <h2>Major Intigration</h2>
             </div>
-            <div className="col-8">
+            <div className="col-sm-12 col-lg-8">
               <div>
                 <span>Marketplace</span>
                 <span>Point of Sale</span>
