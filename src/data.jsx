@@ -810,7 +810,7 @@ export const IntegrationData = [
       "Reduce Return to Origin (RTOs) with Selloship's end-to-end logistics platform now integrated into the EasyEcom solution.",
   },
   {
-    image: "../assets/images/rapidShyp.png",
+    image: "../assets/images/rapid-shyp.png",
     heading: "RapidShyp",
     description:
       "RapidShyp is integrated with EasyEcom to simplify shipping management for Indian DTC brands and eCommerce businesses.",
