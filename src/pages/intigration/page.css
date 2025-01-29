@@ -2,6 +2,7 @@
   position: relative;
   height: 90vh;
   overflow: hidden;
+  z-index: 1;
 }
 
 .intigration-section .container {
@@ -35,6 +36,7 @@
   left: -20%;
   background-repeat: no-repeat;
   top: -10%;
+  z-index: -1;
 }
 
 .intigration-section::after {
@@ -192,6 +194,7 @@
   }
 }
 
+
 .major-intigration {
   & .col-lg-8 div {
     display: flex;
@@ -202,6 +205,8 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 16px;
     border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
   }
 
   & span:hover {
@@ -258,12 +263,12 @@
     margin-top: 5px;
   }
 
-  & .primary-btn{
+  & .primary-btn {
     width: fit-content !important;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .intigration-logo-1,
   .intigration-logo-2,
   .intigration-logo-3,
@@ -273,5 +278,20 @@
   .intigration-logo-7,
   .intigration-logo-8 {
     display: none;
+  }
+  .intigration-section {
+    height: 100%;
+  }
+  .intigration-section::after {
+    content: none;
+  }
+}
+
+@media (max-width: 911px) {
+  .intigration-section {
+    height: 100%;
+  }
+  .intigration-section::after {
+    content: none;
   }
 }

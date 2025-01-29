@@ -24,7 +24,7 @@ import HomeServicesSection from "../home-services/page";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header hideWorks />
 
       <Banner data={MainBanner} />
 
@@ -38,7 +38,7 @@ export default function Home() {
 
       <AppSection />
 
-      <HowItWorks />
+      {/* <HowItWorks /> */}
 
       <Testimonial />
 

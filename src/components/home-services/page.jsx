@@ -14,7 +14,7 @@ export default function HomeServicesSection({ page }) {
       <div className="container">
         <div className="row">
           <div className="testimonial-section-header">
-            <h2 data-aos="fade-up">Our Services</h2>
+            <h2 data-aos="fade-up">Use Cases</h2>
             <div className="custom-nav">
               <button className="custom-prev">
                 <img src="../../assets/images/arrow.svg" alt="" />

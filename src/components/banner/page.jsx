@@ -14,8 +14,8 @@ export default function Banner({ data, hideExplore }) {
     >
       <PricingModal show={modalShow} onHide={() => setModalShow(false)} />
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-sm-12 col-md-6 col-lg-6">
+        <div className="row align-items-center row-gap-4">
+          <div className="col-sm-12 col-md-12 col-lg-6">
             <img
               src="../../assets/images/vector-icon-3.png"
               alt="vector-icon-1"
@@ -55,8 +55,7 @@ export default function Banner({ data, hideExplore }) {
             </div>
           </div>
 
-          <div
-            className="col-sm-12 col-md-6 col-lg-6 text-end"
+          <div className="col-sm-12 col-md-12 col-lg-6 text-end"
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"

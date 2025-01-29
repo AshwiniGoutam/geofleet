@@ -12,7 +12,7 @@ export default function Intigration() {
   const [Show, setShow] = useState(false);
   return (
     <>
-      <Header />
+      <Header hideWorks />
       <section className="intigration-section">
         <div className="container">
           <div className="intigration-logo-1">
@@ -34,8 +34,10 @@ export default function Intigration() {
               <span className="d-block">Unbeatable Platform </span> Integrations
             </h1>
             <div className="d-flex align-items-center gap-3">
-              <button className="primary-btn">Get Started</button>
-              <button className="secondary-btn">Browse Intigration</button>
+              <button className="primary-btn">Schedule a Demo</button>
+              <a href="#integration">
+                <button className="secondary-btn">Browse Intigration</button>
+              </a>
             </div>
           </div>
 
@@ -54,7 +56,7 @@ export default function Intigration() {
         </div>
       </section>
 
-      <section className="major-intigration">
+      <section className="major-intigration" id="integration">
         <div className="container">
           <div className="row row-gap-4 align-items-center">
             <div className="col-sm-12 col-lg-4">

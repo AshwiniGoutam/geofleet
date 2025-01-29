@@ -12,7 +12,7 @@ import PageFeatures from "../../components/PageFeatures/page";
 export default function DriverMobileApp() {
   return (
     <>
-      <Header />
+      <Header hideWorks/>
       <Banner data={DriverMobileData} hideExplore />
       <HightLightFeature data={DriverHightlights} />
       <PageFeatures data={DriverFeature} />

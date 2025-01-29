@@ -12,7 +12,11 @@ export default function Footer() {
           <div className="row row-gap-4 justify-content-between w-100">
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="logo-div">
-                <img src="../assets/images/white-logo.png" alt="logo" width="180px"/>
+                <img
+                  src="../assets/images/white-logo.png"
+                  alt="logo"
+                  width="180px"
+                />
               </div>
               <p className="mt-4">
                 Optimizing Fleets, Planning Routes, and Ensuring Seamless
@@ -39,16 +43,22 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <a href="#">Features</a>
+                  <Link to="/route-as-service">Routing as Service</Link>
                 </li>
                 <li>
-                  <Link to="/">About</Link>
+                  <Link to="/supervisor-app">Supervisor App</Link>
                 </li>
                 <li>
-                  <a href="/privacy-policy">Privacy Policy</a>
+                  <Link to="/driver-mobile-app">Driver Mobile App</Link>
                 </li>
                 <li>
-                  <a href="/terms-and-condition">Terms and Condition</a>
+                  <Link to="/sim-tracking">Sim Tracking</Link>
+                </li>
+                <li>
+                  <Link to="/tms">Track and Trace</Link>
+                </li>
+                <li>
+                  <Link to="/fleet-management">Fleet Management</Link>
                 </li>
               </ul>
             </div>
@@ -71,24 +81,30 @@ export default function Footer() {
               </ul>
             </div>
             <div className="col-6 col-md-6 col-lg-2">
-              <h4 className="footer-heading">Resources</h4>
+              <h4 className="footer-heading">Others</h4>
 
               <ul>
                 <li>
-                  <a href="#">Support Centre</a>
+                  <a href="/privacy-policy">Privacy Policy</a>
                 </li>
                 <li>
-                  <Link to="/">Blogs</Link>
+                  <a href="/terms-and-condition">Terms and Condition</a>
                 </li>
               </ul>
             </div>
 
             <div className="d-flex align-items-center gap-2">
-              <a href="https://play.google.com/store/apps/details?id=com.geofleet.app&hl=en_IN" target="_blank">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.geofleet.app&hl=en_IN"
+                target="_blank"
+              >
                 {" "}
                 <img src="../../assets/images/play_store_badge.svg" alt="" />
               </a>
-              <a href="https://apps.apple.com/in/app/geofleet/id6739492785" target="_blank">
+              <a
+                href="https://apps.apple.com/in/app/geofleet/id6739492785"
+                target="_blank"
+              >
                 {" "}
                 <img src="../../assets/images/app_store_badge.svg" alt="" />
               </a>
@@ -110,15 +126,33 @@ export default function Footer() {
               </a> */}
               <a href="https://x.com/geofleetAI" target="_blank">
                 {" "}
-                <img src="../../assets/images/twitter-icon.png" alt="" width="30px" height="30px" />
+                <img
+                  src="../../assets/images/twitter-icon.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
               </a>
-              <a href="https://www.linkedin.com/showcase/geofleetin" target="_blank">
+              <a
+                href="https://www.linkedin.com/showcase/geofleetin"
+                target="_blank"
+              >
                 {" "}
-                <img src="../../assets/images/linkedin-icon.png" alt="" width="30px" height="30px" />
+                <img
+                  src="../../assets/images/linkedin-icon.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
               </a>
               <a href="https://www.youtube.com/@getgeofleet" target="_blank">
                 {" "}
-                <img src="../../assets/images/youtube.png" alt="" width="40px" height="40px" />
+                <img
+                  src="../../assets/images/youtube.png"
+                  alt=""
+                  width="40px"
+                  height="40px"
+                />
               </a>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { Accordion } from "react-bootstrap";
 import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
 
-export default function Header({ ShowHeader, border }) {
+export default function Header({ ShowHeader, border, hideWorks }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -88,9 +88,9 @@ export default function Header({ ShowHeader, border }) {
           </div>
 
           <ul className="desktop-menu">
-            <li>
+            {/* <li>
               <a href="#home">Home</a>
-            </li>
+            </li> */}
             <li>
               <a href="#features">
                 Features <FontAwesomeIcon icon={faChevronDown} />{" "}
@@ -115,7 +115,7 @@ export default function Header({ ShowHeader, border }) {
                   </ul>
                 </div>
                 <div class="mega-menu-products">
-                  <h5>Our Solutions</h5>
+                  <h5>Our Features</h5>
                   <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
                       <img
@@ -248,11 +248,16 @@ export default function Header({ ShowHeader, border }) {
                 </div>
               </div>
             </li>
-            <li>
-              <a href="#how-it-works">How it Works</a>
-            </li>
+            {!hideWorks && (
+              <li>
+                <a href="#how-it-works">How it Works</a>
+              </li>
+            )}
             <li>
               <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <Link to="/integration">Integration</Link>
             </li>
           </ul>
 

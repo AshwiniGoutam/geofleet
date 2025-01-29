@@ -16,7 +16,7 @@ import PageFeatures from "../../components/PageFeatures/page";
 export default function SimTracking() {
   return (
     <>
-      <Header />
+      <Header  hideWorks/>
       <Banner data={SimTrackingData} hideExplore />
       <HightLightFeature data={SimHightlights} />
       <PageFeatures data={SimFeature} />

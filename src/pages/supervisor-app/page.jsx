@@ -19,7 +19,7 @@ import PageFeatures from "../../components/PageFeatures/page";
 export default function SupervisorApp() {
   return (
     <>
-      <Header />
+      <Header  hideWorks/>
       <Banner data={SupervisorData} hideExplore />
       <HightLightFeature data={SupervisorHightlights} />
       <PageFeatures data={SupervisorFeature} />

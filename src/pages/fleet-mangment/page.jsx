@@ -16,7 +16,7 @@ import PageFeatures from "../../components/PageFeatures/page";
 export default function FleetManagment() {
   return (
     <>
-      <Header />
+      <Header  hideWorks/>
       <Banner data={FleetManagmentData} hideExplore />
       <HightLightFeature data={FleetHigtlightData} />
       <PageFeatures data={FleetFeature} />

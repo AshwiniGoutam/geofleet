@@ -16,11 +16,15 @@ export default function Pricing() {
       buttonVariant: "secondary-custom",
       h5Heading: "Includes:",
       features: [
-        "Live GPS & Progress Tracking: Real-time insights into fleet movements.",
-        "Mobile App for Dispatch: Eliminate paper print-outs with seamless dispatch to drivers’ apps.",
-        "SIM-Based Tracking: Track drivers even without smartphones.",
-        "Fleet Management Module: Comprehensive fleet operations management.",
-        "Basic Reports & Analytics: Actionable insights into fleet performance."
+        "Live GPS & Progress Tracking",
+        "Mobile App for Dispatch.",
+        "SIM-Based Tracking",
+        "Fleet Management Module.",
+        "Basic Reports & Analytics.",
+        "Real-time Order Tracking",
+        "Basic Delivery Analytics",
+        "Basic Route Planning",
+        "Route Replay & History",
       ],
     },
     {
@@ -32,9 +36,13 @@ export default function Pricing() {
       buttonVariant: "primary-custom",
       h5Heading: "Everything in Standard, plus:",
       features: [
-        "Intelligent Route Optimization: Optimize delivery routes, reducing costs by up to 25%.",
-        "API Integrations: Seamless system integration and workflow automation.",
-        "Customer Notifications: Keep customers informed with accurate ETAs.",
+        "Fleet Performance Analytics",
+        "API Integrations",
+        "Driver Behavior Monitoring	",
+        "Customer Notifications",
+        "API & Marketplace Integrations	",
+        "AI-Driven Route Optimization",
+        "Traffic & Weather-Based Adjustments",
       ],
     },
     {
@@ -46,10 +54,14 @@ export default function Pricing() {
       buttonVariant: "secondary-custom",
       h5Heading: "Everything in Professional, plus:",
       features: [
-        "AI Copilot: Smart assistant to guide and enhance fleet operations.",
-        "Dedicated Account Manager: Personalized support for your business.",
-        "24/7 Support: Always-on assistance to address issues promptly.",
-        "And Much More: Additional customization options and enterprise-grade features."
+        "AI Copilot for Fleet Guidance",
+        "Dedicated Account Manager",
+        "24/7 Support & Custom Integrations	",
+        "AI-Based Dispatch & Load Balancing",
+        "SLA Compliance & Priority Support	",
+        "Dynamic Routing with Real-Time Adjustments",
+        "API & AI-Based Load Optimization",
+        "Dedicated Routing Support",
       ],
     },
   ];
