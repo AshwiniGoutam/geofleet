@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export default function HomeServicesSection({ page }) {
   const swiperRef = useRef(null);
   return (
-    <section className={`home-services-section  ${page && "mt-0"}`}>
+    <section className={`home-services-section  ${page && "mt-0"}`} id="use-cases">
       <div className="container">
         <div className="row">
           <div className="testimonial-section-header">

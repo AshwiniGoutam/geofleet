@@ -16,7 +16,7 @@
   border-radius: 16px;
 }
 
-.pricing-section .container .row .col .card{
+.pricing-section .container .row .col .card {
   position: relative;
 }
 
@@ -115,8 +115,7 @@
   margin-bottom: 1rem;
 }
 
-
-.check{
+.check {
   margin-right: 10px;
   background-color: hsl(157.5deg 61.54% 89.8%);
   width: 0px;
@@ -128,11 +127,11 @@
   padding: 13px;
 }
 
-.check svg{
+.check svg {
   color: #616161;
 }
 
-.popular-card{
+.popular-card {
   background-color: rgb(255 126 134);
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -146,24 +145,30 @@
   z-index: 9;
 }
 
-.popular-card p{
+.popular-card p {
   color: white;
   font-weight: 400;
 }
 
-.pricing-card .fw-semi-bold{
+.pricing-card .fw-semi-bold {
   font-size: 40px;
   font-weight: 500;
 }
 
-.pricing-section .container .row .col:nth-child(3) .card .fw-semi-bold{
+.pricing-section .container .row .col:nth-child(3) .card .fw-semi-bold {
   font-size: 1.75rem;
   margin-bottom: 68px !important;
   display: block;
 }
 
-@media(max-width:767px){
-  .pricing-section .container .row .col:nth-child(3) .card{
+@media (max-width: 767px) {
+  .pricing-section .container .row .col:nth-child(3) .card {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-section .container .row .col:nth-child(3) .card {
     margin-top: 50px;
   }
 }

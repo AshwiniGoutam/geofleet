@@ -9,6 +9,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { Accordion } from "react-bootstrap";
 import { faMapMarked } from "@fortawesome/free-solid-svg-icons";
+import Col from "react-bootstrap/Col";
+import Nav from "react-bootstrap/Nav";
+import Row from "react-bootstrap/Row";
+import Tab from "react-bootstrap/Tab";
+import {
+  MapPin,
+  Radio,
+  Smartphone,
+  ArrowRight,
+  DollarSign,
+  Clock,
+  Package,
+  User,
+  LayoutGrid,
+  Route,
+  Blocks,
+} from "lucide-react";
 
 export default function Header({ ShowHeader, border, hideWorks }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,9 +105,11 @@ export default function Header({ ShowHeader, border, hideWorks }) {
           </div>
 
           <ul className="desktop-menu">
-            {/* <li>
-              <a href="#home">Home</a>
-            </li> */}
+            {!hideWorks && (
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+            )}
             <li>
               <a href="#features">
                 Features <FontAwesomeIcon icon={faChevronDown} />{" "}
@@ -103,6 +122,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                       <img
                         src="../../assets/images/routing-banner.png"
                         alt="logo-svg"
+                        className="w-75"
                       />
                     </li>
                     <li>
@@ -114,7 +134,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                     </li>
                   </ul>
                 </div>
-                <div class="mega-menu-products">
+                {/* <div class="mega-menu-products">
                   <h5>Our Features</h5>
                   <Link to="/route-as-service" class="product-item">
                     <div class="product-content">
@@ -245,17 +265,214 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                       </div>
                     </div>
                   </Link>
-                </div>
+                </div> */}
+
+                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                  <Row className="w-100 py-4">
+                    <Col sm={4}>
+                      <h5>Our Features</h5>
+                      <Nav variant="pills" className="flex-column">
+                        <Nav.Item>
+                          <Nav.Link eventKey="first">
+                            {" "}
+                            <div>
+                              <MapPin className="w-5 h-5" />
+                              Fleet Management{" "}
+                            </div>
+                            <ArrowRight className="" />
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="second">
+                            <div>
+                              <Package className="w-5 h-5" />
+                              Delivery Management
+                            </div>
+                            <ArrowRight className="" />
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="third">
+                            {" "}
+                            <div>
+                              <Radio className="w-5 h-5" />
+                              Route Optimization
+                            </div>
+                            <ArrowRight className="" />
+                          </Nav.Link>
+                        </Nav.Item>
+                      </Nav>
+                    </Col>
+                    <Col sm={8}>
+                      <Tab.Content>
+                        <Tab.Pane eventKey="first">
+                          <div class="mega-menu-products">
+                            <Link to="/tms" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/trace-track.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3> Track & Trace →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+
+                            <Link to="/supervisor-app" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/supervisor-icon.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3>Supervisor App →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+
+                            <Link to="/driver-mobile-app" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/header-driver-icon.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3>Driver Mobile App →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+
+                            <Link to="/sim-tracking" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/sim-icon.png"
+                                  alt="icon"
+                                />
+
+                                <div>
+                                  <h3>Sim Tracking →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="second">
+                          <div class="mega-menu-products">
+                            <Link to="/supervisor-app" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/order-management.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3>Order Management System →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                            <Link to="/route-as-service" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/routing-as-service-icon.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3> Routing as Service →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                            <Link to="/fleet-management" class="product-item">
+                              <div class="product-content">
+                                <div className="header-icon-div">
+                                  <img
+                                    src="../../assets/images/fleet-icon.png"
+                                    alt="icon"
+                                  />
+                                </div>
+                                <div>
+                                  <h3>Fleet Management →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="third">
+                          <div class="mega-menu-products">
+                            <Link to="/driver-mobile-app" class="product-item">
+                              <div class="product-content">
+                                <img
+                                  src="../../assets/images/route-planing.png"
+                                  alt="icon"
+                                />
+                                <div>
+                                  <h3>Route Planning API →</h3>
+                                  <p>
+                                    Seamless oversight with real-time vehicle
+                                    tracking, fuel monitoring, maintenance
+                                    alerts.
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </Col>
+                  </Row>
+                </Tab.Container>
               </div>
             </li>
-            {!hideWorks && (
+
+            {/* {hideWorks && (
               <li>
                 <a href="#how-it-works">How it Works</a>
               </li>
+            )} */}
+            {hideWorks && (
+              <li>
+                <a href="#use-cases">Use Cases</a>
+              </li>
             )}
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
+            {hideWorks && (
+              <li>
+                <a href="#pricing">Pricing</a>
+              </li>
+            )}
             <li>
               <Link to="/integration">Integration</Link>
             </li>
@@ -290,12 +507,13 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             <Accordion.Body>
               <ul>
                 <li>
-                  <Link to="/route-as-service" class="product-item">
+                  <Link to="/tms" class="product-item">
                     <div class="product-content">
-                      <h3>Routing as Service →</h3>
+                      <h3>Track & Trace →</h3>
                     </div>
                   </Link>
                 </li>
+
                 <li>
                   <Link to="/supervisor-app" class="product-item">
                     <div class="product-content">
@@ -303,6 +521,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                     </div>
                   </Link>
                 </li>
+
                 <li>
                   <Link to="/driver-mobile-app" class="product-item">
                     <div class="product-content">
@@ -317,6 +536,31 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                     </div>
                   </Link>
                 </li>
+
+                <li>
+                  <Link to="/route-as-service" class="product-item">
+                    <div class="product-content">
+                      <h3>Routing as Service →</h3>
+                    </div>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/" class="product-item">
+                    <div class="product-content">
+                      <h3>Order Management System →</h3>
+                    </div>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/" class="product-item">
+                    <div class="product-content">
+                      <h3>Dispatch Mobile App →</h3>
+                    </div>
+                  </Link>
+                </li>
+
                 <li>
                   <Link to="/fleet-management" class="product-item">
                     <div class="product-content">
@@ -334,13 +578,35 @@ export default function Header({ ShowHeader, border, hideWorks }) {
               </a>
             </Accordion.Header>
           </Accordion.Item>
+
+          {hideWorks && (
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                <a href="#use-case" onClick={toggleSidebar}>
+                  Use Cases
+                </a>
+              </Accordion.Header>
+            </Accordion.Item>
+          )}
+
+          {hideWorks && (
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                <a href="#pricing" onClick={toggleSidebar}>
+                  Pricing
+                </a>
+              </Accordion.Header>
+            </Accordion.Item>
+          )}
+
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <a href="#pricing" onClick={toggleSidebar}>
-                Pricing
-              </a>
+              <Link to="/integration" onClick={toggleSidebar}>
+                Integration
+              </Link>
             </Accordion.Header>
           </Accordion.Item>
+
           <Accordion.Item eventKey="3">
             <Accordion.Header>
               <Link to="http://app.geofleet.ai/">Sign In</Link>

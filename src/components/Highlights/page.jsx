@@ -8,7 +8,7 @@ export default function HightLightFeature({ data }) {
         <div className="row row-gap-5">
           {data?.map((item, index) => {
             return (
-              <div className="col-sm-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="hightlight-cards">
                   <img src={item?.image} alt="images" />
                   <div>

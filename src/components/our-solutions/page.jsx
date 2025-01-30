@@ -25,7 +25,7 @@ export default function OurServices() {
         <div className="row">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
-              <Col sm={4}>
+              <Col sm={12} md={12} lg={4}>
                 <Nav variant="pills" className="flex-column">
                   <h2>Empowering Smarter Logistics</h2>
                   <p className="mb-4">
@@ -64,7 +64,7 @@ export default function OurServices() {
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col sm={8}>
+              <Col sm={12} md={12} lg={8}>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <div className="solution-content-box">

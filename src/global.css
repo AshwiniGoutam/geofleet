@@ -23,12 +23,12 @@ h2 {
   line-height: 50px !important;
 }
 
-p{
+p {
   margin: 0 !important;
   color: rgba(79, 79, 79, 1);
 }
 
-input:focus-visible{
+input:focus-visible {
   border: none;
   outline: none;
 }
@@ -41,7 +41,7 @@ h2 span {
   font-weight: 600;
 }
 
-section{
+section {
   padding: 40px 0;
 }
 
@@ -90,8 +90,8 @@ section{
   transition: 0.5s;
 }
 
-.primary-btn:hover{
-  background-color:  #184ea0;
+.primary-btn:hover {
+  background-color: #184ea0;
 }
 
 .primary-btn img {
@@ -119,24 +119,24 @@ a {
   font-size: 24px !important;
 }
 
-#shadow-host-companion{
+#shadow-host-companion {
   padding: 0 !important;
 }
 
-.privacy-policy-section{
+.privacy-policy-section {
   padding: 40px 0;
 }
 
-.privacy-policy-section h1{
+.privacy-policy-section h1 {
   font-weight: 600;
 }
 
-.privacy-policy-section a{
+.privacy-policy-section a {
   color: black;
   font-weight: 400;
 }
 
-.privacy-policy-section .content-div{
+.privacy-policy-section .content-div {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,14 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1300px !important;
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }

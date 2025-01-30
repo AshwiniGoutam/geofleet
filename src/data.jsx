@@ -1,6 +1,7 @@
 export const MainBanner = {
   heading: "All-in-One Fleet Management for Smarter, More Efficient Operations",
-  description:"Geofleet simplifies fleet operations with real-time tracking, route optimization, and analytics. Boost efficiency, cut costs, and deliver smarter with our all-in-one solution.",
+  description:
+    "Geofleet simplifies fleet operations with real-time tracking, route optimization, and analytics. Boost efficiency, cut costs, and deliver smarter with our all-in-one solution.",
   tags: [
     "Get 7 days free trial",
     "No credit card is required ",
@@ -786,75 +787,198 @@ export const SimFeature = [
 
 export const IntegrationData = [
   {
-    image: "../assets/images/fship.png",
-    heading: "Fship",
-    description:
-      "Fship is an AI-powered eCommerce shipping aggregator offering affordable logistics solutions.",
+    image: "../assets/images/integration-logo-1.png",
+    heading: "Amazon India",
+    description: "Leading e-commerce platform for B2C and B2B sales.",
   },
   {
-    image: "../assets/images/trux-cargo.png",
-    heading: "Trux Cargo",
-    description:
-      "Truxcargo provides fast order creation, pickup scheduling, and coverage across 30,500+ pincodes for efficient shipping.",
+    image: "../assets/images/integration-logo-2.jfif",
+    heading: "Flipkart Seller Hub",
+    description: "One of India's largest online retail marketplaces.",
   },
   {
-    image: "../assets/images/shiperfacto.png",
-    heading: "Shiperfecto",
-    description:
-      "Make use of Shiperfecto's AI-driven warehousing and shipping to aggregate reliable, cost-effective courier services.",
+    image: "../assets/images/integration-logo-3.jfif",
+    heading: "Myntra Seller Portal",
+    description: "Fashion and lifestyle marketplace.",
   },
   {
-    image: "../assets/images/selloship.png",
-    heading: "Selloship",
-    description:
-      "Reduce Return to Origin (RTOs) with Selloship's end-to-end logistics platform now integrated into the EasyEcom solution.",
+    image: "../assets/images/integration-logo-4.jfif",
+    heading: "JioMart Seller",
+    description: "Grocery and essentials marketplace by Reliance.",
   },
   {
-    image: "../assets/images/rapid-shyp.png",
-    heading: "RapidShyp",
-    description:
-      "RapidShyp is integrated with EasyEcom to simplify shipping management for Indian DTC brands and eCommerce businesses.",
+    image: "../assets/images/integration-logo-5.png",
+    heading: "Snapdeal Seller",
+    description: "Value-focused e-commerce platform.",
   },
   {
-    image: "../assets/images/purpledrone.png",
-    heading: "Purpledrone",
-    description:
-      "Purpledrone offers warehousing, distribution, and last-mile deliveries services to retail and eCommerce businesses.",
+    image: "../assets/images/integration-logo-6.jfif",
+    heading: "Meesho Supplier Hub",
+    description: "Social commerce marketplace for small businesses.",
   },
   {
-    image: "../assets/images/pico-express.png",
-    heading: "Pico Express",
-    description:
-      "Pico-Express offers real-time shipment tracking, door-to-door and express delivery options, and API for easy courier tracking.",
+    image: "../assets/images/integration-logo-7.jfif",
+    heading: "Tata Cliq Seller",
+    description: "Omni-channel retail platform by Tata.",
   },
   {
-    image: "../assets/images/openleaf.png",
-    heading: "Openleaf",
-    description:
-      "Automate shipping workflows and exceptions to update customers of their order statuses with the Openleaf API.",
+    image: "../assets/images/integration-logo-8.png",
+    heading: "Nykaa Seller Portal",
+    description: "Beauty and personal care e-commerce platform.",
   },
   {
-    image: "../assets/images/daakit.png",
-    heading: "Daakit",
-    description:
-      "Daakit offers aggregated shipping rates, real-time tracking, and integration with EasyEcom for simplified order management.",
+    image: "../assets/images/integration-logo-9.png",
+    heading: "Paytm Mall",
+    description: "Online shopping marketplace by Paytm.",
   },
   {
-    image: "../assets/images/bhejoo.png",
-    heading: "Bhejoo",
-    description:
-      "Make use of Bhejoo's shipping recommendation engine to select the most reliable and cost-effective courier partner.",
+    image: "../assets/images/integration-logo-10.jfif",
+    heading: "Indiamart Seller Hub",
+    description: "B2B marketplace for manufacturers and wholesalers.",
   },
   {
-    image: "../assets/images/bicree.png",
-    heading: "Bicree",
-    description:
-      "Bicree is a SaaS-based logistics company that offers end-to-end shipping solutions for e-commerce businesses.",
+    image: "../assets/images/integration-logo-11.jfif",
+    heading: "Udaan",
+    description: "B2B trade platform connecting retailers with suppliers.",
   },
   {
-    image: "../assets/images/ginesys.webp",
-    heading: "Ginesys",
-    description:
-      "Make use of the Ginesys One ERP integration to consolidate, track, and improve order, sales, and ship velocity.",
+    image: "../assets/images/integration-logo-12.png",
+    heading: "Pepperfry Seller",
+    description: "Furniture and home décor marketplace.",
+  },
+  {
+    image: "../assets/images/integration-logo-13.jfif",
+    heading: "Limeroad Seller",
+    description: "Fashion and accessories marketplace.",
+  },
+  {
+    image: "../assets/images/integration-logo-14.png",
+    heading: "FirstCry Seller",
+    description: "Baby products and kids' apparel marketplace.",
+  },
+  {
+    image: "../assets/images/integration-logo-15.jfif",
+    heading: "Ajio Business",
+    description: "B2B fashion and lifestyle marketplace by Reliance.",
+  },
+  {
+    image: "../assets/images/integration-logo-16.jfif",
+    heading: "Pine Labs",
+    description: "Smart POS solutions for retail businesses.",
+  },
+  {
+    image: "../assets/images/integration-logo-9.png",
+    heading: "Paytm POS",
+    description: "Digital payment and POS system.",
+  },
+  {
+    image: "../assets/images/integration-logo-17.png",
+    heading: "BharatPe Swipe",
+    description: "POS terminal for small merchants.",
+  },
+  {
+    image: "../assets/images/integration-logo-18.jfif",
+    heading: "Zopper POS",
+    description: "Cloud-based POS system for retail.",
+  },
+  {
+    image: "../assets/images/integration-logo-19.png",
+    heading: "Ginesys POS",
+    description: "End-to-end retail ERP and POS software.",
+  },
+  {
+    image: "../assets/images/integration-logo-20.jfif",
+    heading: "Mswipe",
+    description: "Mobile POS solutions for payments.",
+  },
+  {
+    image: "../assets/images/integration-logo-21.png",
+    heading: "Retailio POS",
+    description: "Pharma and retail POS system.",
+  },
+  {
+    image: "../assets/images/integration-logo-22.png",
+    heading: "GoFrugal POS",
+    description: "Retail, restaurant, and distribution POS.",
+  },
+  {
+    image: "../assets/images/integration-logo-23.jfif",
+    heading: "PetPooja POS",
+    description: "POS for restaurants and cloud kitchens.",
+  },
+  {
+    image: "../assets/images/integration-logo-24.png",
+    heading: "Shoptree POS",
+    description: "Retail-focused cloud POS.",
+  },
+  {
+    image: "../assets/images/integration-logo-25.png",
+    heading: "Bijlipay POS",
+    description: "Payment acceptance and POS solutions.",
+  },
+  {
+    image: "../assets/images/integration-logo-26.png",
+    heading: "Ezetap POS",
+    description: "Digital payments and billing.",
+  },
+  {
+    image: "../assets/images/integration-logo-27.png",
+    heading: "Snapbizz POS",
+    description: "Grocery retail POS.",
+  },
+  {
+    image: "../assets/images/integration-logo-28.png",
+    heading: "Posist",
+    description: "Cloud-based POS for restaurants.",
+  },
+  {
+    image: "../assets/images/integration-logo-29.png",
+    heading: "JustBilling POS",
+    description: "Retail, service, and restaurant POS system.",
+  },
+  {
+    image: "../assets/images/integration-logo-30.png",
+    heading: "Shiprocket",
+    description: "E-commerce shipping and logistics aggregator.",
+  },
+  {
+    image: "../assets/images/integration-logo-31.png",
+    heading: "Delhivery",
+    description: "End-to-end supply chain services.",
+  },
+  {
+    image: "../assets/images/integration-logo-32.png",
+    heading: "Blue Dart",
+    description: "Courier and express logistics service provider.",
+  },
+  {
+    image: "../assets/images/integration-logo-33.jfif",
+    heading: "XpressBees",
+    description: "E-commerce logistics and last-mile delivery.",
+  },
+  {
+    image: "../assets/images/integration-logo-34.png",
+    heading: "Ecom Express",
+    description: "End-to-end logistics solutions for e-commerce.",
+  },
+  {
+    image: "../assets/images/integration-logo-35.png",
+    heading: "Shadowfax",
+    description: "Same-day and hyperlocal delivery solutions.",
+  },
+  {
+    image: "../assets/images/integration-logo-36.png",
+    heading: "DTDC",
+    description: "Domestic and international shipping solutions.",
+  },
+  {
+    image: "../assets/images/integration-logo-37.png",
+    heading: "India Post",
+    description: "Government postal and courier services.",
+  },
+  {
+    image: "../assets/images/integration-logo-38.png",
+    heading: "Pickrr",
+    description: "AI-powered logistics and fulfillment platform.",
   },
 ];

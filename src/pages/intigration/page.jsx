@@ -7,6 +7,19 @@ import { IntegrationData } from "../../data";
 import CtaSection from "../../components/cta-section/page";
 import Footer from "../../components/footer/footer";
 import { Modal } from "react-bootstrap";
+import {
+  MapPin,
+  Radio,
+  Smartphone,
+  ArrowRight,
+  DollarSign,
+  Clock,
+  Package,
+  User,
+  LayoutGrid,
+  Route,
+  Blocks,
+} from "lucide-react";
 
 export default function Intigration() {
   const [Show, setShow] = useState(false);
@@ -80,7 +93,7 @@ export default function Intigration() {
             {IntegrationData &&
               IntegrationData?.map((items, index) => {
                 return (
-                  <div className="col-sm-4" key={index}>
+                  <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
                     <div
                       className="integration-boxes"
                       onClick={() => setShow(true)}
@@ -99,6 +112,46 @@ export default function Intigration() {
                   </div>
                 );
               })}
+          </div>
+
+          <div className="row stat-row">
+            <div>
+              <h2>
+                Other Integration to{" "}
+                <h2 className="d-block m-0">Support Your Business</h2>
+              </h2>
+              <p>
+                Leading enterprise thoughout the world have achieved significant
+                results with Geofleet management.
+              </p>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <div className="stat-boxes">
+                <div className="stat-svg">
+                  <DollarSign />
+                  <span>400+</span>
+                </div>
+                <h4>Multi-Carrier Integration</h4>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <div className="stat-boxes">
+                <div className="stat-svg">
+                  <Clock />
+                  <span>30 +</span>
+                </div>
+                <h4>Communication Gatways</h4>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <div className="stat-boxes">
+                <div className="stat-svg">
+                  <Package />
+                  <span>Plus </span>
+                </div>
+                <h4>Leads WMS, OMS & ERP Platforms Integration.</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>

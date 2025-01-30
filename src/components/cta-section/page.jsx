@@ -68,7 +68,7 @@ export default function CtaSection() {
       <section className="cta-section">
         <div className="container">
           <div className="row align-items-center overflow-hidden">
-            <div className="col-sm-6" data-aos="fade-right">
+            <div className="col-sm-12 col-md-12 col-lg-6" data-aos="fade-right">
               <h2>
                 Secure and Reliable – Our Geofleet Driver App is Built for Your
                 Peace of Mind.
@@ -100,7 +100,7 @@ export default function CtaSection() {
                 Already a member? <a href="http://app.geofleet.ai/">Sign In</a>
               </p>
             </div>
-            <div className="col-sm-6" data-aos="fade-left">
+            <div className="col-sm-12 col-md-12 col-lg-6" data-aos="fade-left">
               <img
                 src="../../assets/images/cta-image.png"
                 alt="images"
