@@ -74,7 +74,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
 
   const handleScrolled = (event) => {
     event.preventDefault();
-    const targetId = event.target.getAttribute("href").slice(1);
+    const targetId = event.currentTarget.getAttribute("href").slice(1);
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
@@ -105,7 +105,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
           </div>
 
           <ul className="desktop-menu">
-            {!hideWorks && (
+            {hideWorks && (
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -463,12 +463,12 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                 <a href="#how-it-works">How it Works</a>
               </li>
             )} */}
-            {hideWorks && (
+            {!hideWorks && (
               <li>
                 <a href="#use-cases">Use Cases</a>
               </li>
             )}
-            {hideWorks && (
+            {!hideWorks && (
               <li>
                 <a href="#pricing">Pricing</a>
               </li>

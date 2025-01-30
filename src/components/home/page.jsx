@@ -24,7 +24,7 @@ import HomeServicesSection from "../home-services/page";
 export default function Home() {
   return (
     <>
-      <Header hideWorks />
+      <Header  />
 
       <Banner data={MainBanner} />
 

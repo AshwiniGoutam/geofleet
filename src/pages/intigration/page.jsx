@@ -20,11 +20,15 @@ import {
   Route,
   Blocks,
 } from "lucide-react";
+import PricingModal from "../../components/pricing/pricing-model";
 
 export default function Intigration() {
   const [Show, setShow] = useState(false);
+
+  const [modalShow, setModalShow] = useState(false);
   return (
     <>
+      <PricingModal show={modalShow} onHide={() => setModalShow(false)} />
       <Header hideWorks />
       <section className="intigration-section">
         <div className="container">
@@ -47,7 +51,12 @@ export default function Intigration() {
               <span className="d-block">Unbeatable Platform </span> Integrations
             </h1>
             <div className="d-flex align-items-center gap-3">
-              <button className="primary-btn">Schedule a Demo</button>
+              <button
+                className="primary-btn"
+                onClick={() => setModalShow(true)}
+              >
+                Schedule a Demo
+              </button>
               <a href="#integration">
                 <button className="secondary-btn">Browse Intigration</button>
               </a>
