@@ -102,13 +102,13 @@ nav {
   background: white;
   /* border-radius: 16px; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  padding: 0px;
+  padding: 0 20px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
   display: grid;
-  grid-template-columns: 0.8fr 2fr;
-  gap: 32px;
+  /* grid-template-columns: 1fr 3fr; */
+  gap: 20px;
   /* padding: 20px 0; */
   border-top: 3px solid var(--primary-color);
   z-index: 9999;
@@ -174,13 +174,18 @@ nav {
   border-radius: 100px;
 } */
 
-.product-content img {
-  width: 45px;
+.product-content svg {
+  width: 65px;
   height: 45px;
-  object-fit: contain;
   background: #ebf3ff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
+  fill: none !important;
+  stroke: var(--primary-color);
+}
+
+.product-content img{
+  display: none;
 }
 
 .menu-links h3 {
@@ -260,6 +265,12 @@ nav {
 .mega-menu .nav-pills .nav-link.active {
   background-color: #ebf3ff;
   color: black;
+}
+
+.mega-menu .tab-section-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
 }
 
 @media (max-width: 991px) {

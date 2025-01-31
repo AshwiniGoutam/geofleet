@@ -20,7 +20,7 @@ import {
 
 export default function OurServices() {
   return (
-    <section className="our-solutions-section">
+    <section className="our-solutions-section" id="our-services">
       <div className="container">
         <div className="row">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">

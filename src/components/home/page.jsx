@@ -19,12 +19,12 @@ import CtaSection from "../cta-section/page";
 import Banner from "../banner/page";
 import { HomeBanner, MainBanner } from "../../data";
 import OurServices from "../our-solutions/page";
-import HomeServicesSection from "../home-services/page";
+import CaseStudy from "../case-study/page";
 
 export default function Home() {
   return (
     <>
-      <Header  />
+      <Header />
 
       <Banner data={MainBanner} />
 
@@ -32,7 +32,7 @@ export default function Home() {
 
       <OurServices />
 
-      <HomeServicesSection />
+      <CaseStudy />
 
       {/* <Features /> */}
 

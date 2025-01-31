@@ -7,7 +7,7 @@ export default function PageFeatures({ data }) {
       <div className="container">
         {data?.map((item, index) => {
           return (
-            <div className="row" key={index}>
+            <div className="row" key={index} id={item?.section_id}>
               <div className="col-sm-12 col-md-12 col-lg-6">
                 <img
                   src={item?.image}

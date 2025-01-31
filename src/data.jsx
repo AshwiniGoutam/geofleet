@@ -461,6 +461,7 @@ export const RoutingFeature = [
       "Minimize fuel consumption and operational costs by integrating an intelligent, capacity-aware routing API into your system for optimized planning.",
     ],
     image: "../assets/images/routing-feature-1.png",
+    section_id:"ai-power-route-planning"
   },
   {
     heading:
@@ -474,6 +475,7 @@ export const RoutingFeature = [
       "Minimize fuel consumption and operational costs by integrating an intelligent, capacity-aware routing API into your system for optimized planning.",
     ],
     image: "../assets/images/routing-feature-2.png",
+    section_id:"dynamic-re-routing"
   },
   {
     heading:
@@ -487,6 +489,7 @@ export const RoutingFeature = [
       "Promote sustainability by aligning route planning with eco-friendly strategies and tracking cost savings from optimized routes and improved fuel efficiency.",
     ],
     image: "../assets/images/routing-feature-3.png",
+    section_id:"carbon-emission-reduction"
   },
   {
     heading:
@@ -500,6 +503,7 @@ export const RoutingFeature = [
       "Improve operational efficiency by adjusting delivery schedules, avoiding delays, and streamlining route planning with customizable parameters for each unique delivery requirement.",
     ],
     image: "../assets/images/routing-feature-4.png",
+    section_id:"customizable-parameters"
   },
   {
     heading:
@@ -513,6 +517,7 @@ export const RoutingFeature = [
       "Optimize driver schedules, monitor performance, and adjust assignments based on changing conditions to ensure timely arrivals and increase customer satisfaction with consistent, accurate delivery time predictions.",
     ],
     image: "../assets/images/routing-feature-5.png",
+    section_id:"driver-assigment-optimization"
   },
 ];
 

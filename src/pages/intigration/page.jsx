@@ -105,7 +105,7 @@ export default function Intigration() {
                   <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
                     <div
                       className="integration-boxes"
-                      onClick={() => setShow(true)}
+                      // onClick={() => setShow(true)}
                     >
                       <div>
                         <img src={items?.image} alt="icon" />
@@ -113,10 +113,10 @@ export default function Intigration() {
                         <p>{items?.description}</p>
                       </div>
 
-                      <a href="#">
+                      {/* <a href="#">
                         Request Integration{" "}
                         <FontAwesomeIcon icon={faChevronRight} />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 );
@@ -156,9 +156,9 @@ export default function Intigration() {
               <div className="stat-boxes">
                 <div className="stat-svg">
                   <Package />
-                  <span>Plus </span>
+                  <span>50 + </span>
                 </div>
-                <h4>Leads WMS, OMS & ERP Platforms Integration.</h4>
+                <h4>Leading WMS, OMS Platforms Integration.</h4>
               </div>
             </div>
           </div>

@@ -37,7 +37,7 @@ export default function Banner({ data, hideExplore }) {
                 Schedule a Demo{" "}
               </button>
               {!hideExplore && (
-                <a href="http://app.geofleet.ai/" target="_blank">
+                <a href="#our-services">
                   Explore the Product <FontAwesomeIcon icon={faArrowRight} />
                 </a>
               )}

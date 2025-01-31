@@ -25,6 +25,28 @@ import {
   LayoutGrid,
   Route,
   Blocks,
+  LocateFixed,
+  AudioLines,
+  AudioWaveform,
+  TabletSmartphone,
+  Users,
+  Receipt,
+  Bell,
+  Navigation,
+  MapPinHouse,
+  SquareKanban,
+  MonitorSmartphone,
+  PackageCheck,
+  Contact,
+  ChartSpline,
+  Bike,
+  FileText,
+  Link2Icon,
+  Navigation2,
+  Waypoints,
+  AlarmSmoke,
+  Car,
+  Component,
 } from "lucide-react";
 
 export default function Header({ ShowHeader, border, hideWorks }) {
@@ -112,165 +134,14 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             )}
             <li>
               <a href="#features">
-                Features <FontAwesomeIcon icon={faChevronDown} />{" "}
+                Solutions <FontAwesomeIcon icon={faChevronDown} />{" "}
               </a>
 
               <div class="mega-menu">
-                <div class="mega-menu-links">
-                  <ul class="menu-links">
-                    <li className="flex-column">
-                      <img
-                        src="../../assets/images/routing-banner.png"
-                        alt="logo-svg"
-                        className="w-75"
-                      />
-                    </li>
-                    <li>
-                      <p>
-                        GeoFleet streamlines fleet management with multi-source
-                        tracking (App, SIM, GPS), real-time updates, route
-                        optimization, and delivery tools like EPOD and OTP.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                {/* <div class="mega-menu-products">
-                  <h5>Our Features</h5>
-                  <Link to="/route-as-service" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/routing-as-service-icon.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3> Routing as Service →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/supervisor-app" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/supervisor-icon.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3>Supervisor App →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/driver-mobile-app" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/header-driver-icon.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3>Driver Mobile App →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/sim-tracking" class="product-item">
-                    <div class="product-content">
-                      <img src="../../assets/images/sim-icon.png" alt="icon" />
-
-                      <div>
-                        <h3>Sim Tracking →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                <div class="mega-menu-products">
-                  <h5
-                    className="visiblisty-hidden"
-                    style={{ visibility: "hidden" }}
-                  >
-                    Products
-                  </h5>
-                  <Link to="/tms" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/trace-track.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3> Track & Trace →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/supervisor-app" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/order-management.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3>Order Management System →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/driver-mobile-app" class="product-item">
-                    <div class="product-content">
-                      <img
-                        src="../../assets/images/route-planing.png"
-                        alt="icon"
-                      />
-                      <div>
-                        <h3>Route Planning API →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link to="/fleet-management" class="product-item">
-                    <div class="product-content">
-                      <div className="header-icon-div">
-                        <img
-                          src="../../assets/images/fleet-icon.png"
-                          alt="icon"
-                        />
-                      </div>
-                      <div>
-                        <h3>Fleet Management →</h3>
-                        <p>
-                          Seamless oversight with real-time vehicle tracking,
-                          fuel monitoring, maintenance alerts.
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                </div> */}
-
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                   <Row className="w-100 py-4">
                     <Col sm={4}>
-                      <h5>Our Features</h5>
+                      <h5>Our Solutions</h5>
                       <Nav variant="pills" className="flex-column">
                         <Nav.Item>
                           <Nav.Link eventKey="first">
@@ -293,6 +164,15 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                         </Nav.Item>
                         <Nav.Item>
                           <Nav.Link eventKey="third">
+                            <div>
+                              <MapPinHouse />
+                              Fieldforce Management
+                            </div>
+                            <ArrowRight className="" />
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link eventKey="fourth">
                             {" "}
                             <div>
                               <Radio className="w-5 h-5" />
@@ -306,149 +186,500 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                     <Col sm={8}>
                       <Tab.Content>
                         <Tab.Pane eventKey="first">
-                          <div class="mega-menu-products">
-                            <Link to="/tms" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/trace-track.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3> Track & Trace →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
-                              </div>
-                            </Link>
+                          <div className="tab-section-row">
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <LocateFixed />
+                                    <div>
+                                      <h3> IOT GPS tracking →</h3>
+                                      <p>
+                                        Monitor vehicle movements with precision
+                                        using advanced GPS and IoT technology
+                                        for seamless fleet visibility.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
 
-                            <Link to="/supervisor-app" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/supervisor-icon.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3>Supervisor App →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
-                              </div>
-                            </Link>
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <AudioLines />
+                                    <div>
+                                      <h3>Sim Based Tracking →</h3>
+                                      <p>
+                                        Track fleet locations directly through
+                                        SIM networks—no extra hardware required,
+                                        just seamless connectivity
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
 
-                            <Link to="/driver-mobile-app" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/header-driver-icon.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3>Driver Mobile App →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
-                              </div>
-                            </Link>
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <AudioWaveform />
+                                    <div>
+                                      <h3>RFID based In Plant Tracking →</h3>
+                                      <p>
+                                        Optimize in-plant vehicle movements with
+                                        RFID-based tracking for enhanced
+                                        efficiency and asset security.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
 
-                            <Link to="/sim-tracking" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/sim-icon.png"
-                                  alt="icon"
-                                />
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <TabletSmartphone />
 
-                                <div>
-                                  <h3>Sim Tracking →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
+                                    <div>
+                                      <h3>Driver Mobile App Tracking →</h3>
+                                      <p>
+                                        Real-time driver tracking via a mobile
+                                        app, ensuring location updates, task
+                                        completion, and seamless communication.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
                               </div>
-                            </Link>
+                            </div>
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <Users />
+                                    <div>
+                                      <h3>Supervisor App →</h3>
+                                      <p>
+                                        Access real-time vehicle visibility and
+                                        playback past routes to analyze
+                                        performance.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <Receipt />
+                                    <div>
+                                      <h3>Billing Automation →</h3>
+                                      <p>
+                                        Eliminate manual calculations with
+                                        automated payout processing for vendors
+                                        and drivers based on real-time data.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Bell />
+                                    <div>
+                                      <h3>20+ Alerts & Notifications →</h3>
+                                      <p>
+                                        Receive instant alerts on geofencing,
+                                        route deviations, fuel consumption, and
+                                        more for proactive fleet management.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <Blocks />
+
+                                    <div>
+                                      <h3>
+                                        10000+ IOT and other Hardwares
+                                        integrated →
+                                      </h3>
+                                      <p>
+                                        Connect effortlessly with GPS, IoT, and
+                                        other telematics hardware for a fully
+                                        integrated fleet ecosystem.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
                           </div>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                          <div class="mega-menu-products">
-                            <Link to="/supervisor-app" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/order-management.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3>Order Management System →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
+                          <div className="tab-section-row">
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <Package />
+                                    <div>
+                                      <h3>Last Mile Delivery Management →</h3>
+                                      <p>
+                                        Ensure faster, cost-effective, and
+                                        seamless last-mile deliveries with
+                                        AI-driven routing, real-time tracking,
+                                        and automated workflows.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <SquareKanban />
+                                    <div>
+                                      <h3>Pickup Management →</h3>
+                                      <p>
+                                        Optimize pickup schedules, automate task
+                                        assignments, and track real-time status
+                                        for efficient first-mile logistics.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <MonitorSmartphone />
+                                    <div>
+                                      <h3>Dispatcher Mobile App →</h3>
+                                      <p>
+                                        Get complete visibility into order
+                                        status from dispatch to doorstep using
+                                        Dispatcher Mobile App
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <TabletSmartphone />
+
+                                    <div>
+                                      <h3>Driver Mobile App →</h3>
+                                      <p>
+                                        Enable drivers with intuitive mobile
+                                        apps for optimized navigation, order
+                                        updates, and easy proof-of-delivery
+                                        submission.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
                               </div>
-                            </Link>
-                            <Link to="/route-as-service" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/routing-as-service-icon.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3> Routing as Service →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
+                            </div>
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <PackageCheck />
+                                    <div>
+                                      <h3>Delivery Proofs & Validation →</h3>
+                                      <p>
+                                        Capture digital proof of delivery with
+                                        e-signatures, OTP verification, and
+                                        real-time image uploads for complete
+                                        order validation.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <Route />
+                                    <div>
+                                      <h3>AI powered Route Planning →</h3>
+                                      <p>
+                                        Leverage intelligent algorithms to plan
+                                        the most efficient delivery routes,
+                                        reducing fuel costs and ensuring on-time
+                                        deliveries.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Contact />
+                                    <div>
+                                      <h3>Customer Experience Management →</h3>
+                                      <p>
+                                        Enhance customer satisfaction with
+                                        real-time tracking, automated alerts,
+                                        and seamless communication at every
+                                        step.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <ChartSpline />
+                                    <div>
+                                      <h3>100+ OMS, Carrier Inetgration →</h3>
+                                      <p>
+                                        Integrate effortlessly with top-order
+                                        management systems and carrier networks
+                                        for unified logistics operations.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
                               </div>
-                            </Link>
-                            <Link to="/fleet-management" class="product-item">
-                              <div class="product-content">
-                                <div className="header-icon-div">
-                                  <img
-                                    src="../../assets/images/fleet-icon.png"
-                                    alt="icon"
-                                  />
-                                </div>
-                                <div>
-                                  <h3>Fleet Management →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
-                              </div>
-                            </Link>
+                            </div>
                           </div>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                          <div class="mega-menu-products">
-                            <Link to="/driver-mobile-app" class="product-item">
-                              <div class="product-content">
-                                <img
-                                  src="../../assets/images/route-planing.png"
-                                  alt="icon"
-                                />
-                                <div>
-                                  <h3>Route Planning API →</h3>
-                                  <p>
-                                    Seamless oversight with real-time vehicle
-                                    tracking, fuel monitoring, maintenance
-                                    alerts.
-                                  </p>
-                                </div>
+                          <div className="tab-section-row">
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <LocateFixed />
+                                    <div>
+                                      <h3>
+                                        Complete Fieldforce Visibility in
+                                        Real-Time →
+                                      </h3>
+                                      <p>
+                                        Track, manage, and optimize your field
+                                        workforce with live location updates,
+                                        task progress, and automated reporting.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <AudioLines />
+                                    <div>
+                                      <h3>AI-Optimized Beat Planning →</h3>
+                                      <p>
+                                        Plan optimized fieldforce routes with
+                                        over 24 constraints, ensuring better
+                                        coverage and productivity."
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <AudioWaveform />
+                                    <div>
+                                      <h3>
+                                        Effortless Employee Transport Solutions
+                                        →
+                                      </h3>
+                                      <p>
+                                        Automate and optimize daily commutes
+                                        with route planning, tracking, and
+                                        real-time scheduling.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <Bike />
+
+                                    <div>
+                                      <h3>
+                                        On-Demand Ride Request Automation →
+                                      </h3>
+                                      <p>
+                                        Enable employees to request rides on
+                                        demand with automated dispatching and
+                                        optimized routing.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
                               </div>
-                            </Link>
+                            </div>
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/tms" class="product-item">
+                                  <div class="product-content">
+                                    <Users />
+                                    <div>
+                                      <h3>Automated Check-ins →</h3>
+                                      <p>
+                                        Enable seamless pickups using
+                                        Geofencing, RFID, QR codes, Face
+                                        Recognition, Biometrics, Chirp Sound,
+                                        and Manual Check-ins.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/supervisor-app" class="product-item">
+                                  <div class="product-content">
+                                    <FileText />
+                                    <div>
+                                      <h3>
+                                        Data-Driven Decisions with Smart
+                                        Insights →
+                                      </h3>
+                                      <p>
+                                        Get detailed reports and analytics on
+                                        fieldforce performance, task efficiency,
+                                        and operational KPIs.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/driver-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Link2Icon />
+                                    <div>
+                                      <h3>
+                                        Live ETA Updates & Trackable Links →
+                                      </h3>
+                                      <p>
+                                        Share real-time tracking URLs with
+                                        employees and customers for better
+                                        visibility and trust.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/sim-tracking" class="product-item">
+                                  <div class="product-content">
+                                    <Navigation2 />
+
+                                    <div>
+                                      <h3>
+                                        Intelligent Vendor Allocation Engine
+                                      </h3>
+                                      <p>
+                                        AI matches rides with optimal transport
+                                        providers based on availability, cost,
+                                        and performance.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </Tab.Pane>
+
+                        <Tab.Pane eventKey="fourth">
+                          <div className="tab-section-row">
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/route-as-service#ai-power-route-planning" class="product-item">
+                                  <div class="product-content">
+                                    <Waypoints />
+                                    <div>
+                                      <h3>AI power Route Planning →</h3>
+                                      <p>
+                                        Utilize machine learning to generate
+                                        cost-effective, traffic-aware, and
+                                        time-optimized delivery.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/route-as-service#carbon-emission-reduction" class="product-item">
+                                  <div class="product-content">
+                                    <AlarmSmoke />
+                                    <div>
+                                      <h3>Carbon Emission Reduction →</h3>
+                                      <p>
+                                        Reduce fuel consumption and emissions
+                                        with smart routing and optimized fleet
+                                        operations.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/route-as-service#driver-assigment-optimization"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Car />
+                                    <div>
+                                      <h3>Driver Assignment Optimization →</h3>
+                                      <p>
+                                        Assign the best driver for each task
+                                        based on location, availability, and
+                                        skill set.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link to="/route-as-service#dynamic-re-routing" class="product-item">
+                                  <div class="product-content">
+                                    <Route />
+                                    <div>
+                                      <h3>Dynamic Re-Routing →</h3>
+                                      <p>
+                                        Optimize routes in real-time based on
+                                        traffic, delays, and priority changes to
+                                        improve efficiency.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link to="/route-as-service#customization-parameters" class="product-item">
+                                  <div class="product-content">
+                                    <Component />
+                                    <div>
+                                      <h3>Customization Parameters →</h3>
+                                      <p>
+                                        Tailor the platform to your business
+                                        needs with configurable workflows,
+                                        rules, and automation.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
                           </div>
                         </Tab.Pane>
                       </Tab.Content>
@@ -465,7 +696,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             )} */}
             {!hideWorks && (
               <li>
-                <a href="#use-cases">Use Cases</a>
+                <a href="#use-cases">Case Study</a>
               </li>
             )}
             {!hideWorks && (
@@ -474,7 +705,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
               </li>
             )}
             <li>
-              <Link to="/integration">Integration</Link>
+              <Link to="/integration">Integrations</Link>
             </li>
           </ul>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header/header";
 import Banner from "../../components/banner/page";
 import Testimonial from "../../components/testimonials/page";
@@ -12,13 +12,26 @@ import {
 } from "../../data";
 import HightLightFeature from "../../components/Highlights/page";
 import PageFeatures from "../../components/PageFeatures/page";
+import { useLocation } from "react-router-dom";
 
 export default function RouteAsService() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
-      <Header  hideWorks/>
+      <Header hideWorks />
       <Banner data={RouteServiceData} hideExplore />
-      <HightLightFeature data={RoutingHightlights}  />
+      <HightLightFeature data={RoutingHightlights} />
       <PageFeatures data={RoutingFeature} />
       <section className="delivery-section m-0">
         <div className="container">

@@ -294,12 +294,14 @@
   display: flex;
   align-items: start;
   flex-direction: column;
+  justify-content: center;
   /* background: #f1f7fe; */
   margin-top: 20px;
   border-radius: 16px;
   padding: 1.5rem;
   gap: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  height: 100%;
 }
 
 .major-intigration .stat-row .stat-boxes h4{
