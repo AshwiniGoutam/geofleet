@@ -17,9 +17,9 @@ export default function CaseStudy({ page }) {
       id="use-cases"
     >
       <div className="container">
-        <div className="row">
+        <div className="row row-gap-4">
           <div className="testimonial-section-header">
-            <h2 data-aos="fade-up">Case Study</h2>
+            <h2 data-aos="fade-up">Success Stories</h2>
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-4">

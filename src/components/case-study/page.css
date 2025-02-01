@@ -142,6 +142,7 @@
     & p {
       font-size: 14px;
       font-weight: 400;
+      margin: 14px 0 !important;
     }
   }
 }

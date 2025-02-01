@@ -54,6 +54,15 @@ export default function Footer() {
                 <li>
                   <Link to="/route-optimization">Route Optimization</Link>
                 </li>
+                <li>
+                  <Link to="/sim-tracking">Sim Tracking</Link>
+                </li>
+                <li>
+                  <Link to="/driver-mobile-app">Driver Mobile App</Link>
+                </li>
+                <li>
+                  <Link to="/supervisor-app">Supervisor App</Link>
+                </li>
               </ul>
             </div>
             {/* <div className="col-6 col-md-6 col-lg-2">

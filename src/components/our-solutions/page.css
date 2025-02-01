@@ -99,6 +99,7 @@
 
 .our-solutions-section .tab-content a {
   color: black;
+  cursor: pointer;
 }
 
 .our-solutions-section .solution-content-box {

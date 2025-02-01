@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./page.css";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
@@ -18,10 +18,13 @@ import {
   Blocks,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import PricingModal from "../pricing/pricing-model";
 
 export default function OurServices() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <section className="our-solutions-section" id="our-services">
+      <PricingModal show={modalShow} onHide={() => setModalShow(false)} />
       <div className="container">
         <div className="row">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -120,7 +123,9 @@ export default function OurServices() {
                             Explore More <ArrowRight />
                           </button>
                         </Link>
-                        <a href="#">Book a Demo </a>
+                        <a href={undefined} onClick={() => setModalShow(true)}>
+                          Book a Demo{" "}
+                        </a>
                       </div>
                     </div>
                   </Tab.Pane>
@@ -183,7 +188,9 @@ export default function OurServices() {
                             Explore More <ArrowRight />
                           </button>
                         </Link>
-                        <a href="#">Book a Demo </a>
+                        <a href={undefined} onClick={() => setModalShow(true)}>
+                          Book a Demo{" "}
+                        </a>
                       </div>
                     </div>
                   </Tab.Pane>
@@ -231,7 +238,9 @@ export default function OurServices() {
                             Explore More <ArrowRight />
                           </button>
                         </Link>
-                        <a href="#">Book a Demo </a>
+                        <a href={undefined} onClick={() => setModalShow(true)}>
+                          Book a Demo{" "}
+                        </a>
                       </div>
                     </div>
                   </Tab.Pane>

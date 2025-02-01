@@ -30,7 +30,7 @@
 }
 
 .banner-h1{
-  font-size: 42px !important;
+  font-size: clamp(2rem, 1.8828rem + 0.625vw, 2.625rem) !important;
 }
 
 .hero-section a {

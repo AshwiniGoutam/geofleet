@@ -258,35 +258,34 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/fleet-management#rfid-based-plant-tracking"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <AudioWaveform />
-                                    <div>
-                                      <h3>RFID based In Plant Tracking →</h3>
-                                      <p>
-                                        Optimize in-plant vehicle movements with
-                                        RFID-based tracking for enhanced
-                                        efficiency and asset security.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
-                                <Link
                                   to="/fleet-management#driver-mobile-app-tracking"
                                   class="product-item"
                                 >
                                   <div class="product-content">
                                     <TabletSmartphone />
-
                                     <div>
                                       <h3>Driver Mobile App Tracking →</h3>
                                       <p>
                                         Real-time driver tracking via a mobile
                                         app, ensuring location updates, task
                                         completion, and seamless communication.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/fleet-management#alert-&-notification"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Bell />
+                                    <div>
+                                      <h3>20+ Alerts & Notifications →</h3>
+                                      <p>
+                                        Receive instant alerts on geofencing,
+                                        route deviations, fuel consumption, and
+                                        more for proactive fleet management.
                                       </p>
                                     </div>
                                   </div>
@@ -313,6 +312,23 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
+                                  to="/fleet-management#rfid-based-plant-tracking"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <AudioWaveform />
+                                    <div>
+                                      <h3>RFID based In Plant Tracking →</h3>
+                                      <p>
+                                        Optimize in-plant vehicle movements with
+                                        RFID-based tracking for enhanced
+                                        efficiency and asset security.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
                                   to="/fleet-management#billing-automation"
                                   class="product-item"
                                 >
@@ -330,29 +346,11 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/fleet-management#alert-&-notification"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <Bell />
-                                    <div>
-                                      <h3>20+ Alerts & Notifications →</h3>
-                                      <p>
-                                        Receive instant alerts on geofencing,
-                                        route deviations, fuel consumption, and
-                                        more for proactive fleet management.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
-                                <Link
                                   to="/fleet-management#other-hardware-integration"
                                   class="product-item"
                                 >
                                   <div class="product-content">
                                     <Blocks />
-
                                     <div>
                                       <h3>
                                         10000+ IOT and other Hardwares
@@ -370,8 +368,81 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                             </div>
                           </div>
                         </Tab.Pane>
+
                         <Tab.Pane eventKey="second">
                           <div className="tab-section-row">
+                            <div className="col-6">
+                              <div class="mega-menu-products">
+                                <Link
+                                  to="/delivery-management#dispatcher-mobile-app"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <MonitorSmartphone />
+                                    <div>
+                                      <h3>Dispatcher Mobile App →</h3>
+                                      <p>
+                                        Get complete visibility into order
+                                        status from dispatch to doorstep using
+                                        Dispatcher Mobile App.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/delivery-management#delivery-proof-&-validation"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <PackageCheck />
+                                    <div>
+                                      <h3>Delivery Proofs & Validation →</h3>
+                                      <p>
+                                        Capture digital proof of delivery with
+                                        e-signatures, OTP verification, and
+                                        real-time image uploads for complete
+                                        order validation.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+
+                                <Link
+                                  to="/delivery-management#carrier-integration"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <ChartSpline />
+                                    <div>
+                                      <h3>100+ OMS, Carrier Integration →</h3>
+                                      <p>
+                                        Integrate effortlessly with top-order
+                                        management systems and carrier networks
+                                        for unified logistics operations.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                                <Link
+                                  to="/delivery-management#customer-experience-management"
+                                  class="product-item"
+                                >
+                                  <div class="product-content">
+                                    <Contact />
+                                    <div>
+                                      <h3>Customer Experience Management →</h3>
+                                      <p>
+                                        Enhance customer satisfaction with
+                                        real-time tracking, automated alerts,
+                                        and seamless communication at every
+                                        step.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
                             <div className="col-6">
                               <div class="mega-menu-products">
                                 <Link
@@ -410,29 +481,11 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/delivery-management#dispatcher-mobile-app"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <MonitorSmartphone />
-                                    <div>
-                                      <h3>Dispatcher Mobile App →</h3>
-                                      <p>
-                                        Get complete visibility into order
-                                        status from dispatch to doorstep using
-                                        Dispatcher Mobile App
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
-                                <Link
                                   to="/delivery-management#driver-mobile-app"
                                   class="product-item"
                                 >
                                   <div class="product-content">
                                     <TabletSmartphone />
-
                                     <div>
                                       <h3>Driver Mobile App →</h3>
                                       <p>
@@ -446,64 +499,9 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
                               </div>
                             </div>
-                            <div className="col-6">
-                              <div class="mega-menu-products">
-                                <Link
-                                  to="/delivery-management#delivery-proof-&-validation"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <PackageCheck />
-                                    <div>
-                                      <h3>Delivery Proofs & Validation →</h3>
-                                      <p>
-                                        Capture digital proof of delivery with
-                                        e-signatures, OTP verification, and
-                                        real-time image uploads for complete
-                                        order validation.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
-                                <Link
-                                  to="/delivery-management#customer-experience-management"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <Contact />
-                                    <div>
-                                      <h3>Customer Experience Management →</h3>
-                                      <p>
-                                        Enhance customer satisfaction with
-                                        real-time tracking, automated alerts,
-                                        and seamless communication at every
-                                        step.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
-                                <Link
-                                  to="/delivery-management#carrier-integration"
-                                  class="product-item"
-                                >
-                                  <div class="product-content">
-                                    <ChartSpline />
-                                    <div>
-                                      <h3>100+ OMS, Carrier Inetgration →</h3>
-                                      <p>
-                                        Integrate effortlessly with top-order
-                                        management systems and carrier networks
-                                        for unified logistics operations.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-                              </div>
-                            </div>
                           </div>
                         </Tab.Pane>
+
                         <Tab.Pane eventKey="third">
                           <div className="tab-section-row">
                             <div className="col-6">
@@ -539,7 +537,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                       <p>
                                         Plan optimized fieldforce routes with
                                         over 24 constraints, ensuring better
-                                        coverage and productivity."
+                                        coverage and productivity.
                                       </p>
                                     </div>
                                   </div>
@@ -571,7 +569,6 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 >
                                   <div class="product-content">
                                     <Bike />
-
                                     <div>
                                       <h3>
                                         On-Demand Ride Request Automation →
@@ -651,10 +648,9 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 >
                                   <div class="product-content">
                                     <Navigation2 />
-
                                     <div>
                                       <h3>
-                                        Intelligent Vendor Allocation Engine
+                                        Intelligent Vendor Allocation Engine →
                                       </h3>
                                       <p>
                                         AI matches rides with optimal transport
@@ -680,7 +676,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   <div class="product-content">
                                     <Waypoints />
                                     <div>
-                                      <h3>AI power Route Planning →</h3>
+                                      <h3>AI Power Route Planning →</h3>
                                       <p>
                                         Utilize machine learning to generate
                                         cost-effective, traffic-aware, and
@@ -778,7 +774,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             )} */}
             {!hideWorks && (
               <li>
-                <a href="#use-cases">Case Study</a>
+                <a href="#use-cases">Success Stories</a>
               </li>
             )}
             {!hideWorks && (
