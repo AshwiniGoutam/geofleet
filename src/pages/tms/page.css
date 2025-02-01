@@ -1,0 +1,13 @@
+.customer-experience-section{
+    background-color: #cccccc12;
+}
+
+.customer-experience-section .page-features-section .row::after{
+    content: none;
+}
+
+.customer-experience-section .page-features-section .row img{
+    height: 400px;
+    width: 100%;
+    border-radius: 16px;
+}

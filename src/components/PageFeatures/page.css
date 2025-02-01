@@ -7,7 +7,7 @@
 }
 
 .page-features-section h2{
-    font-size: 28px !important;
+    font-size: 26px !important;
     line-height: normal !important;
 }
 
@@ -23,14 +23,15 @@
 }
 
 .page-features-section .content-col ul li{
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 8px;
 }
 
 .page-features-section .row{
     row-gap: 20px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     position: relative;
+    align-items: center;
 }
 
 .page-features-section .row::after{
@@ -50,6 +51,6 @@
 
 .page-features-section img{
     width: 100%;
-    height: 600px;
+    height: 450px;
     object-fit: contain;
 }

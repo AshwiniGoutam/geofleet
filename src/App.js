@@ -13,6 +13,7 @@ import SimTracking from "./pages/sim-tracker/page";
 import TMS from "./pages/tms/page";
 import Intigration from "./pages/intigration/page";
 import { useLayoutEffect } from "react";
+import FieldForce from "./pages/fieldforce-management/page";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -33,9 +34,10 @@ function App() {
         <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tms" element={<TMS />} />
+            <Route path="/delivery-management" element={<TMS />} />
             <Route path="/integration" element={<Intigration />} />
-            <Route path="/route-as-service" element={<RouteAsService />} />
+            <Route path="/fieldforce-management" element={<FieldForce />} />
+            <Route path="/route-optimization" element={<RouteAsService />} />
             <Route path="/supervisor-app" element={<SupervisorApp />} />
             <Route path="/driver-mobile-app" element={<DriverMobileApp />} />
             <Route path="/sim-tracking" element={<SimTracking />} />

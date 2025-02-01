@@ -43,22 +43,16 @@ export default function Footer() {
 
               <ul>
                 <li>
-                  <Link to="/route-as-service">Routing as Service</Link>
-                </li>
-                <li>
-                  <Link to="/supervisor-app">Supervisor App</Link>
-                </li>
-                <li>
-                  <Link to="/driver-mobile-app">Driver Mobile App</Link>
-                </li>
-                <li>
-                  <Link to="/sim-tracking">Sim Tracking</Link>
-                </li>
-                <li>
-                  <Link to="/tms">Track and Trace</Link>
-                </li>
-                <li>
                   <Link to="/fleet-management">Fleet Management</Link>
+                </li>
+                <li>
+                  <Link to="/delivery-management">Delivery Management</Link>
+                </li>
+                <li>
+                  <Link to="/feildforce-management">Fieldforce Management</Link>
+                </li>
+                <li>
+                  <Link to="/route-optimization">Route Optimization</Link>
                 </li>
               </ul>
             </div>

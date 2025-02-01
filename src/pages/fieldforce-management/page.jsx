@@ -6,6 +6,9 @@ import CtaSection from "../../components/cta-section/page";
 import Pricing from "../../components/pricing/page";
 import Footer from "../../components/footer/footer";
 import {
+    fieldForce,
+    FieldForceData,
+  FieldForceHightlights,
   FleetFeature,
   FleetHigtlightData,
   FleetManagmentData,
@@ -14,7 +17,7 @@ import HightLightFeature from "../../components/Highlights/page";
 import PageFeatures from "../../components/PageFeatures/page";
 import { useLocation } from "react-router-dom";
 
-export default function FleetManagment() {
+export default function FieldForce() {
   const location = useLocation();
 
   useEffect(() => {
@@ -30,9 +33,9 @@ export default function FleetManagment() {
   return (
     <>
       <Header  hideWorks/>
-      <Banner data={FleetManagmentData} hideExplore />
-      <HightLightFeature data={FleetHigtlightData} />
-      <PageFeatures data={FleetFeature} />
+      <Banner data={FieldForceData} hideExplore />
+      <HightLightFeature data={FieldForceHightlights} />
+      <PageFeatures data={fieldForce} />
       <section className="delivery-section m-0">
         <div className="container">
           <div className="row">

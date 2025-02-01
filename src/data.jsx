@@ -23,11 +23,19 @@ export const HomeBanner = {
 };
 
 export const FleetManagmentData = {
-  heading: "Seamless IoT & GPS Tracking for Smarter Fleet Management",
+  heading: "Smart Solutions for Seamless Fleet Monitoring",
   description:
-    "Track your fleet effortlessly with SIM-based IoT connectivity. Enjoy real-time location updates, enhanced visibility, and simplified management—all without the need for additional hardware. Geofleet.ai makes fleet tracking seamless and hassle-free.",
+    "GeoFleet offers a powerful fleet monitoring solution, delivering real-time visibility, control, and insights. Powered by AI and IoT, it ensures efficient, safe, and cost-effective fleet operations.",
   tags: ["IOT GPS Tracking", "Sim Tracking", "Tracking via Driver App "],
   image: "../assets/images/fleet-managment-banner.png",
+};
+
+export const FieldForceData = {
+  heading: "Optimize, Track & Empower Your Workforce",
+  description:
+    "Streamline Operations, Enhance Productivity & Gain Real-Time Workforce Visibility",
+  tags: ["IOT GPS Tracking", "Sim Tracking", "Tracking via Driver App "],
+  image: "../assets/images/fieldforce-banner.png",
 };
 
 export const RouteServiceData = {
@@ -116,6 +124,120 @@ export const FleetHigtlightData = [
     description:
       "Secures cargo with electronic locks, offering remote control, real-time monitoring, and alerts for unauthorized access.",
     image: "../assets/images/fleet-hightlight-2.png",
+  },
+];
+
+export const FieldForceHightlights = [
+  {
+    heading: "Real Time Fieldforce Visibility",
+    description:
+      "Track your field workforce in real-time with live location updates, task progress, and automated reporting to ensure maximum efficiency.",
+    image: "../assets/images/field-hightlight-1.png",
+  },
+  {
+    heading: "Automated Check-in",
+    description:
+      "Enable seamless check-ins and check-outs with automated location-based verification, eliminating manual errors and ensuring accountability.",
+    image: "../assets/images/field-hightlight-2.png",
+  },
+  {
+    heading: "Agent Roaster Management",
+    description:
+      "Optimize workforce allocation with intelligent scheduling and shift management, ensuring the right agents are assigned to the right tasks at the right time.",
+    image: "../assets/images/field-hightlight-3.png",
+  },
+  {
+    heading: "Alerts & Notifications",
+    description:
+      "Receive instant alerts for missed check-ins, task delays, and emergency situations to ensure smooth field operations and proactive decision-making.",
+    image: "../assets/images/field-hightlight-4.png",
+  },
+  {
+    heading: "AI Optimized Beat Planning",
+    description:
+      "Automate daily route planning with AI-powered beat optimization, reducing travel time and improving field agent productivity.",
+    image: "../assets/images/field-hightlight-5.png",
+  },
+  {
+    heading: "Smart Insights",
+    description:
+      "Leverage powerful analytics and performance metrics to track agent efficiency, identify bottlenecks, and optimize field operations.",
+    image: "../assets/images/field-hightlight-6.png",
+  },
+  {
+    heading: "Live ETA & tracking URL",
+    description:
+      "Provide customers and supervisors with real-time estimated arrival times and tracking links for complete transparency in field service execution.",
+    image: "../assets/images/field-hightlight-7.png",
+  },
+  {
+    heading: "On Demand Request Automation",
+    description:
+      "Automate service requests and dynamically assign field agents based on availability, location, and priority.",
+    image: "../assets/images/field-hightlight-8.png",
+  },
+  {
+    heading: "Intelligent Vendor Allocation Engine",
+    description:
+      "Leverage AI to allocate tasks to the best-suited vendors or third-party service providers, ensuring faster response times and optimized resource utilization.",
+    image: "../assets/images/field-hightlight-9.png",
+  },
+];
+
+export const DeliveryHightlightData = [
+  {
+    heading: "Order Management",
+    description:
+      "Literally Real Time Tracking, Movement Status with parking, idle movement alerts",
+    image: "../assets/images/delivery-hightlight-1.png",
+  },
+  {
+    heading: "Route Planning & Optimization",
+    description:
+      "Vehicle Maintenance ensures optimal fleet performance with scheduled servicing, alerts, cost tracking, and predictive insights.",
+    image: "../assets/images/delivery-hightlight-2.png",
+  },
+  {
+    heading: "Order Analytics",
+    description:
+      "Provides actionable fleet insights via dashboards, key metrics, and reports for better decision-making and efficiency.",
+    image: "../assets/images/delivery-hightlight-3.png",
+  },
+  {
+    heading: "Alerts & Notifications",
+    description:
+      "Alerts & Notifications provide real-time updates on events for timely action and better fleet management.",
+    image: "../assets/images/delivery-hightlight-4.png",
+  },
+  {
+    heading: "Order Tracking URLs",
+    description:
+      "Driving Behavior Analytics evaluates driver performance through metrics like speed, braking, acceleration, and idle time to improve safety, efficiency, and compliance.",
+    image: "../assets/images/delivery-hightlight-5.png",
+  },
+  {
+    heading: "Shipper & Customer Management",
+    description:
+      "Combines video footage with telematics data to enhance safety, monitor incidents, and improve driver accountability.",
+    image: "../assets/images/delivery-hightlight-6.png",
+  },
+  {
+    heading: "Internal Ticketing Tool",
+    description:
+      "Streamlines issue tracking and resolution within the organization through efficient logging, assignment, and monitoring of tickets.",
+    image: "../assets/images/delivery-hightlight-7.png",
+  },
+  {
+    heading: "User Access Management",
+    description:
+      "Controls user permissions and access levels, ensuring secure and role-based access to system features and data.",
+    image: "../assets/images/delivery-hightlight-8.png",
+  },
+  {
+    heading: "EPOD, Esign, OTP based Deliveries",
+    description:
+      "Secures cargo with electronic locks, offering remote control, real-time monitoring, and alerts for unauthorized access.",
+    image: "../assets/images/delivery-hightlight-9.png",
   },
 ];
 
@@ -349,102 +471,160 @@ export const DriverHightlights = [
 
 export const FleetFeature = [
   {
-    heading:
-      "Real-Time Vehicle Tracking: Accurate Movement Monitoring at Every Moment",
+    heading: "IoT – Smart Fleet Connectivity for Real-Time Insights",
     description:
-      "GeoFleet’s Real-Time Vehicle Tracking feature provides precise, up-to-the-minute tracking of your fleet, including movement status, parking, idle time and movement alerts.",
+      "Transform your fleet with IoT-powered intelligence. Geofleet seamlessly integrates with IoT devices to provide real-time vehicle diagnostics, fuel monitoring, driver behavior analysis, and predictive maintenance alerts.",
     List: [
-      "Monitor vehicle movements in real-time, ensuring you always know the location and status of every vehicle.",
-      "Receive instant alerts for idle time, parking, and any unauthorized movement to keep operations on track.",
-      "Improve fleet efficiency by reducing unnecessary idle time and optimizing vehicle usage.",
-      "Enhance operational control with continuous tracking that allows for proactive decision-making and issue resolution.",
+      " Monitor vehicle health with IoT-based diagnostics and telematics.",
+      "Track fuel usage and optimize efficiency with sensor-driven insights.",
+      "Prevent breakdowns with predictive maintenance alerts.",
     ],
     image: "../assets/images/fleet-feature-1.png",
-  },
-  {
-    heading:
-      "Vehicle Maintenance: Maximize Fleet Performance and Minimize Downtime",
-    description:
-      "GeoFleet’s Vehicle Maintenance feature ensures optimal fleet performance by providing scheduled servicing, maintenance alerts, cost tracking, and predictive insights.",
-    List: [
-      "Schedule regular maintenance and receive timely alerts to prevent unexpected breakdowns.",
-      "Track maintenance costs to better manage fleet budgets and reduce unnecessary expenses.",
-      "Use predictive insights to identify potential issues before they become costly problems, ensuring fleet reliability.",
-      "Enhance fleet uptime and performance by staying ahead of maintenance needs and keeping vehicles in peak condition.",
-    ],
-    image: "../assets/images/fleet-feature-2.png",
+    section_id:"iot-gps-tracking"
   },
 
   {
-    heading: "Reports & Analytics:Data-Driven Insights for Smarter Decisions",
+    heading: "Track using GeoFleet Mobile App",
     description:
-      "GeoFleet’s Reports & Analytics feature provides actionable fleet insights through dashboards, key metrics, and detailed reports to enhance decision-making and improve operational efficiency.",
+      "Stay connected to your fleet on the go with GeoFleet’s mobile app. Manage operations and access vital data from your smartphone anytime, anywhere.",
     subHeading: "With Geofleet, you can:",
     List: [
-      "Access real-time dashboards and reports to monitor key performance indicators and track fleet efficiency.",
-      "Analyze critical data such as fuel consumption, route performance, and driver behavior for informed decision-making.",
-      "Gain insights into fleet trends and patterns to optimize operations and reduce costs.",
-      "Improve overall fleet performance by making data-driven adjustments based on comprehensive, actionable reports.",
+      "Cross-Platform Support: Available on iOS and Android for seamless management.",
+      "Driver and Fleet Manager Modules: Real-time communication and updates.",
+      "Instant Notifications: Stay updated with alerts for critical events.",
+      "Manage Attendance: Manage Driver Attendance and automate payroll.",
     ],
-    image: "../assets/images/fleet-feature-3.png",
+    image: "../assets/images/fleet-feature-2.png",
+    section_id:"supervisor-app"
   },
 
   {
-    heading: "Alerts & Notifications:Stay Informed, Act Fast",
+    heading: "SIM-Based Vehicle Tracking",
     description:
-      "GeoFleet’s Alerts & Notifications feature provides real-time updates on key events, enabling timely action and enhancing overall fleet management.",
+      "Effortlessly monitor your vehicles using SIM-based tracking technology. A cost-effective and reliable solution for location tracking, ensuring maximum coverage and minimal setup.",
     subHeading: "With GeoFleet, you can:",
     List: [
-      "Receive instant alerts for critical events like route deviations, speeding, or maintenance issues to take immediate action.",
-      "Stay updated on driver behavior, vehicle status, and environmental conditions to improve operational control.",
-      "Customize notifications to focus on the most relevant events for your fleet's needs.",
-      "Improve fleet efficiency and safety by addressing issues as they arise with real-time, actionable notifications.",
+      "Wide Network Coverage: Reliable tracking in areas with GPS limitations.",
+      "Real-Time Data Updates: Instant location and movement details.",
+      "Easy Integration: Compatible with multiple vehicle types and systems.",
+      "Compatible with all networks.",
+      "Power your fleet with SIM-based tracking for continuous monitoring and control. ",
+    ],
+    image: "../assets/images/fleet-feature-3.png",
+    section_id:"sim-based-tracking"
+  },
+
+  {
+    heading:
+      "Empower EVs with Intelligent Telematics for Data-Driven Analytics",
+    description:
+      "Access real-time vehicle charging details, including SOC (State of charge), State of Health, Nearby Chargers, Predicted Kwh, Historical Kwh. Get Realtime alerts for low battery levels, optimise energy usage, charge times, and locations for efficient fleet planning. Monitor trip wise emissions to align with sustainability goals.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Track Important Metrics like SOC, SOH, Predicted vs Actual Kwh.",
+      "Charging Cycle Insights: Monitor charging status and battery levels.",
+      "Low Battery Alerts: Stay ahead of energy needs with timely notifications.",
+      "Emission Tracking: Support sustainability goals with trip-based analytics.",
     ],
     image: "../assets/images/fleet-feature-4.png",
   },
 
   {
-    heading: "Driver Behavior Monitoring:Enhance Safety and Compliance",
+    heading: "OBD CAN Monitoring",
     description:
-      "GeoFleet’s Driver Behavior Monitoring feature evaluates driver performance through key metrics like speed, braking, acceleration, and idle time to improve safety, efficiency, and regulatory compliance.",
+      "Leverage GeoFleet’s OBD-based diagnostics for detailed insights into vehicle performance and operational health.",
     subHeading: "With GeoFleet, you can:",
     List: [
-      "Track and analyze driver behaviors to identify patterns and improve driving performance.",
-      "Monitor metrics like speed, harsh braking, acceleration, and idle time to reduce risks and enhance safety.",
-      "Ensure compliance with safety standards and regulations by addressing unsafe driving behaviors.",
-      "Improve overall fleet efficiency by optimizing driving habits and reducing fuel consumption and wear on vehicles.",
+      "Driver Behavior Insights: Monitor acceleration, braking, and idling patterns.",
+      "DEF and AdBlue Monitoring: Ensure compliance and reduce emissions.",
+      "Predictive Analytics: Gain foresight into potential maintenance needs.",
     ],
     image: "../assets/images/fleet-feature-5.png",
   },
 
   {
-    heading:
-      "Geofencing:Improve Safety and Accountability with Smart Boundaries",
+    heading: "Cargo Security",
     description:
-      "GeoFleet’s Geofencing feature combines video footage with telematics data to enhance safety, monitor incidents, and improve driver accountability.",
+      "Protect your valuable cargo with GeoFleet’s secure container tracking and locking solutions. Enhance safety and minimize theft risks.",
     subHeading: "With GeoFleet, you can:",
     List: [
-      "Set virtual boundaries around key locations and receive alerts when vehicles enter or exit these zones.",
-      "Enhance security and safety by combining real-time video footage with geofence data to monitor incidents.",
-      "Improve driver accountability by tracking behaviors within designated geofenced areas.",
-      "Gain insights into fleet movement and driver actions, helping to optimize routes and enhance overall fleet performance.",
+      "GPS-Based Locking: Monitor and control lock/unlock events remotely.",
+      "Geofence Unlocking: Ensure access only in authorized zones.",
+      "Tamper Detection: Alerts for unauthorized access attempts.",
     ],
     image: "../assets/images/fleet-feature-6.png",
   },
-
   {
-    heading:
-      "Trip History Replay:Review and Analyze Past Routes for Enhanced Performance",
+    heading: "Temperature Monitoring for Cold Chain Logistics",
     description:
-      "GeoFleet’s Trip History Replay feature allows you to review past trips, providing valuable insights into route efficiency, driver behavior, and fleet performance.",
-    subHeading: "With GeoFleet, you can:",
+      "Ensure the integrity of temperature-sensitive goods with GeoFleet’s real-time reefer monitoring. Maintain quality and reduce losses with precise temperature controls.",
     List: [
-      "Playback historical trip data to assess route performance and identify areas for improvement.",
-      "Analyze past trips to optimize future route planning and enhance fleet productivity.",
-      "Track driver behavior over time to ensure compliance and safety.",
-      "Use historical data to make informed decisions and improve overall fleet management strategies.",
+      "Real-Time Temperature Data: Get second-by-second updates.",
+      "Spoilage Prevention Alerts: Immediate notifications for temperature deviations.",
+      "Minimized Load Rejections: Proactively manage conditions to ensure compliance.",
     ],
     image: "../assets/images/fleet-feature-7.png",
+  },
+  {
+    heading: "RFID – Secure & Automated Fleet Access Control",
+    description:
+      "Enhance security and efficiency with RFID-based fleet management. Geofleet’s RFID technology enables driver authentication, automated vehicle access, and secure cargo tracking.",
+    List: [
+      " Use RFID tags for driver authentication and vehicle access control.",
+      "Prevent unauthorized vehicle usage with automated security.",
+      "Track assets and cargo with RFID-powered inventory management.",
+    ],
+    image: "../assets/images/fleet-feature-8.png",
+    section_id:"rfid-based-plant-tracking"
+  },
+  {
+    heading: "Supervisor App – Real-Time Fleet Oversight on the Go",
+    description:
+      "Stay in control with Geofleet’s Supervisor App, designed for fleet managers to monitor operations, track driver performance, and manage exceptions in real-time.",
+    List: [
+      "View live tracking, route progress, and delivery status from anywhere.",
+      "Receive instant alerts for delays, vehicle issues, or route deviations.",
+      "Improve decision-making with on-the-go fleet insights and analytics.",
+    ],
+    image: "../assets/images/fleet-feature-9.png",
+    section_id:"driver-mobile-app-tracking"
+  },
+  {
+    heading: "Billing Automation – Streamline Invoicing & Cost Management",
+    description:
+      "Automate fleet billing with Geofleet’s smart invoicing system. Generate accurate cost reports, mileage-based billing, and automated payment processing to reduce errors and delays.",
+    List: [
+      "Automate invoicing for fleet usage and service costs.",
+      "Ensure accurate billing with real-time trip and expense tracking.",
+      "Simplify payment processing with seamless integration to accounting platforms.",
+    ],
+    image: "../assets/images/fleet-feature-10.png",
+    section_id:"billing-automation"
+  },
+  {
+    heading: "Alerts & Notifications – Stay Informed with Instant Updates",
+    description:
+      "Never miss a critical fleet update with Geofleet’s smart alert system. Receive instant notifications for vehicle status, route deviations, maintenance needs, and compliance alerts.",
+    List: [
+      "Get real-time alerts for unauthorized movements, speeding, and maintenance issues.",
+      "Set up custom notifications for critical events like route deviations and delays.",
+      "Keep drivers and managers informed with push notifications, SMS, and email alerts.",
+    ],
+    image: "../assets/images/fleet-feature-11.png",
+    section_id:"alert-&-notification"
+  },
+  {
+    heading:
+      "10,000+ Integrations – Seamlessly Connect with Your Existing Systems",
+    description:
+      "Geofleet offers extensive API integrations with 10,000+ platforms, including ERP, TMS, CRM, payment gateways, and IoT ecosystems. Connect your fleet data with existing business tools for enhanced automation and visibility.",
+    List: [
+      "Integrate with major ERPs, accounting, and dispatch management systems.",
+      "Sync fleet data with IoT platforms, fuel management, and telematics solutions.",
+      "Customize integrations using Geofleet’s robust open API.",
+    ],
+    image: "../assets/images/fleet-feature-12.png",
+    section_id:"other-hardware-integration"
   },
 ];
 
@@ -461,7 +641,7 @@ export const RoutingFeature = [
       "Minimize fuel consumption and operational costs by integrating an intelligent, capacity-aware routing API into your system for optimized planning.",
     ],
     image: "../assets/images/routing-feature-1.png",
-    section_id:"ai-power-route-planning"
+    section_id: "ai-power-route-planning",
   },
   {
     heading:
@@ -475,7 +655,7 @@ export const RoutingFeature = [
       "Minimize fuel consumption and operational costs by integrating an intelligent, capacity-aware routing API into your system for optimized planning.",
     ],
     image: "../assets/images/routing-feature-2.png",
-    section_id:"dynamic-re-routing"
+    section_id: "dynamic-re-routing",
   },
   {
     heading:
@@ -489,21 +669,22 @@ export const RoutingFeature = [
       "Promote sustainability by aligning route planning with eco-friendly strategies and tracking cost savings from optimized routes and improved fuel efficiency.",
     ],
     image: "../assets/images/routing-feature-3.png",
-    section_id:"carbon-emission-reduction"
+    section_id: "carbon-emission-reduction",
   },
   {
     heading:
-      "Time Window Management & Customizable Parameters: Tailored Routes for Timely Deliveries",
+      "Smart and Intelligent Route Optimization with customizable Parameters",
     description:
-      "GeoFleet’s time window management and customizable parameters allow you to plan routes that meet specific delivery time slots, enhance customer satisfaction, and cater to the unique needs of your fleet.",
+      "Experience the power of intelligent route optimization with Geofleet. Our cutting-edge platform helps you create optimized delivery routes that take into account traffic patterns, driver preferences, and your unique business priorities. Say goodbye to inefficiencies and hello to cost savings!",
     subHeading: "With GeoFleet, you can:",
     List: [
-      "Plan routes to ensure timely deliveries within customer-defined time windows while considering vehicle type, load capacity, and delivery priorities.",
-      " Customize routing to meet customer preferences, ensuring a personalized service and optimizing the delivery process.",
-      "Improve operational efficiency by adjusting delivery schedules, avoiding delays, and streamlining route planning with customizable parameters for each unique delivery requirement.",
+      "Save up to 25% per delivery by optimizing every route for maximum efficiency.",
+      "Easily create routes that factor in real-time traffic data, reducing delays and improving delivery times.",
+      "Customize routes based on driver preferences and operational needs.",
+      "Edit routes effortlessly—although with our smart optimization, you’ll rarely need to!",
     ],
-    image: "../assets/images/routing-feature-4.png",
-    section_id:"customizable-parameters"
+    image: "../assets/images/tms-feature-1.png",
+    section_id: "customizable-parameters",
   },
   {
     heading:
@@ -517,7 +698,7 @@ export const RoutingFeature = [
       "Optimize driver schedules, monitor performance, and adjust assignments based on changing conditions to ensure timely arrivals and increase customer satisfaction with consistent, accurate delivery time predictions.",
     ],
     image: "../assets/images/routing-feature-5.png",
-    section_id:"driver-assigment-optimization"
+    section_id: "driver-assigment-optimization",
   },
 ];
 
@@ -787,6 +968,254 @@ export const SimFeature = [
       "Enhance fleet management efficiency with reliable tracking, regardless of geographical challenges.",
     ],
     image: "../assets/images/sim-feature-7.png",
+  },
+];
+
+export const deliveryManagement = [
+  {
+    heading: "Live Monitoring with Web & Mobile App",
+    description:
+      "Enable dispatchers to manage deliveries and fleet operations on the go with Geofleet’s mobile app. Assign tasks, track driver progress, and handle exceptions in real time.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "View live fleet updates and monitor deliveries from anywhere.",
+      "Assign and modify tasks instantly based on priority.",
+      "Communicate with drivers seamlessly for better coordination.",
+    ],
+    image: "../assets/images/delivery-management-1.png",
+    section_id:"dispatcher-mobile-app"
+  },
+  {
+    heading: "Last Mile Delivery Management – Optimize & Accelerate Deliveries",
+    description:
+      "Enhance your last-mile delivery operations with Geofleet’s intelligent management system. Ensure on-time, cost-effective, and efficient deliveries with real-time tracking, route optimization, and automated dispatching.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Reduce delivery time with AI-driven route optimization.",
+      "Track shipments live to ensure timely fulfillment.",
+      "Improve efficiency with automated dispatch and fleet coordination.",
+    ],
+    image: "../assets/images/delivery-management-2.png",
+    section_id:"last-mile-delivery-management"
+  },
+  {
+    heading: "Delivery Proofs & Validation – Secure & Paperless Confirmations",
+    description:
+      "Ensure secure and verifiable deliveries with Geofleet’s advanced proof-of-delivery system. Capture electronic signatures, photos, and OTP confirmations to eliminate disputes and enhance accountability.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Digitally confirm deliveries with EPOD, e-signatures, and timestamped photos.",
+      "Reduce errors with OTP-based delivery validation.",
+      "Maintain compliance with automated digital records.",
+    ],
+    image: "../assets/images/delivery-management-3.png",
+    section_id:"delivery-proof-&-validation"
+  },
+  {
+    heading:
+      "Pickup Management – Efficient Scheduling & Real-Time Coordination",
+    description:
+      "Optimize pickup requests with automated scheduling and real-time tracking. Geofleet enables businesses to plan, dispatch, and track pickups with maximum efficiency.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Auto-assign pickups to the nearest available drivers.",
+      "Provide customers with real-time tracking for scheduled pickups.",
+      "Optimize pickup routes for reduced turnaround time.",
+    ],
+    image: "../assets/images/delivery-management-4.png",
+    section_id:"pickup-management"
+  },
+  {
+    heading:
+      "100+ OMS Integrations – Seamlessly Connect with Order Management Systems",
+    description:
+      "Geofleet integrates with 100+ OMS platforms, enabling seamless order processing, real-time updates, and automated dispatching for maximum efficiency.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Sync orders in real time with leading OMS solutions.",
+      "Automate dispatch and tracking for faster fulfillment.",
+      "Reduce manual processes with seamless API connectivity.",
+    ],
+    image: "../assets/images/delivery-management-5.png",
+    section_id:"carrier-integration"
+  },
+  {
+    heading: "Carrier Integration – Connect with Leading Logistics Partners",
+    description:
+      "Easily integrate with major carriers to expand your delivery network and optimize shipping options. Geofleet ensures seamless connectivity with top logistics providers.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Integrate with national and regional carriers for greater flexibility.",
+      "Automate order dispatch based on carrier availability and rates.",
+      "Improve delivery reliability with real-time carrier tracking.",
+    ],
+    image: "../assets/images/delivery-management-6.png",
+  },
+];
+
+export const customerExperience = [
+  {
+    heading: "Electronic Proof of Delivery (EPOD)",
+    headingSpan: "– Secure & Digital Delivery Confirmations",
+    description:
+      "Ensure every delivery is documented with Geofleet’s EPOD feature. Capture electronic proof of delivery with digital signatures, timestamps, and photo uploads, eliminating paperwork and disputes.",
+    List: [
+      "Digitally confirm deliveries with secure EPOD, ensuring accountability.",
+      "Attach images and notes for added proof, reducing delivery disputes.",
+    ],
+    image: "../assets/images/customer-exp-1.png",
+  },
+  {
+    heading: "Tracking URL",
+    headingSpan: "– Real-Time Visibility for Customers",
+    description:
+      "Enhance customer satisfaction with live tracking links. Geofleet generates real-time tracking URLs for customers to monitor their deliveries on the go.",
+    List: [
+      "Provide customers with live tracking updates for enhanced transparency.",
+      "Reduce customer support queries with self-service tracking.",
+    ],
+    image: "../assets/images/customer-exp-2.png",
+  },
+  {
+    heading: "E-Sign",
+    headingSpan: "– Paperless and Instant Signature Collection",
+    description:
+      "Simplify the signing process with Geofleet’s E-Sign feature. Customers can provide digital signatures directly on the driver’s app, ensuring smooth and verifiable deliveries.",
+    List: [
+      "Capture instant electronic signatures for faster processing.",
+      "Secure and legally valid digital authentication for every delivery.",
+    ],
+    image: "../assets/images/customer-exp-3.png",
+  },
+  {
+    heading: "OTP Validation ",
+    headingSpan: "– Secure & Error-Free Deliveries",
+    description:
+      "Prevent delivery mismatches with Geofleet’s OTP Validation feature. Customers receive a one-time password (OTP) to confirm delivery before completion.",
+    List: [
+      "Ensure accurate deliveries with OTP-based validation.",
+      "Reduce fraud and incorrect handovers with secure verification.",
+      "Enhance delivery security and accuracy with Geofleet’s OTP Validation system.",
+    ],
+    image: "../assets/images/customer-exp-4.png",
+  },
+  {
+    heading: "Customer Ratings",
+    headingSpan: "– Feedback-Driven Performance Insights",
+    description:
+      "Improve service quality with real-time customer ratings. Allow customers to rate their delivery experience, helping refine operations and enhance driver efficiency.",
+    List: [
+      "Gather instant feedback to improve service quality.",
+      "Use insights to reward top-performing drivers and enhance training.",
+    ],
+    image: "../assets/images/customer-exp-5.png",
+  },
+];
+
+export const fieldForce = [
+  {
+    heading: "Complete Fieldforce Visibility in Real-Time",
+    description:
+      "Gain full control over your field workforce with real-time tracking and automated task monitoring. Geofleet provides live location updates, route progress, and historical movement data to ensure efficient operations and workforce productivity.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Monitor agents’ live locations, task statuses, and movement history.",
+      "Reduce idle time with proactive tracking and dynamic task assignments.",
+      "Improve workforce accountability with automated check-ins and reporting.",
+    ],
+    image: "../assets/images/field-feature-1.png",
+    section_id:"complete-fieldforce-visibility-in-real-time"
+  },
+  {
+    heading: "Seamless & Secure Employee Attendance Capture",
+    description:
+      "Ensure accurate and automated check-ins with advanced location and identity verification technologies. Field agents can authenticate their presence effortlessly using multiple check-in options, reducing manual errors and enhancing security.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Enable Geofencing-based auto check-ins upon reaching designated areas.",
+      "Support RFID, QR codes, Face Recognition, and Biometrics for secure authentication.",
+      "Utilize Chirp Sound and manual check-ins for flexible workforce validation.",
+    ],
+    image: "../assets/images/field-feature-2.png",
+    section_id:"seamless-and-secure-employee-attendance-capture"
+  },
+  {
+    heading: "AI-Optimized Beat/Employee Pickup Planning",
+    description:
+      "Optimize workforce routes using AI-driven planning with over 24 constraints, ensuring maximum efficiency and service coverage. Reduce travel time, fuel costs, and manual planning efforts with intelligent beat optimization.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Plan optimized routes with traffic, workload, and priority-based adjustments.",
+      "Auto-assign tasks to the nearest available agent for faster turnaround.",
+      "Reduce operational costs with smart workload distribution.",
+    ],
+    image: "../assets/images/field-feature-3.png",
+    section_id:"ai-optimized-beat-employee-pickup-planning"
+  },
+  {
+    heading: "Smart Insights & Performance Analytics",
+    description:
+      "Leverage data-driven insights to evaluate workforce efficiency and optimize field operations. Geofleet provides in-depth analytics on task completion, travel time, and agent productivity, helping businesses refine their field strategies.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Access real-time and historical reports on workforce performance.",
+      "Measure key operational KPIs, including task efficiency and response times.",
+      "Identify bottlenecks and optimize resources based on performance insights.",
+    ],
+    image: "../assets/images/field-feature-4.png",
+    section_id:"smart-insights-performance-analytics"
+  },
+  {
+    heading: "Effortless Employee Transport Solutions",
+    description:
+      "Streamline employee transport with AI-driven route optimization and automated scheduling. Geofleet ensures seamless, on-time employee commutes with live tracking and intelligent fleet management.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Automate transport scheduling with optimized pickup and drop-off routes.",
+      "Track employee rides in real time for increased safety and transparency.",
+      "Reduce transit delays with predictive route planning and real-time adjustments.",
+    ],
+    image: "../assets/images/field-feature-5.png",
+    section_id:"effortless-employee-transport-solutions"
+  },
+  {
+    heading: "Live ETA Updates & Trackable Links",
+    description:
+      "Enhance service transparency by sharing live tracking URLs with employees and customers. Provide accurate estimated time of arrival (ETA) updates and ensure seamless coordination between field agents and clients.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      " Generate real-time tracking links for live field agent monitoring.",
+      "Improve customer communication with instant ETA updates.",
+      "Minimize delivery uncertainty and enhance trust with transparent tracking.",
+    ],
+    image: "../assets/images/field-feature-6.png",
+    section_id:"live-eta-updates-trackable-links"
+  },
+  {
+    heading: "On-Demand Ride Request Automation",
+    description:
+      "Enable employees to request rides instantly with an AI-driven dispatch system. The platform automatically assigns vehicles based on real-time availability, optimizing transport efficiency and reducing wait times.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Automate ride requests with AI-powered dispatching.",
+      "Assign the nearest available transport to minimize delays.",
+      "Optimize routing to reduce travel time and fuel costs.",
+    ],
+    image: "../assets/images/field-feature-7.png",
+    section_id:"on-demand-ride-request-automation"
+  },
+  {
+    heading: "Intelligent Vendor Allocation Engine",
+    description:
+      "Ensure optimal ride fulfillment with an AI-powered vendor selection engine. The system dynamically assigns transport providers based on cost efficiency, performance metrics, and real-time availability.",
+    subHeading: "With GeoFleet, you can:",
+    List: [
+      "Match requests with the best-suited transport providers using AI-driven selection.",
+      "Prioritize vendors based on availability, proximity, and cost-effectiveness.",
+      "Improve service reliability with automated vendor performance tracking.",
+    ],
+    image: "../assets/images/field-feature-8.png",
+    section_id:"intelligent-vendor-allocation-engine"
   },
 ];
 

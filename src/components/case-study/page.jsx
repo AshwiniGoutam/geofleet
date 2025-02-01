@@ -29,16 +29,20 @@ export default function CaseStudy({ page }) {
                 alt="case-study"
               />
               <div className="content">
-                <h4>
-                  Transforming Field Operations with AI-Driven Fleet Management
-                  for a Renewable Energy Leader
-                </h4>
+                <h4>AI-Driven Safety Overhaul Reduces Speeding by 40%</h4>
                 <p>
-                  Field teams were spending 30% of their time on administrative
-                  tasks like logging site visits and manually calculating travel
-                  distances for billing. Speeding incidents accounted for 25% of
-                  near-miss safety reports, and delayed emergency response
-                  during storms raised stakeholder concerns
+                  <b>Challenge:</b> High speeding incidents and unsafe driving
+                  at remote sites risked worker safety.
+                </p>
+                <p>
+                  <b>Solution:</b> GeoFleet.ai’s real-time monitoring with AI
+                  behavior scoring, geofence alerts, and instant speed
+                  notifications.
+                </p>
+                <p>
+                  <b>Result:</b> 40% fewer speeding cases, 35% accident
+                  reduction via targeted coaching, and automated compliance
+                  logs.
                 </p>
 
                 <button className="primary-btn">
@@ -55,16 +59,18 @@ export default function CaseStudy({ page }) {
                 alt="case-study"
               />
               <div className="content">
-                <h4>
-                  Revolutionizing Employee Transportation with AI-Driven
-                  Mobility Solutions for a Solar Manufacturing Giant
-                </h4>
+                <h4>Automated Fleet Management Saves 200+ Hours Monthly</h4>
                 <p>
-                  A global solar panel manufacturer, with 10,000+ employees
-                  across five sprawling production plants in remote regions,
-                  faced persistent challenges in managing daily employee
-                  commutes. With workers operating in shifts across 24/7
-                  facilities.
+                  <b>Challenge:</b> Manual billing and route planning drained
+                  productivity.
+                </p>
+                <p>
+                  <b>Solution:</b> AI-optimized routing cut fuel use by 20%,
+                  while GPS tracking auto-generated invoices.{" "}
+                </p>
+                <p>
+                  <b>Result:</b> 50% faster billing cycles, 200+ hours/month
+                  saved, and zero billing disputes.
                 </p>
 
                 <button className="primary-btn">
@@ -82,14 +88,19 @@ export default function CaseStudy({ page }) {
               />
               <div className="content">
                 <h4>
-                  Optimizing EV Fleet Operations with AI-Powered Battery
-                  Management for a Logistics Leader
+                  Dynamic Geofencing Ensures 100% Compliance During Emergencies
                 </h4>
                 <p>
-                  A major logistics service provider, operating a fleet of 500+
-                  electric vehicles (EVs) across North America, faced challenges
-                  in scaling its green transition. While committed to replacing
-                  diesel trucks with EVs,
+                  <b>Challenge:</b> Audit failures and slow storm response
+                  threatened operations.
+                </p>
+                <p>
+                  <b>Solution:</b> Disaster-responsive geofences, movement
+                  replay logs, and escalation workflows.
+                </p>
+                <p>
+                  <b>Result:</b> 100% compliance during audits, 90% faster
+                  emergency deployments, and real-time accountability.
                 </p>
 
                 <button className="primary-btn">

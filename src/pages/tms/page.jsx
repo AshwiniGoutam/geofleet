@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./page.css";
 import Header from "../../components/header/header";
 import Banner from "../../components/banner/page";
-import { HomeBanner } from "../../data";
+import {
+  customerExperience,
+  DeliveryHightlightData,
+  deliveryManagement,
+  HomeBanner,
+} from "../../data";
 import DeliverySection from "../../components/delivery-section/page";
 import OurServices from "../../components/our-solutions/page";
 import Features from "../../components/features/page";
@@ -11,18 +17,72 @@ import Testimonial from "../../components/testimonials/page";
 import CtaSection from "../../components/cta-section/page";
 import Pricing from "../../components/pricing/page";
 import Footer from "../../components/footer/footer";
-import TmsFeatures from "../../components/tms-features/page";
+import PageFeatures from "../../components/PageFeatures/page";
+import HightLightFeature from "../../components/Highlights/page";
+import { useLocation } from "react-router-dom";
 
 export default function TMS() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
       <Header />
 
       <Banner data={HomeBanner} />
 
-      <DeliverySection />
+      <HightLightFeature data={DeliveryHightlightData} />
 
-      <TmsFeatures/>
+      {/* <DeliverySection /> */}
+
+      {/* <TmsFeatures/> */}
+      <PageFeatures data={deliveryManagement} />
+
+      <section className="customer-experience-section mt-5" id="customer-experience-management">
+        <div className="container">
+          <h2 className="text-center">
+            Customer Experience Management –{" "}
+            <span className="d-block">Deliver Transparency & Satisfaction</span>
+          </h2>
+          <section className="page-features-section pb-0">
+            <div className="container">
+              {customerExperience &&
+                customerExperience?.map((item, index) => {
+                  return (
+                    <div className="row" key={index} id={item?.section_id}>
+                      <div className="col-sm-12 col-md-12 col-lg-6">
+                        <img src={item?.image} alt="images" />
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-6 content-col">
+                        <div>
+                          <h2>{item?.heading}</h2>
+                          <p>{item?.description}</p>
+                        </div>
+                        <hr />
+                        <div>
+                          <ul>
+                            {item?.List?.map((i, o) => {
+                              return <li key={o}>{i}</li>;
+                            })}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </section>
+        </div>
+      </section>
 
       <AppSection />
 

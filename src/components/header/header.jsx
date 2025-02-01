@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import HumbergMenu from "../HumbergMenu";
 import ArrowDown from "../arrowDown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -50,8 +50,20 @@ import {
 } from "lucide-react";
 
 export default function Header({ ShowHeader, border, hideWorks }) {
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [activeKey, setActiveKey] = useState("first");
+
+  useEffect(() => {
+    if (location.pathname === "/fleet-management") setActiveKey("first");
+    else if (location.pathname === "/delivery-management")
+      setActiveKey("second");
+    else if (location.pathname === "/fieldforce-management")
+      setActiveKey("third");
+    else if (location.pathname === "/route-optimization")
+      setActiveKey("fourth");
+  }, [location]);
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -138,23 +150,35 @@ export default function Header({ ShowHeader, border, hideWorks }) {
               </a>
 
               <div class="mega-menu">
-                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <Tab.Container
+                  activeKey={activeKey}
+                  onSelect={(key) => setActiveKey(key)}
+                >
                   <Row className="w-100 py-4">
                     <Col sm={4}>
                       <h5>Our Solutions</h5>
                       <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                          <Nav.Link eventKey="first">
-                            {" "}
-                            <div>
+                          <Nav.Link
+                            eventKey="first"
+                            onMouseEnter={() => setActiveKey("first")}
+                            as={Link}
+                            to="/fleet-management"
+                          >
+                            <div className="flex items-center gap-2">
                               <MapPin className="w-5 h-5" />
-                              Fleet Management{" "}
+                              Fleet Management
                             </div>
-                            <ArrowRight className="" />
+                            <ArrowRight className="w-5 h-5" />
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="second">
+                          <Nav.Link
+                            eventKey="second"
+                            onMouseEnter={() => setActiveKey("second")}
+                            as={Link}
+                            to="/delivery-management"
+                          >
                             <div>
                               <Package className="w-5 h-5" />
                               Delivery Management
@@ -163,7 +187,12 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="third">
+                          <Nav.Link
+                            eventKey="third"
+                            onMouseEnter={() => setActiveKey("third")}
+                            as={Link}
+                            to="/fieldforce-management"
+                          >
                             <div>
                               <MapPinHouse />
                               Fieldforce Management
@@ -172,7 +201,12 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                          <Nav.Link eventKey="fourth">
+                          <Nav.Link
+                            eventKey="fourth"
+                            onMouseEnter={() => setActiveKey("fourth")}
+                            as={Link}
+                            to="/route-optimization"
+                          >
                             {" "}
                             <div>
                               <Radio className="w-5 h-5" />
@@ -189,7 +223,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           <div className="tab-section-row">
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/fleet-management#iot-gps-tracking"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <LocateFixed />
                                     <div>
@@ -203,7 +240,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
+                                <Link
+                                  to="/fleet-management#sim-based-tracking"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <AudioLines />
                                     <div>
@@ -218,7 +258,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/fleet-management#rfid-based-plant-tracking"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -234,7 +274,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/fleet-management#driver-mobile-app-tracking"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <TabletSmartphone />
 
@@ -252,7 +295,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                             </div>
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/fleet-management#supervisor-app"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Users />
                                     <div>
@@ -266,7 +312,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
+                                <Link
+                                  to="/fleet-management#billing-automation"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Receipt />
                                     <div>
@@ -281,7 +330,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/fleet-management#alert-&-notification"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -297,7 +346,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/fleet-management#other-hardware-integration"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Blocks />
 
@@ -322,7 +374,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           <div className="tab-section-row">
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/delivery-management#last-mile-delivery-management"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Package />
                                     <div>
@@ -337,7 +392,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
+                                <Link
+                                  to="/delivery-management#pickup-management"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <SquareKanban />
                                     <div>
@@ -352,7 +410,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/delivery-management#dispatcher-mobile-app"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -368,7 +426,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/delivery-management#driver-mobile-app"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <TabletSmartphone />
 
@@ -387,7 +448,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                             </div>
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/delivery-management#delivery-proof-&-validation"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <PackageCheck />
                                     <div>
@@ -402,23 +466,8 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
-                                  <div class="product-content">
-                                    <Route />
-                                    <div>
-                                      <h3>AI powered Route Planning →</h3>
-                                      <p>
-                                        Leverage intelligent algorithms to plan
-                                        the most efficient delivery routes,
-                                        reducing fuel costs and ensuring on-time
-                                        deliveries.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </Link>
-
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/delivery-management#customer-experience-management"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -435,7 +484,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/delivery-management#carrier-integration"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <ChartSpline />
                                     <div>
@@ -456,7 +508,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           <div className="tab-section-row">
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#complete-fieldforce-visibility-in-real-time"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <LocateFixed />
                                     <div>
@@ -473,7 +528,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#ai-optimized-beat-employee-pickup-planning"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <AudioLines />
                                     <div>
@@ -488,7 +546,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/fieldforce-management#effortless-employee-transport-solutions"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -507,7 +565,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#on-demand-ride-request-automation"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Bike />
 
@@ -527,7 +588,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                             </div>
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/tms" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#seamless-and-secure-employee-attendance-capture"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Users />
                                     <div>
@@ -542,7 +606,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/supervisor-app" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#smart-insights-performance-analytics"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <FileText />
                                     <div>
@@ -560,7 +627,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/driver-mobile-app"
+                                  to="/fieldforce-management#live-eta-updates-trackable-links"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -578,7 +645,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/sim-tracking" class="product-item">
+                                <Link
+                                  to="/fieldforce-management#intelligent-vendor-allocation-engine"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Navigation2 />
 
@@ -603,7 +673,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                           <div className="tab-section-row">
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/route-as-service#ai-power-route-planning" class="product-item">
+                                <Link
+                                  to="/route-optimization#ai-power-route-planning"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Waypoints />
                                     <div>
@@ -617,7 +690,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/route-as-service#carbon-emission-reduction" class="product-item">
+                                <Link
+                                  to="/route-optimization#carbon-emission-reduction"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <AlarmSmoke />
                                     <div>
@@ -632,7 +708,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                 </Link>
 
                                 <Link
-                                  to="/route-as-service#driver-assigment-optimization"
+                                  to="/route-optimization#driver-assigment-optimization"
                                   class="product-item"
                                 >
                                   <div class="product-content">
@@ -651,7 +727,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                             </div>
                             <div className="col-6">
                               <div class="mega-menu-products">
-                                <Link to="/route-as-service#dynamic-re-routing" class="product-item">
+                                <Link
+                                  to="/route-optimization#dynamic-re-routing"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Route />
                                     <div>
@@ -665,7 +744,10 @@ export default function Header({ ShowHeader, border, hideWorks }) {
                                   </div>
                                 </Link>
 
-                                <Link to="/route-as-service#customization-parameters" class="product-item">
+                                <Link
+                                  to="/route-optimization#customizable-parameters"
+                                  class="product-item"
+                                >
                                   <div class="product-content">
                                     <Component />
                                     <div>
@@ -735,80 +817,50 @@ export default function Header({ ShowHeader, border, hideWorks }) {
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>Features</Accordion.Header>
-            <Accordion.Body>
+            <Accordion.Body className="mt-4">
               <ul>
-                <li>
-                  <Link to="/tms" class="product-item">
-                    <div class="product-content">
-                      <h3>Track & Trace →</h3>
-                    </div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/supervisor-app" class="product-item">
-                    <div class="product-content">
-                      <h3>Supervisor App →</h3>
-                    </div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/driver-mobile-app" class="product-item">
-                    <div class="product-content">
-                      <h3>Driver Mobile App →</h3>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/sim-tracking" class="product-item">
-                    <div class="product-content">
-                      <h3>Sim Tracking →</h3>
-                    </div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/route-as-service" class="product-item">
-                    <div class="product-content">
-                      <h3>Routing as Service →</h3>
-                    </div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/" class="product-item">
-                    <div class="product-content">
-                      <h3>Order Management System →</h3>
-                    </div>
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/" class="product-item">
-                    <div class="product-content">
-                      <h3>Dispatch Mobile App →</h3>
-                    </div>
-                  </Link>
-                </li>
-
                 <li>
                   <Link to="/fleet-management" class="product-item">
                     <div class="product-content">
-                      <h3>Fleet Management →</h3>
+                      <h3>Fleet Management</h3>
+                    </div>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/delivery-management" class="product-item">
+                    <div class="product-content">
+                      <h3>Delivery Management</h3>
+                    </div>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/feildforce-management" class="product-item">
+                    <div class="product-content">
+                      <h3>Fieldforce Management</h3>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/route-optimization" class="product-item">
+                    <div class="product-content">
+                      <h3>Route Optimization</h3>
                     </div>
                   </Link>
                 </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>
-              <a href="#how-it-works" onClick={toggleSidebar}>
-                How it works
-              </a>
-            </Accordion.Header>
-          </Accordion.Item>
+          {hideWorks && (
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                <a href="#how-it-works" onClick={toggleSidebar}>
+                  How it works
+                </a>
+              </Accordion.Header>
+            </Accordion.Item>
+          )}
 
           {hideWorks && (
             <Accordion.Item eventKey="2">

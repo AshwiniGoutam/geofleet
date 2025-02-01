@@ -17,6 +17,7 @@ import {
   Route,
   Blocks,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function OurServices() {
   return (
@@ -114,9 +115,11 @@ export default function OurServices() {
                       </ul>
 
                       <div className="d-flex align-items-center gap-4">
-                        <button className="primary-btn">
-                          Explore More <ArrowRight />
-                        </button>
+                        <Link to="/fleet-management">
+                          <button className="primary-btn">
+                            Explore More <ArrowRight />
+                          </button>
+                        </Link>
                         <a href="#">Book a Demo </a>
                       </div>
                     </div>
@@ -175,9 +178,11 @@ export default function OurServices() {
                       </ul>
 
                       <div className="d-flex align-items-center gap-4">
-                        <button className="primary-btn">
-                          Explore More <ArrowRight />
-                        </button>
+                        <Link to="/delivery-management">
+                          <button className="primary-btn">
+                            Explore More <ArrowRight />
+                          </button>
+                        </Link>
                         <a href="#">Book a Demo </a>
                       </div>
                     </div>
@@ -221,9 +226,11 @@ export default function OurServices() {
                       </ul>
 
                       <div className="d-flex align-items-center gap-4">
-                        <button className="primary-btn">
-                          Explore More <ArrowRight />
-                        </button>
+                        <Link to="/route-optimization">
+                          <button className="primary-btn">
+                            Explore More <ArrowRight />
+                          </button>
+                        </Link>
                         <a href="#">Book a Demo </a>
                       </div>
                     </div>

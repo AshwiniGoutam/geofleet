@@ -35,7 +35,7 @@ export default function AppSection() {
 
   return (
     <>
-      <section className="app-section">
+      <section className="app-section" id="driver-mobile-app">
         <div className="container">
           <div className="row">
             <h2 data-aos="fade-up">
