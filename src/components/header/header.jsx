@@ -862,7 +862,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             <Accordion.Item eventKey="2">
               <Accordion.Header>
                 <a href="#use-case" onClick={toggleSidebar}>
-                  Use Cases
+                  Success Stories
                 </a>
               </Accordion.Header>
             </Accordion.Item>
@@ -880,8 +880,8 @@ export default function Header({ ShowHeader, border, hideWorks }) {
 
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <Link to="/integration" onClick={toggleSidebar}>
-                Integration
+              <Link to="/integrations" onClick={toggleSidebar}>
+                Integrations
               </Link>
             </Accordion.Header>
           </Accordion.Item>
