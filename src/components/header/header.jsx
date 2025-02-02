@@ -783,7 +783,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
               </li>
             )}
             <li>
-              <Link to="/integration">Integrations</Link>
+              <Link to="/integrations">Integrations</Link>
             </li>
           </ul>
 
