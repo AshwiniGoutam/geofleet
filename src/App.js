@@ -35,7 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/delivery-management" element={<TMS />} />
-            <Route path="/integration" element={<Intigration />} />
+            <Route path="/integrations" element={<Intigration />} />
             <Route path="/fieldforce-management" element={<FieldForce />} />
             <Route path="/route-optimization" element={<RouteAsService />} />
             <Route path="/supervisor-app" element={<SupervisorApp />} />
