@@ -848,7 +848,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-          {hideWorks && (
+          {!hideWorks && (
             <Accordion.Item eventKey="1">
               <Accordion.Header>
                 <a href="#how-it-works" onClick={toggleSidebar}>
@@ -858,7 +858,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             </Accordion.Item>
           )}
 
-          {hideWorks && (
+          {!hideWorks && (
             <Accordion.Item eventKey="2">
               <Accordion.Header>
                 <a href="#use-case" onClick={toggleSidebar}>
@@ -868,7 +868,7 @@ export default function Header({ ShowHeader, border, hideWorks }) {
             </Accordion.Item>
           )}
 
-          {hideWorks && (
+          {!hideWorks && (
             <Accordion.Item eventKey="2">
               <Accordion.Header>
                 <a href="#pricing" onClick={toggleSidebar}>
