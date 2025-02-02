@@ -94,6 +94,10 @@ export default function Intigration() {
                 <span>Warehousing</span>
                 <span>Accounting and ERP</span>
                 <span>Cross-product Intigration</span>
+                <span>Hardware</span>
+                <span>Concox</span>
+                <span>Teltonika</span>
+                <span>More</span>
               </div>
             </div>
           </div>
