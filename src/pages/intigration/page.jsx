@@ -83,7 +83,7 @@ export default function Intigration() {
           <div className="row row-gap-4 align-items-center">
             <div className="col-sm-12 col-lg-4">
               {" "}
-              <h2>Major Intigration</h2>
+              <h2>Major Intigrations</h2>
             </div>
             <div className="col-sm-12 col-lg-8">
               <div>
@@ -95,9 +95,6 @@ export default function Intigration() {
                 <span>Accounting and ERP</span>
                 <span>Cross-product Intigration</span>
                 <span>Hardware</span>
-                <span>Concox</span>
-                <span>Teltonika</span>
-                <span>More</span>
               </div>
             </div>
           </div>
@@ -130,7 +127,7 @@ export default function Intigration() {
           <div className="row stat-row">
             <div>
               <h2>
-                Other Integration to{" "}
+                Other Integrations to{" "}
                 <h2 className="d-block m-0">Support Your Business</h2>
               </h2>
               <p>

@@ -480,7 +480,7 @@ export const FleetFeature = [
       "Prevent breakdowns with predictive maintenance alerts.",
     ],
     image: "../assets/images/fleet-feature-1.png",
-    section_id:"iot-gps-tracking"
+    section_id: "iot-gps-tracking",
   },
 
   {
@@ -495,7 +495,7 @@ export const FleetFeature = [
       "Manage Attendance: Manage Driver Attendance and automate payroll.",
     ],
     image: "../assets/images/fleet-feature-2.png",
-    section_id:"supervisor-app"
+    section_id: "supervisor-app",
   },
 
   {
@@ -511,7 +511,7 @@ export const FleetFeature = [
       "Power your fleet with SIM-based tracking for continuous monitoring and control. ",
     ],
     image: "../assets/images/fleet-feature-3.png",
-    section_id:"sim-based-tracking"
+    section_id: "sim-based-tracking",
   },
 
   {
@@ -575,7 +575,7 @@ export const FleetFeature = [
       "Track assets and cargo with RFID-powered inventory management.",
     ],
     image: "../assets/images/fleet-feature-8.png",
-    section_id:"rfid-based-plant-tracking"
+    section_id: "rfid-based-plant-tracking",
   },
   {
     heading: "Supervisor App – Real-Time Fleet Oversight on the Go",
@@ -587,7 +587,7 @@ export const FleetFeature = [
       "Improve decision-making with on-the-go fleet insights and analytics.",
     ],
     image: "../assets/images/fleet-feature-9.png",
-    section_id:"driver-mobile-app-tracking"
+    section_id: "driver-mobile-app-tracking",
   },
   {
     heading: "Billing Automation – Streamline Invoicing & Cost Management",
@@ -599,7 +599,7 @@ export const FleetFeature = [
       "Simplify payment processing with seamless integration to accounting platforms.",
     ],
     image: "../assets/images/fleet-feature-10.png",
-    section_id:"billing-automation"
+    section_id: "billing-automation",
   },
   {
     heading: "Alerts & Notifications – Stay Informed with Instant Updates",
@@ -611,7 +611,7 @@ export const FleetFeature = [
       "Keep drivers and managers informed with push notifications, SMS, and email alerts.",
     ],
     image: "../assets/images/fleet-feature-11.png",
-    section_id:"alert-&-notification"
+    section_id: "alert-&-notification",
   },
   {
     heading:
@@ -624,7 +624,7 @@ export const FleetFeature = [
       "Customize integrations using Geofleet’s robust open API.",
     ],
     image: "../assets/images/fleet-feature-12.png",
-    section_id:"other-hardware-integration"
+    section_id: "other-hardware-integration",
   },
 ];
 
@@ -983,7 +983,7 @@ export const deliveryManagement = [
       "Communicate with drivers seamlessly for better coordination.",
     ],
     image: "../assets/images/delivery-management-1.png",
-    section_id:"dispatcher-mobile-app"
+    section_id: "dispatcher-mobile-app",
   },
   {
     heading: "Last Mile Delivery Management – Optimize & Accelerate Deliveries",
@@ -996,7 +996,7 @@ export const deliveryManagement = [
       "Improve efficiency with automated dispatch and fleet coordination.",
     ],
     image: "../assets/images/delivery-management-2.png",
-    section_id:"last-mile-delivery-management"
+    section_id: "last-mile-delivery-management",
   },
   {
     heading: "Delivery Proofs & Validation – Secure & Paperless Confirmations",
@@ -1009,7 +1009,7 @@ export const deliveryManagement = [
       "Maintain compliance with automated digital records.",
     ],
     image: "../assets/images/delivery-management-3.png",
-    section_id:"delivery-proof-&-validation"
+    section_id: "delivery-proof-&-validation",
   },
   {
     heading:
@@ -1023,7 +1023,7 @@ export const deliveryManagement = [
       "Optimize pickup routes for reduced turnaround time.",
     ],
     image: "../assets/images/delivery-management-4.png",
-    section_id:"pickup-management"
+    section_id: "pickup-management",
   },
   {
     heading:
@@ -1037,7 +1037,7 @@ export const deliveryManagement = [
       "Reduce manual processes with seamless API connectivity.",
     ],
     image: "../assets/images/delivery-management-5.png",
-    section_id:"carrier-integration"
+    section_id: "carrier-integration",
   },
   {
     heading: "Carrier Integration – Connect with Leading Logistics Partners",
@@ -1124,7 +1124,7 @@ export const fieldForce = [
       "Improve workforce accountability with automated check-ins and reporting.",
     ],
     image: "../assets/images/field-feature-1.png",
-    section_id:"complete-fieldforce-visibility-in-real-time"
+    section_id: "complete-fieldforce-visibility-in-real-time",
   },
   {
     heading: "Seamless & Secure Employee Attendance Capture",
@@ -1137,7 +1137,7 @@ export const fieldForce = [
       "Utilize Chirp Sound and manual check-ins for flexible workforce validation.",
     ],
     image: "../assets/images/field-feature-2.png",
-    section_id:"seamless-and-secure-employee-attendance-capture"
+    section_id: "seamless-and-secure-employee-attendance-capture",
   },
   {
     heading: "AI-Optimized Beat/Employee Pickup Planning",
@@ -1150,7 +1150,7 @@ export const fieldForce = [
       "Reduce operational costs with smart workload distribution.",
     ],
     image: "../assets/images/field-feature-3.png",
-    section_id:"ai-optimized-beat-employee-pickup-planning"
+    section_id: "ai-optimized-beat-employee-pickup-planning",
   },
   {
     heading: "Smart Insights & Performance Analytics",
@@ -1163,7 +1163,7 @@ export const fieldForce = [
       "Identify bottlenecks and optimize resources based on performance insights.",
     ],
     image: "../assets/images/field-feature-4.png",
-    section_id:"smart-insights-performance-analytics"
+    section_id: "smart-insights-performance-analytics",
   },
   {
     heading: "Effortless Employee Transport Solutions",
@@ -1176,7 +1176,7 @@ export const fieldForce = [
       "Reduce transit delays with predictive route planning and real-time adjustments.",
     ],
     image: "../assets/images/field-feature-5.png",
-    section_id:"effortless-employee-transport-solutions"
+    section_id: "effortless-employee-transport-solutions",
   },
   {
     heading: "Live ETA Updates & Trackable Links",
@@ -1189,7 +1189,7 @@ export const fieldForce = [
       "Minimize delivery uncertainty and enhance trust with transparent tracking.",
     ],
     image: "../assets/images/field-feature-6.png",
-    section_id:"live-eta-updates-trackable-links"
+    section_id: "live-eta-updates-trackable-links",
   },
   {
     heading: "On-Demand Ride Request Automation",
@@ -1202,7 +1202,7 @@ export const fieldForce = [
       "Optimize routing to reduce travel time and fuel costs.",
     ],
     image: "../assets/images/field-feature-7.png",
-    section_id:"on-demand-ride-request-automation"
+    section_id: "on-demand-ride-request-automation",
   },
   {
     heading: "Intelligent Vendor Allocation Engine",
@@ -1215,7 +1215,7 @@ export const fieldForce = [
       "Improve service reliability with automated vendor performance tracking.",
     ],
     image: "../assets/images/field-feature-8.png",
-    section_id:"intelligent-vendor-allocation-engine"
+    section_id: "intelligent-vendor-allocation-engine",
   },
 ];
 
@@ -1414,5 +1414,16 @@ export const IntegrationData = [
     image: "../assets/images/integration-logo-38.png",
     heading: "Pickrr",
     description: "AI-powered logistics and fulfillment platform.",
+  },
+  {
+    image: "../assets/images/integration-logo-39.png",
+    heading: "Concox",
+    description:
+      "Gps tracking solutions, fleet optimization and intelligent security services.",
+  },
+  {
+    image: "../assets/images/integration-logo-40.png",
+    heading: "Teltonika",
+    description: "Global manufacturer of IoT connectivity equipment.",
   },
 ];
